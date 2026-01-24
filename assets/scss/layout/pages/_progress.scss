@@ -1,0 +1,126 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.14 progress css start
+/*----------------------------------------*/
+.tp-progress-bar{
+    &-item{
+        overflow: hidden;
+        margin-bottom: 50px;
+        padding-top: 11px;  
+        background-color: #0D0D0D;
+        @media #{$lg}{
+            padding-top: 20px;
+        }
+        & label{
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 17px;
+            display: inline-block;
+            padding-left: 20px;
+            color: var(--tp-common-white);
+            @media #{$xs}{
+                font-size: 12px;
+                margin-bottom: 7px;
+                padding-left: 0;
+            }
+        }
+    }
+    & .progress{
+        overflow: visible;
+        border-radius: 10px;
+        background: #0D0D0D;
+        height: 6px;
+        border-radius: 0;
+    }
+    & .progress-bar{
+        background-color: var(--tp-theme-1);
+        position: relative;
+        overflow: visible;
+        height: 100%;
+        border-radius: 0px;
+        top: 0;
+    }
+    & .progress-bar span {
+        position: absolute;
+        right: 0;
+        top: -28px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        color: var(--tp-common-white);
+    }
+}
+.tp-progress-2-bar{
+    &-wrap {
+        & h5 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            @media #{$xl}{
+                font-size: 24px;
+            }
+            @media #{$lg,$md,$xs}{
+                font-size: 20px;
+            }
+        }
+    }
+    &-item{
+        overflow: hidden;
+        position: relative;
+        width: 76%;
+        @media #{$xs}{
+            width: 100%;
+        }
+        @media #{$sm}{
+            width: 80%;
+        }
+        &:not(:last-child){
+            padding-bottom: 35px;
+            @media #{$lg,$md,$xs}{
+                font-size: 14px;
+                padding-bottom: 17px;
+            }
+        }
+        & label{
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 8px;
+            display: inline-block;
+            @media #{$xs}{
+                font-size: 14px;
+                margin-bottom: 7px;
+                padding-left: 12px;
+            }
+        }
+        & span {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    & .progress{
+        overflow: visible;
+        border-radius: 10px;
+        background: #E6E6E6;
+        height: 8px;
+    }
+    & .progress-bar{
+        background-color: var(--tp-theme-1);
+        position: relative;
+        overflow: visible;
+        height: 100%;
+        top: 0;
+        border-radius: 10px;
+    }
+    & .progress-bar span {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        color: var(--tp-common-white);
+    }
+}

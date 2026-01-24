@@ -1,0 +1,132 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  7.2 appointment css start
+/*----------------------------------------*/
+
+.tp-appointment {
+    &-contact{
+        margin-top: 111px;
+        margin-left: 80px;
+        @media #{$xxl}{
+            margin-left: 40px;
+        }
+        @media #{$xl}{
+            margin-left: 20px;
+        }
+        @media #{$lg}{
+            margin-left: 0;
+        }
+        @media #{$md,$xs}{
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        &-title {
+            font-size: 28px;
+            @media #{$xxl,$xl}{
+               font-size: 25px;
+            }
+            @media #{$lg,$md,$xs}{
+                font-size: 22px;
+            }
+        }
+        &-item{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            & input{
+                display: none;
+    
+                &:checked{
+                    & ~ label{
+                        &::before{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+            & label{
+                font-size: 20px;
+                position: relative;
+                padding-left: 34px;
+                font-weight: 600;
+                color:rgba(0, 0, 0, 0.7);
+                @media #{$lg,$md}{
+                    font-size: 18px;
+                }
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+    
+                &::after{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 6px;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    border: 1px solid var(--tp-theme-1);
+                    transition: 0.3s;
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 2px;
+                    top: 8px;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: var(--tp-theme-1);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    &-left {
+        & p {
+            color: var(--tp-common-black);
+            @media #{$xl,$lg,$md,$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+    &-list {
+        margin-right: 65px;
+        @media #{$lg,$md,$xs}{
+            margin-right: 0;
+        }
+        & ul {
+            & li {
+                padding-left: 34px;
+                position: relative;
+                list-style-type: none;
+                color: var(--tp-common-black);
+                @media #{$xl,$lg,$md,$xs}{
+                    font-size: 14px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 22px;
+                }
+                & i {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    color:#E3042E;
+                }
+            }
+        }
+    }
+    &-thumb {
+        @media #{$md,$xs}{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}

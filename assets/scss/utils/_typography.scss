@@ -1,0 +1,24 @@
+// font url
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Satisfy&family=Poppins:wght@300;400;500;600;700&family=Schoolbell&display=swap" rel="stylesheet';
+
+// font family
+$font-family: (
+    'ff': (
+        'body': "'Montserrat', sans-serif",
+        'heading': "'Montserrat', sans-serif",
+        'satisfy': "'Satisfy', cursive",
+        'poppins': "'Poppins', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+    )
+);
+
+// font size
+$font-size: (
+    'fz': (
+        'body': 16px,
+        'p': 16px,
+    )
+);
+
+

@@ -1,0 +1,94 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.11 Breadcrumb
+/*----------------------------------------*/
+
+.breadcrumb{
+    &__pt{
+        padding-top: 120px;
+        @media #{$lg,$md,$xs}{
+            padding-top: 90px;
+        }
+    }
+    &__height{
+        height: 336px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: bottom;
+        @media #{$md,$xs}{
+            height: 300px;
+        }
+    }
+    &__overlay{
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.94) 100%);
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 68px;
+        text-transform: capitalize;
+        color: var(--tp-common-white); 
+        margin-bottom: 0; 
+        line-height: 1;
+        @media #{$xxl}{
+            font-size: 62px;
+        }
+        @media #{$xl}{
+            font-size: 53px;
+        }
+        @media #{$lg}{
+            font-size: 52px;
+        }
+        @media #{$md}{
+            font-size: 45px;
+        }
+        @media #{$xs}{
+            font-size: 35px;
+            margin-bottom: 20px;
+        } 
+        @media #{$sm}{
+            margin-bottom: 0;
+        }      
+    }
+    &__list{
+        display: inline-block;
+        padding: 0px 10px;
+        & span{
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;   
+            color: var(--tp-common-white);  
+            @media #{$xl,$lg,$md,$xs}{
+                font-size: 17px;
+            }           
+            &.dvdr{
+                & i{
+                    font-size: 15px;
+                    display: inline-block; 
+                    margin: 0 13px;
+                }
+            }
+            & a {
+                color: var(--tp-common-white);  
+            }
+        }
+    }
+    &__content {
+        @media #{$xs}{
+            flex-wrap: wrap;
+        }
+    }
+}

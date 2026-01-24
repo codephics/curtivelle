@@ -1,0 +1,53 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+
+.tp-section-subtitle{
+    color: var(--tp-theme-1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    @media #{$xl,$lg,$md}{
+        font-size: 16px;
+    }
+    @media #{$xs}{
+        font-size: 14px;
+    }
+}
+.tp-section-title{
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    @media #{$xxl}{
+        font-size: 42px;
+    }
+    @media #{$xl}{
+        font-size: 38px;
+    }
+    @media #{$lg}{
+        font-size: 32px;        
+    }
+    @media #{$md}{
+        font-size: 38px;   
+        & br {
+            display: none;
+        }     
+    }
+    @media #{$xs}{
+        font-size: 29px;   
+        & br {
+            display: none;
+        }     
+    }
+    @media #{$sm}{
+        font-size: 34px;   
+        & br {
+            display: none;
+        }     
+    }
+}

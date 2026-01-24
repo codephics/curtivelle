@@ -1,0 +1,191 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  5.4 Sidebar css
+/*----------------------------------------*/
+.sidebar{
+    &__widget{
+        padding: 50px;
+        background: #F4F6F8;
+        @media #{$lg,$md,$xs}{
+            padding: 30px 25px;
+        }
+        &-title{
+            position: relative;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: var(--tp-common-black);
+
+        }
+         
+        & ul{
+            & li{
+                list-style: none;
+                height: 56px;
+                line-height: 56px;
+                border-radius: 2px;
+                padding: 0 30px;
+                box-shadow: 0px 4px 20px 0px rgba(30, 22, 22, 0.06);         
+                background: var(--tp-common-white);         
+                &:hover{
+                    & a{
+                        color: var(--tp-common-white);
+                    }
+                    background-color: var(--tp-theme-1);
+                }
+                &.active{
+                    & a{
+                        color: var(--tp-common-white);
+                    }
+                    background-color: var(--tp-theme-1);
+                }
+                &:last-child{
+                    margin-bottom: 10px;
+                }
+                a{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: var(--tp-common-black);
+                    display: block;
+                    & span{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    &__about{
+        padding: 37px 0 38px 0;
+    }
+    &__thumb{
+        & img{
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    }
+    &__content{         
+        &-title{
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--tp-common-black);
+            margin-bottom: 6px;
+        }
+        &-designation{
+            font-weight: 400;
+            font-size: 14px;
+            color: #727A7D;
+            display: block;
+            margin-bottom: 13px;
+        }
+        & p{
+            font-size: 16px;
+            color: #838383;
+            margin-bottom: 27px;
+        }
+        &-social{
+            & a{
+                height: 37px;
+                width: 42px;
+                line-height: 37px;
+                text-align: center;
+                display: inline-block;
+                border: 1px solid #E8E8E8;
+                margin-right: 12px;
+                & i{
+                    transition: .3s;
+                }
+                &:hover{
+                    border: 1px solid var(--tp-theme-1);
+                    background-color: var(--tp-theme-1);
+                    & i{
+                        color: var(--tp-common-white);
+                    }
+                }
+            }
+        }
+    }
+    &__search{
+        position: relative;
+        & input{
+            font-size: 14px;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            padding: 0 25px;
+            text-transform: capitalize;
+            border: 1px solid #fff;
+            outline: none;
+            padding-right: 70px;
+            border: 1px solid #e0dddc;
+            background: var(--tp-common-white);
+            color: var(--tp-common-black);
+            @include placeholder{
+                color: #000;
+            }
+            &:focus{
+                border: 1px solid var(--tp-theme-1);
+            }
+        }
+        & button{
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 60px;
+            height: 100%;
+            line-height: 60px;
+            color: var(--tp-common-white);
+            background-color: var(--tp-theme-1);
+        }
+
+    }
+    &__banner{
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000, $alpha: .5);
+        }
+        &-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            z-index: 1;
+            background: var(--tp-common-white);
+            & h4{
+                padding: 15px 20px;
+                font-size: 24px;
+                color: var(--tp-common-black);
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.tagcloud{
+    & a{
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 2px 15px;
+        margin-right: 5px;
+        background-color:var(--tp-common-white);
+        margin-bottom: 14px;
+        display: inline-block;
+        &:hover{
+            color: var(--tp-common-white);
+            background-color: var(--tp-theme-1);
+        }
+        &.active{
+            color: var(--tp-common-white);
+            background-color: var(--tp-theme-1);
+        }
+    }
+}

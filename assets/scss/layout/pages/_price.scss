@@ -1,0 +1,86 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.12 price css start
+/*----------------------------------------*/
+.tp-price{
+    &-item {
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05)  
+    }
+    &-content {
+        padding: 40px 40px;
+        padding-bottom: 0px;
+        @media #{$lg,$xs}{
+            padding: 40px 15px;
+        }
+        @media #{$sm}{
+            padding: 40px 50px;
+        }
+
+    }
+    &-title {
+        padding-top: 43px;
+        font-size: 28px;
+        font-weight: 700;
+        @media #{$xl,$lg}{
+            font-size: 24px;
+        }
+        @media #{$md,$xs}{
+            font-size: 22px;
+        }
+        & a {
+            background-repeat: no-repeat;
+            background-size: 0% 1px, 0 1px;
+            background-position: 100% 100%, 0 100%;
+            transition: background-size 0.6s linear;
+            background-image: linear-gradient(#000000, #000000), linear-gradient(#000000, #000000);
+            &:hover {
+                background-size: 0% 1px, 100% 1px;
+            }
+        }
+    }
+    &-rate {
+        padding: 18px 0;
+        background-color: rgba(166, 161, 130, 0.1);
+        & h6 {
+            font-size: 20px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0;
+            color: var(--tp-theme-1);
+            & i {
+                font-style: normal;
+                font-size: 48px;
+                font-weight: 700;
+                @media #{$xl,$lg}{
+                    font-size: 44px;
+                }
+                @media #{$md,$xs}{
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+    &-list {
+        & ul {
+            & li {
+                list-style-type: none;
+                position: relative;
+                padding-left: 30px;
+                @media #{$lg,$md,$xs}{
+                    font-size: 14px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 7px;
+                }
+                & i {
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                    color: var(--tp-theme-1);
+
+                }
+            }
+        }
+    }
+}

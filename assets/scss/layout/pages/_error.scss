@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.6 error css start
+/*----------------------------------------*/
+
+.tp-error{
+    &-thumb-box {
+        & img {
+            @media #{$xxl}{
+                max-width: 70%;
+            }
+            @media #{$xl,$lg}{
+                max-width: 60%;
+            }
+            @media #{$lg}{
+                max-width: 60%;
+            }
+        }
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 40px;
+        @media #{$xxl}{
+            font-size: 45px;
+        }
+        @media #{$xl}{
+            font-size: 40px;
+        }
+        @media #{$lg,$md}{
+            font-size: 36px;
+        }
+        @media #{$xs}{
+            font-size: 30px;
+        }
+        @media #{$sm}{
+            font-size: 34px;
+        }
+    }
+    &-content {
+        & .tp-btn-black-sm {
+            padding: 0 23px;
+        }
+    }
+}

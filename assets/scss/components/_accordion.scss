@@ -1,0 +1,102 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.12 Accordion
+/*----------------------------------------*/
+
+.tp-custom-accordion {
+    & .accordion-items {
+        margin-bottom: 20px;
+    }
+    & .accordion-buttons {
+        position: relative;
+        width: 100%;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: left;
+        padding: 25px 30px;
+        padding-right: 55px;    
+        transition: .3s;
+        font-family: var(--tp-ff-heading);
+        color: var(--tp-common-black);
+        background-color: #F8F8F8;
+        display: flex;
+        align-items: start;
+        @media #{$xl}{
+            font-size: 17px;
+        }  
+        @media #{$lg}{
+            font-size: 16px;
+        }  
+        @media #{$md}{
+            font-size: 18px;
+        }  
+        @media #{$xs}{
+            font-size: 15px;
+            padding-left: 20px;
+        }  
+        @media #{$sm}{
+            font-size: 17px;
+        }  
+        &::after {
+            position: absolute;
+            content: "\f068";
+            font-family: 'Font Awesome 5 Pro';
+            top: 21px;
+            right:20px;
+            font-weight: 700;
+            font-size: 12px;
+            opacity: 1;
+            transition: .3s;
+            height: 28px;
+            width: 28px;
+            line-height: 27px;
+            border-radius: 50%;
+            text-align: center;
+            color: var(--tp-theme-1);
+            border: 1px solid var(--tp-theme-1);
+            @media #{$xs}{
+              right: 20px;
+            } 
+        }
+        & span {
+            margin-right: 5px;
+            display: inline-block;
+        }
+        &.collapsed {
+            &::after {
+                content: '\f067';
+            }
+        }
+       
+    }
+    & .collapsed {
+        position: relative;
+        z-index: 99;
+    }
+    & .accordion-body {
+        padding-top: 17px;
+        padding-bottom: 2px;
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
+        font-size:16px;
+        @media #{$xl} {
+            font-size: 15px;
+        }
+        @media #{$lg}{
+            font-size: 14px;
+        }
+        @media #{$md}{
+            font-size: 14px;
+        }
+        @media #{$xs}{
+            font-size: 13px;
+            padding-right: 0;
+            line-height: 26px;
+        }
+        @media #{$sm}{
+            font-size: 14px;
+        }
+    }
+}

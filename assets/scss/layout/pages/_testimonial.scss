@@ -1,0 +1,385 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.19 testimonial css start
+/*----------------------------------------*/
+
+.tp-testimonial{
+    &-item {
+        @media #{$xs}{
+            flex-wrap: wrap;
+        }
+        @media #{$sm}{
+            flex-wrap: nowrap;
+        }
+        &:hover {
+            & .tp-testimonial-author-thumb {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &-author-thumb-box {
+        flex: 0 0 auto;
+    }
+    &-author-thumb {
+        overflow: hidden;
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-bottom: 0px;
+        }
+        & img {
+            transition: all 500ms ease;
+            -webkit-transition: all 500ms ease;
+        }
+    }
+    &-top-text {
+        & p {
+            margin-left: 40px;
+            @media #{$xl,$lg}{
+                font-size: 14px;
+            }
+            @media #{$md,$xs}{
+                font-size: 14px;
+                margin-left: 0;
+            }
+        }
+    }
+    &-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0;
+        @media #{$xxl}{
+            font-size: 25px;
+        }
+        @media #{$xl}{
+            font-size: 22px;
+        }
+        @media #{$lg,$md,$xs}{
+            font-size: 20px;
+        }
+        &-box {
+            @media #{$md,$xs}{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &-author{
+        &-thumb {
+            margin-right: 30px;
+            flex: 0 0 auto;
+        }
+        &-info {
+            & span {
+                font-size: 16px;
+                font-weight: 400;
+                @media #{$xl,$lg,$md,$xs}{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &-author-info {
+        display: inline-block;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #A6A182;
+    }
+    &-text {
+        & p {
+            margin-bottom: 0;
+            @media #{$xl}{
+                font-size: 14px;
+            }
+            @media #{$lg}{
+                font-size: 12px;
+            }
+            @media #{$md,$xs}{
+                font-size: 14px;
+            }
+        }
+    }
+    &-quot {
+        position: absolute;
+        top: -25px;   
+        left: 50%;
+        transform: translateX(-50%);     
+        & span {
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: var(--tp-theme-1);
+            & svg {
+                color: var(--tp-common-white);
+            }
+        }
+    }
+    &-active {
+        padding: 40px 0px;
+        margin:-40px 0px;
+    }
+}
+.tp-testimonial-2 {
+   
+    &-thumb {
+        display: block;
+        overflow: hidden;
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+        & img {
+            max-width: inherit;
+            transform: scale(1.04) translateX(-1%);
+            transition: transform .6s cubic-bezier(.65,0,.35,1);
+            @media #{$xl,$lg,$md,$xs}{
+                width: 100%;
+            }
+        }
+        &:hover {
+            & img {
+                transform: scale(1.04) translateX(1%);
+            }
+        }
+    }
+    &-rate {
+        & i {
+            padding: 0 3px;
+            font-size: 14px;
+            color: var(--tp-theme-1);
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+    &-text {
+        & p {
+            @media #{$lg}{
+                font-size: 14px;
+                margin-bottom: 0;
+                & br {
+                    display: none;
+                }
+            }
+            @media #{$md}{
+                font-size: 13px;
+                margin-bottom: 0;
+                & br {
+                    display: none;
+                }
+            }
+            @media #{$xs}{
+                font-size: 14px;
+                margin-bottom: 0;
+                & br {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-author-info{
+        padding-bottom: 8px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 230px;
+            background-color: var(--tp-theme-1);
+        }
+        & h5 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @media #{$xl}{
+                font-size: 24px;
+            }
+            @media #{$lg}{
+                font-size: 20px;
+            }
+            @media #{$md}{
+                font-size: 18px;
+            }
+            @media #{$xs}{
+                font-size: 19px;
+            }
+        }
+        & span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px; 
+            @media #{$md}{
+                font-size: 14px;
+            }
+          
+        }
+    }
+    &-wrapper {
+        margin-left: 60px;
+        @media #{$xl}{
+            margin-left: 20px;
+        }
+        @media #{$lg,$md,$xs}{
+            margin-left:0px;
+        }
+    }
+    &-big-text {
+        position: absolute;
+        content: '';
+        right: 270px;
+        top: 300px;
+        @media #{$xxl}{
+           right: 120px;
+        }
+        @media #{$xl}{
+           right: 150px;
+        }
+        & h6 {
+            color: var(--tp-theme-1);
+            font-size: 118px;
+            font-style: normal;
+            font-weight: 700;
+            opacity: 0.05;
+            @media #{$xl}{
+                font-size: 110px;
+            }
+        }
+    }
+    &-arrow-box {
+        position: relative;
+        z-index: 3;
+        margin-top: 9px;
+        
+        & button {
+            & svg {
+                transition: .3s;
+                color: rgba(0, 0, 0, 0.2);
+                @media #{$xl}{
+                    width: 45px;
+                }
+            }
+            &:hover {
+                & svg {
+                    color: var(--tp-common-black);
+                    opacity: 1;
+                }
+            }
+            &.testimonial-prev{
+                margin-right: 55px;
+                @media #{$xl,$lg,$md,$xs}{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+.tp-testimonial-3 {
+
+    &-author-thumb {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        & img {
+            border-radius: 50%;
+        }
+    }
+    &-title {
+        font-size: 24px;
+        @media #{$lg}{
+            font-size: 22px;
+        }
+        @media #{$md}{
+            font-size: 21px;
+        }
+        @media #{$xs}{
+            font-size: 19px;
+        }
+    }
+    &-wrap {
+        & .tp-testimonial-title-box {
+            @media #{$md,$xs}{
+                margin-bottom: 60px;
+            }
+        }
+    }
+    &-content {
+        padding: 40px 42px;
+        background-color: var(--tp-common-white);
+        box-shadow:(0px 6px 25px rgba(0, 0, 0, 0.05)) ;
+        position: relative;
+        @media #{$lg}{
+            padding: 40px 37px;
+        }
+        @media #{$xs}{
+            padding: 40px 18px;
+        }
+    }
+    &-quot {
+        position: absolute;
+        right: 30px;
+        bottom: 22px;
+        & span {
+            & svg {
+                color: var(--tp-theme-1);
+            }
+        }
+    }
+    &-text {
+        & p {
+            margin-bottom: 0;
+            @media #{$lg,$md}{
+                font-size: 14px;
+            }
+            @media #{$xs}{
+                font-size: 13px;
+            }
+        }
+    }
+    &-arrow-box { 
+        & button {
+            & svg {
+                transition: .3s;
+                color:var(--tp-theme-1);
+                opacity: 1;
+                @media #{$xl}{
+                    width: 45px;
+                }
+            }
+            &:hover {
+                & svg {
+                    color: var(--tp-common-black);
+                    opacity: 1;
+                }
+            }
+            &.testimonial-prev{
+                position: absolute;
+                top: 29%;
+                left: -13%;
+                z-index: 3;
+                @media #{$xxxl}{
+                    left: -10%;
+                }
+            }
+            &.testimonial-next{
+                position: absolute;
+                top: 29%;
+                right: -13%;
+                z-index: 3;
+                @media #{$xxxl}{
+                    right: -10%;
+                }
+            }
+        }
+    }
+    &-active {
+        padding: 30px;
+        margin: -30px;
+    }
+}

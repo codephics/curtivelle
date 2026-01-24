@@ -1,0 +1,312 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.7 feature css start
+/*----------------------------------------*/
+.tp-feature {
+    &-item {
+        padding: 40px 25px;
+        padding-bottom: 35px;
+        background-color: #0A0A0A;  
+        position: relative;   
+          
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            opacity: 0;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: top;
+            transform-origin: top;
+            -webkit-transition: all 600ms ease;
+            transition: all 600ms ease;
+            visibility: hidden;
+            background-size: cover;
+            background-color: var(--tp-common-white);
+         
+        }
+
+        &.active {
+            
+            &::after {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            & .tp-feature-icon {
+                & span {
+                    & svg {
+                        transform: scaleX(-1);
+                        -webkit-transform: scaleX(-1);
+                        color: var(--tp-common-black);
+                    }
+                }
+            }
+            & .tp-feature-title {
+                color: var(--tp-common-black);
+            }
+
+            & .tp-feature-text {
+                & p {
+                    color: var(--tp-common-black);
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        -webkit-transition: all 600ms ease;
+        transition: all 600ms ease;
+        color: var(--tp-common-white);
+        position: relative;
+        z-index: 1;
+        @media #{$lg,$md,$xs} {
+            font-size: 18px;
+        }
+
+        & a {
+            background-repeat: no-repeat;
+            background-size: 0% 1px, 0 1px;
+            background-position: 100% 100%, 0 100%;
+            transition: background-size 0.6s linear;
+            background-image: linear-gradient(#000, #000), linear-gradient(#000, #000);
+
+            &:hover {
+                background-size: 0% 1px, 100% 1px;
+            }
+        }
+    }
+
+    &-icon {
+        position: relative;
+        z-index: 1;
+        & span {
+            & svg {
+                color: var(--tp-theme-1);
+                -webkit-transition: all 600ms ease;
+                transition: all 600ms ease;
+            }
+        }
+    }
+
+    &-left {
+        @media #{$md,$xs} {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-text {
+        position: relative;
+        z-index: 1;
+        & p {
+            margin-bottom: 0;
+            color: var(--tp-common-white);
+            -webkit-transition: all 600ms ease;
+            transition: all 600ms ease;
+
+            @media #{$lg,$md,$xs} {
+                font-size: 14px;
+
+                & br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-shape-1 {
+        position: absolute;
+        bottom: 0;
+        left: -2%;
+        z-index: -1;
+        animation: tptranslateX2 2.5s infinite alternate;
+    }
+}
+
+.tp-exp-fea {
+    &-wrap {
+        @media #{$xl} {
+            margin-right: 80px;
+        }
+        @media #{$sm} {
+            margin-right: 80px;
+        }
+    }
+    &-text {
+        & p {
+            color: var(--tp-common-black);
+            font-size: 16px;
+            font-weight: 400;
+
+            @media #{$xl,$lg,$md,$xs} {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-list {
+        & ul {
+            & li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                position: relative;
+                padding-left: 33px;
+                list-style-type: none;
+                color: var(--tp-common-black);
+
+                @media #{$xl,$lg,$md,$xs} {
+                    font-size: 14px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 11px;
+                }
+
+                & i {
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    color: var(--tp-theme-1);
+
+                }
+            }
+        }
+    }
+
+    &-canva-box {
+        padding: 35px 55px;
+        background-color: #F8F8F8;
+
+        @media #{$xl,$lg,$md} {
+            padding: 35px 27px;
+        }
+
+        @media #{$xs} {
+            padding: 35px 20px;
+        }
+        @media #{$sm} {
+            padding: 35px 55px;
+        }
+        @media only screen and (min-width: 440px) and (max-width: 576px){
+            padding: 35px 40px;
+        }
+        & span {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--tp-common-black);
+
+            @media #{$xs} {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-thumb {
+        position: relative;
+        overflow: hidden;
+        margin-right: 35px;
+
+        @media #{$lg} {
+            margin-right: 20px;
+        }
+
+        @media #{$md,$xs} {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        & img {
+            width: 100%;
+            transition: 1.3s all ease;
+        }
+    }
+
+    &-thumb-2 {
+        position: relative;
+        overflow: hidden;
+        margin-left: 35px;
+
+        @media #{$lg} {
+            margin-left: 20px;
+        }
+
+        @media #{$md,$xs} {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        & img {
+            width: 100%;
+            transition: 1.3s all ease;
+        }
+
+        &:hover {
+            &::after {
+                height: 100%;
+                opacity: 0;
+            }
+        }
+    }
+
+    &-big-text {
+        position: absolute;
+        content: "";
+        top: 46%;
+        right: -8.4%;
+
+        @media #{$xxl} {
+            right: -7.6%;
+        }
+
+        @media #{$xl} {
+            right: 7.6%;
+        }
+
+        & h6 {
+            color: var(--tp-theme-1);
+            font-size: 148px;
+            font-style: normal;
+            font-weight: 700;
+            opacity: 0.05;
+
+            @media #{$xl} {
+                font-size: 130px;
+            }
+        }
+    }
+
+    &-right {
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.tp-progress {
+    height: 72px;
+    width: 72px;
+    text-align: center;
+    line-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+
+    & input {
+        color: #000 !important;
+        font-size: 16px !important;
+        height: 72px !important;
+        margin-top: 0 !important;
+    }
+}
+
