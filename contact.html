@@ -395,37 +395,46 @@
                         <div class="col-xl-8 col-lg-8 mb-50">
                            <div class="tp-form-box tp-form-box-style-2">
                               <h4 class="tp-section-title pb-60">Enter You Personal Details</h4>
-                              <form id="contact-form" action="assets/mail.php" method="POST">
-                                 <div class="row">
-                                    <div class="col-xl-6 col-lg-6 mb-30">
+                              <form id="contact-form" onsubmit="return sendToWhatsAppContact(event);">
+                               <div class="row">
+                                   <div class="col-xl-6 col-lg-6 mb-30">
                                        <div class="tp-form-input-box">
-                                          <input name="name" type="text" placeholder="First name">
+                                           <input id="wa_name" name="name" type="text" placeholder="First name" required>
                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 mb-30">
+                                   </div>
+
+                                   <div class="col-xl-6 col-lg-6 mb-30">
                                        <div class="tp-form-input-box">
-                                          <input name="email" type="email" placeholder="Your Email">
+                                           <input id="wa_email" name="email" type="email" placeholder="Your Email" required>
                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 mb-30">
+                                   </div>
+
+                                   <div class="col-xl-6 col-lg-6 mb-30">
                                        <div class="tp-form-input-box">
-                                          <input name="phone" type="text" placeholder="Phone">
+                                           <input id="wa_phone" name="phone" type="text" placeholder="Phone" required>
                                        </div>
-                                    </div>                     
-                                    <div class="col-xl-6 col-lg-6 mb-30">
+                                   </div>
+
+                                   <div class="col-xl-6 col-lg-6 mb-30">
                                        <div class="tp-form-input-box">
-                                          <input name="address" type="text" placeholder="Address">
+                                           <input id="wa_address" name="address" type="text" placeholder="Address">
                                        </div>
-                                    </div>                     
-                                    <div class="col-xl-12 col-lg-12 mb-30">
+                                   </div>
+
+                                   <div class="col-xl-12 col-lg-12 mb-30">
                                        <div class="tp-form-textarea-box">
-                                          <textarea name="message" placeholder="Messege"></textarea>
+                                           <textarea id="wa_message" name="message" placeholder="Message" required></textarea>
                                        </div>
-                                    </div>
-                                 </div>
-                                 <button class="tp-btn-theme black-bg" type="submit"><span>Send a messege</span></button>
-                                 <p class="ajax-response"></p>
-                              </form>
+                                   </div>
+                               </div>
+
+                               <button class="tp-btn-theme black-bg" type="submit">
+                                   <span>Send a message</span>
+                               </button>
+
+                               <p></p>
+                           </form>
+
                            </div>                   
                         </div>
                         <div class="col-xl-4 col-lg-4 mb-50">
@@ -686,6 +695,33 @@
    <script src="assets/js/slick.js"></script>
    <script src="assets/js/swiper-bundle.js"></script>
    <script src="assets/js/main.js"></script>
+
+   <script>
+   function sendToWhatsAppContact(e) {
+       e.preventDefault();
+
+       var phoneNumber = "+8801329856367"; // CHANGE THIS
+
+       var name = document.getElementById("wa_name").value.trim();
+       var email = document.getElementById("wa_email").value.trim();
+       var phone = document.getElementById("wa_phone").value.trim();
+       var address = document.getElementById("wa_address").value.trim();
+       var message = document.getElementById("wa_message").value.trim();
+
+       var text =
+           "Curtivelle Contact Request%0A%0A" +
+           "Name: " + encodeURIComponent(name) + "%0A" +
+           "Email: " + encodeURIComponent(email) + "%0A" +
+           "Phone: " + encodeURIComponent(phone) + "%0A" +
+           "Address: " + encodeURIComponent(address) + "%0A%0A" +
+           "Message:%0A" + encodeURIComponent(message);
+
+       var url = "https://wa.me/" + phoneNumber + "?text=" + text;
+
+       window.open(url, "_blank");
+       return false;
+   }
+   </script>
 
 </body>
 
