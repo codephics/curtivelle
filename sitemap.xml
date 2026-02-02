@@ -1,49 +1,62 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://curtivelle.com/</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/index.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/style-base-curtain.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/interior-base-curtain.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/seasonal-curtain.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/about-us.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/our-profile.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/our-mission-vision.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://curtivelle.com/contact.html</loc>
-<lastmod>2026-01-31T02:26:00+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://curtivelle.com/</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/index.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/style-base-curtain.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/interior-base-curtain.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/seasonal-curtain.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/about-us.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/our-profile.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/our-mission-vision.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://curtivelle.com/contact.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
