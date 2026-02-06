@@ -39,8 +39,6 @@
 
                         &::after {
                             position: absolute;
-                            counter-increment: count;
-                            content: counter(count, decimal-leading-zero);
                             left: 0;
                             top: 10px;
                             font-size: 12px;

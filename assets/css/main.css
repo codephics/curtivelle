@@ -5581,8 +5581,6 @@ body .ui-tooltip {
 }
 .tp-header-2-menu > nav > ul > li > a::after {
   position: absolute;
-  counter-increment: count;
-  content: counter(count, decimal-leading-zero);
   left: 0;
   top: 10px;
   font-size: 12px;

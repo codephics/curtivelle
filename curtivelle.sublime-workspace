@@ -180,12 +180,84 @@
 	"buffers":
 	[
 		{
-			"file": "curtivelle.sublime-project",
+			"file": "sitemap.xml",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 1536,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAABxBgAAVGhpcyBYTUwgZmlsZSBkb2VzIG5vdCBhcHBlYXIgdG8gaGF2ZSBhbnkgc3R5bGUgaW5mb3JtYXRpb24gYXNzb2NpYXRlZCB3aXRoIGl0LiBUaGUgZG9jdW1lbnQgdHJlZSBpcyBzaG93biBiZWxvdy4KPHVybHNldCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNpdGVtYXBzLm9yZy9zY2hlbWFzL3NpdGVtYXAvMC45IGh0dHA6Ly93d3cuc2l0ZW1hcHMub3JnL3NjaGVtYXMvc2l0ZW1hcC8wLjkvc2l0ZW1hcC54c2QiPgo8IS0tICBjcmVhdGVkIHdpdGggRnJlZSBPbmxpbmUgU2l0ZW1hcCBHZW5lcmF0b3Igd3d3LnhtbC1zaXRlbWFwcy5jb20gIC0tPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vPC9sb2M+CjxsYXN0bW9kPjIwMjYtMDEtMzFUMDI6MjY6MDArMDA6MDA8L2xhc3Rtb2Q+Cjxwcmlvcml0eT4xLjAwPC9wcmlvcml0eT4KPC91cmw+Cjx1cmw+Cjxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9pbmRleC5odG1sPC9sb2M+CjxsYXN0bW9kPjIwMjYtMDEtMzFUMDI6MjY6MDArMDA6MDA8L2xhc3Rtb2Q+Cjxwcmlvcml0eT4wLjgwPC9wcmlvcml0eT4KPC91cmw+Cjx1cmw+Cjxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9zdHlsZS1iYXNlLWN1cnRhaW4uaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vaW50ZXJpb3ItYmFzZS1jdXJ0YWluLmh0bWw8L2xvYz4KPGxhc3Rtb2Q+MjAyNi0wMS0zMVQwMjoyNjowMCswMDowMDwvbGFzdG1vZD4KPHByaW9yaXR5PjAuODA8L3ByaW9yaXR5Pgo8L3VybD4KPHVybD4KPGxvYz5odHRwczovL2N1cnRpdmVsbGUuY29tL3NlYXNvbmFsLWN1cnRhaW4uaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vYWJvdXQtdXMuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vb3VyLXByb2ZpbGUuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vb3VyLW1pc3Npb24tdmlzaW9uLmh0bWw8L2xvYz4KPGxhc3Rtb2Q+MjAyNi0wMS0zMVQwMjoyNjowMCswMDowMDwvbGFzdG1vZD4KPHByaW9yaXR5PjAuODA8L3ByaW9yaXR5Pgo8L3VybD4KPHVybD4KPGxvYz5odHRwczovL2N1cnRpdmVsbGUuY29tL2NvbnRhY3QuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8L3VybHNldD4AAAAAAAAAAHEGAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAHEGAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAA0AAAAAAAAADgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAA0AAAAAAAAADQAAAAAAAAABAAAALQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAOAAAAAAAAAA4AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAByAAAAVGhpcyBYTUwgZmlsZSBkb2VzIG5vdCBhcHBlYXIgdG8gaGF2ZSBhbnkgc3R5bGUgaW5mb3JtYXRpb24gYXNzb2NpYXRlZCB3aXRoIGl0LiBUaGUgZG9jdW1lbnQgdHJlZSBpcyBzaG93biBiZWxvdy4K",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOsAAAAAAAAA6wAAAAAAAABLAAAACjwhLS0gIGNyZWF0ZWQgd2l0aCBGcmVlIE9ubGluZSBTaXRlbWFwIEdlbmVyYXRvciB3d3cueG1sLXNpdGVtYXBzLmNvbSAgLS0+",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADrAAAAAAAAADYBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					20,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAJgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					24,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAAAYAAAAAAADbBQAAPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHVybHNldCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vd3d3LnNpdGVtYXBzLm9yZy9zY2hlbWFzL3NpdGVtYXAvMC45IGh0dHA6Ly93d3cuc2l0ZW1hcHMub3JnL3NjaGVtYXMvc2l0ZW1hcC8wLjkvc2l0ZW1hcC54c2QiPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vPC9sb2M+CjxsYXN0bW9kPjIwMjYtMDEtMzFUMDI6MjY6MDArMDA6MDA8L2xhc3Rtb2Q+Cjxwcmlvcml0eT4xLjAwPC9wcmlvcml0eT4KPC91cmw+Cjx1cmw+Cjxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9pbmRleC5odG1sPC9sb2M+CjxsYXN0bW9kPjIwMjYtMDEtMzFUMDI6MjY6MDArMDA6MDA8L2xhc3Rtb2Q+Cjxwcmlvcml0eT4wLjgwPC9wcmlvcml0eT4KPC91cmw+Cjx1cmw+Cjxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9zdHlsZS1iYXNlLWN1cnRhaW4uaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vaW50ZXJpb3ItYmFzZS1jdXJ0YWluLmh0bWw8L2xvYz4KPGxhc3Rtb2Q+MjAyNi0wMS0zMVQwMjoyNjowMCswMDowMDwvbGFzdG1vZD4KPHByaW9yaXR5PjAuODA8L3ByaW9yaXR5Pgo8L3VybD4KPHVybD4KPGxvYz5odHRwczovL2N1cnRpdmVsbGUuY29tL3NlYXNvbmFsLWN1cnRhaW4uaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vYWJvdXQtdXMuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vb3VyLXByb2ZpbGUuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8dXJsPgo8bG9jPmh0dHBzOi8vY3VydGl2ZWxsZS5jb20vb3VyLW1pc3Npb24tdmlzaW9uLmh0bWw8L2xvYz4KPGxhc3Rtb2Q+MjAyNi0wMS0zMVQwMjoyNjowMCswMDowMDwvbGFzdG1vZD4KPHByaW9yaXR5PjAuODA8L3ByaW9yaXR5Pgo8L3VybD4KPHVybD4KPGxvYz5odHRwczovL2N1cnRpdmVsbGUuY29tL2NvbnRhY3QuaHRtbDwvbG9jPgo8bGFzdG1vZD4yMDI2LTAxLTMxVDAyOjI2OjAwKzAwOjAwPC9sYXN0bW9kPgo8cHJpb3JpdHk+MC44MDwvcHJpb3JpdHk+CjwvdXJsPgo8L3VybHNldD4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAANsFAAAAAAAAAAAAAAAA8L8"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -224,6 +296,8 @@
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/curtivelle/sitemap.xml",
+		"/D/xampp/htdocs/curtivelle/curtivelle.sublime-project",
 		"/D/xampp/htdocs/tailoreditbd.github.io/index.html",
 		"/D/xampp/htdocs/tailoreditbd.github.io/e-commerce-solutions.html",
 		"/D/xampp/htdocs/tailoreditbd.github.io/domain-hosting.html",
@@ -349,9 +423,7 @@
 		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/inventory/index.blade.php",
 		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/inventory/create.blade.php",
 		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/pre-order-invoice.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/pre-order-list.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/inventory/show.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/item/index.blade.php"
+		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/pre-order-list.blade.php"
 	],
 	"find":
 	{
@@ -392,30 +464,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "curtivelle.sublime-project",
+					"file": "sitemap.xml",
 					"selected": true,
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 1536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1536,
+								1536
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 201.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -487,7 +559,7 @@
 		[
 			[
 				"",
-				"D:\\xampp\\htdocs\\tailoreditbd.github.io\\codephics.sublime-project"
+				"D:\\xampp\\htdocs\\codephics\\scripts\\sublime\\codephics.sublime-project"
 			]
 		],
 		"width": 380.0
