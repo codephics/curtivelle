@@ -183,7 +183,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 242592,
+				"buffer_size": 242591,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
@@ -197,7 +197,55 @@
 						"characters": "Curtivelle"
 					},
 					"CgAAAB04AgAAAAAAHjgCAAAAAAAMAAAAIyNzaXRlTmFtZSMjHjgCAAAAAAAfOAIAAAAAAAAAAAAfOAIAAAAAACA4AgAAAAAAAAAAACA4AgAAAAAAITgCAAAAAAAAAAAAITgCAAAAAAAiOAIAAAAAAAAAAAAiOAIAAAAAACM4AgAAAAAAAAAAACM4AgAAAAAAJDgCAAAAAAAAAAAAJDgCAAAAAAAlOAIAAAAAAAAAAAAlOAIAAAAAACY4AgAAAAAAAAAAACY4AgAAAAAAJzgCAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAHTgCAAAAAAApOAIAAAAAAAAAAAAAAPC/"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAB04AgAAAAAAKTgCAAAAAAAAAAAAAADwvw"
+				],
+				[
+					13,
+					1,
+					"paste",
+					null,
+					"AQAAAL4eAgAAAAAAyh4CAAAAAAAKAAAAQ29uc3VsdGlvbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC+HgIAAAAAAMgeAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					25,
+					2,
+					"left_delete",
+					null,
+					"AgAAADc0AgAAAAAANzQCAAAAAAACAAAAaW42NAIAAAAAADY0AgAAAAAAAQAAACA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA3NAIAAAAAADk0AgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					39,
+					1,
+					"cut",
+					null,
+					"AQAAAMlnAgAAAAAAyWcCAAAAAAAXAAAASW50ZXJpb3ItYmFzZWQgY3VydGFpbnM",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADJZwIAAAAAAOBnAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					42,
+					1,
+					"paste",
+					null,
+					"AQAAAJhoAgAAAAAAr2gCAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACYaAIAAAAAAJhoAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					45,
+					1,
+					"cut",
+					null,
+					"AQAAAK9oAgAAAAAAr2gCAAAAAAAXAAAAV2hlcmUgaW50ZXJpb3JzIGJyZWF0aGU",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACvaAIAAAAAAMZoAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					48,
+					1,
+					"paste",
+					null,
+					"AQAAAMlnAgAAAAAA4GcCAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADJZwIAAAAAAMlnAgAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
@@ -209,10 +257,7 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "<!doctype html>"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "style-based-curtain.html",
@@ -221,10 +266,7 @@
 				"buffer_size": 258823,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "interior-based-curtain.html",
@@ -233,10 +275,7 @@
 				"buffer_size": 242557,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "seasonal-curtain.html",
@@ -245,10 +284,7 @@
 				"buffer_size": 246821,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "contact-us.html",
@@ -257,10 +293,7 @@
 				"buffer_size": 206886,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "mission-vision.html",
@@ -269,10 +302,7 @@
 				"buffer_size": 207806,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "our-profile.html",
@@ -281,10 +311,7 @@
 				"buffer_size": 207823,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "about-us.html",
@@ -293,10 +320,7 @@
 				"buffer_size": 228912,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "sitemap.xml",
@@ -314,7 +338,7 @@
 					"right_delete",
 					null,
 					"AgAAAAkFAAAAAAAACQUAAAAAAAADAAAAb3VyCQUAAAAAAAAJBQAAAAAAAAEAAAAt",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACQUAAAAAAAAMBQAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAkFAAAAAAAADAUAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					8,
@@ -324,7 +348,7 @@
 						"characters": "-us"
 					},
 					"AwAAAJwFAAAAAAAAnQUAAAAAAAAAAAAAnQUAAAAAAACeBQAAAAAAAAAAAACeBQAAAAAAAJ8FAAAAAAAAAAAAAA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAnAUAAAAAAACcBQAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJwFAAAAAAAAnAUAAAAAAAAAAAAAAADwvw"
 				]
 			]
 		},
@@ -344,7 +368,7 @@
 					"left_delete",
 					null,
 					"AQAAAAgEAAAAAAAACAQAAAAAAACBAAAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb3VudGVyLWluY3JlbWVudDogY291bnQ7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZW50OiBjb3VudGVyKGNvdW50LCBkZWNpbWFsLWxlYWRpbmctemVybyk7",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACAQAAAAAAACJBAAAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAgEAAAAAAAAiQQAAAAAAAAAAAAAAADwvw"
 				]
 			]
 		},
@@ -356,10 +380,7 @@
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
-			},
-			"undo_stack":
-			[
-			]
+			}
 		},
 		{
 			"file": "assets/css/bootstrap.css",
@@ -394,7 +415,7 @@
 					"left_delete",
 					null,
 					"AQAAACzVAQAAAAAALNUBAAAAAABNAAAACiAgY291bnRlci1pbmNyZW1lbnQ6IGNvdW50OwogIGNvbnRlbnQ6IGNvdW50ZXIoY291bnQsIGRlY2ltYWwtbGVhZGluZy16ZXJvKTs",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAALNUBAAAAAAB51QEAAAAAAAAAAAAAAPC/"
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACzVAQAAAAAAedUBAAAAAAAAAAAAAADwvw"
 				]
 			]
 		},
@@ -582,7 +603,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -597,6 +618,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"interio",
+			"drape",
+			"Curtivelle",
 			"##siteName##",
 			"no.",
 			"foot",
@@ -669,25 +693,25 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 242592,
+						"buffer_size": 242591,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145447,
-								145447
+								157664,
+								157664
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 3,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 34390.0,
+						"translation.y": 37452.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -746,7 +770,7 @@
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 3,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -839,7 +863,7 @@
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 3,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
