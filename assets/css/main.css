@@ -16851,4 +16851,32 @@ p.checkout-coupon input[type=text]:focus {
   padding: 0 23px;
 }
 
+
 /*# sourceMappingURL=main.css.map */
+/* আইকনকে টেক্সটের একদম মাঝখানে আনার জন্য শক্তিশালী সলিউশন */
+.curtain-list-fix {
+    list-style: none;
+    padding: 0;
+}
+
+.curtain-list-fix li {
+    display: flex !important;
+    align-items: center !important; /* এটিই মেইন কাজ করবে */
+    margin-bottom: 15px;
+    gap: 15px; /* আইকন এবং টেক্সটের মাঝখানের দূরত্ব */
+}
+
+.curtain-list-fix li i {
+    color: #c6a363;
+    font-size: 16px;
+    flex-shrink: 0;
+    line-height: 1 !important; /* বাড়তি জায়গা কমাবে */
+    display: flex;
+    align-items: center;
+}
+
+.curtain-list-fix li span {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+}
