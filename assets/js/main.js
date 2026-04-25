@@ -1563,23 +1563,30 @@
         });
 	});
 
-// সাব-মেনু মোবাইল ভার্সনে দেখানোর জন্য ফিক্স
+// মোবাইল মেনু ফিক্স: লেখায় ক্লিক করলে পেজ লোড হবে, বাটনে ক্লিক করলে ড্রপডাউন খুলবে
     if($('.tp-main-menu-mobile').length) {
-        $('.tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a').on('click', function(e) {
-            e.preventDefault();
-            var $this = $(this);
+        // শুধু ড্রপডাউন টগল বাটনের জন্য ক্লিক ইভেন্ট
+        $('.tp-main-menu-mobile .dropdown-toggle-btn').on('click', function(e) {
+            e.preventDefault(); // লিঙ্কে যাওয়া আটকাবে শুধু বাটনের জন্য
+            e.stopPropagation();
             
-            if ($this.next('.tp-submenu').is(':visible')) {
-                $this.next('.tp-submenu').slideUp();
-                $this.parent().removeClass('dropdown-opened');
+            var $parent_li = $(this).closest('li');
+            var $submenu = $parent_li.children('.tp-submenu');
+            
+            if ($submenu.is(':visible')) {
+                $submenu.slideUp();
+                $parent_li.removeClass('dropdown-opened');
+                $(this).removeClass('dropdown-opened');
             } else {
-                $this.closest('ul').find('.tp-submenu').slideUp();
-                $this.closest('ul').find('.has-dropdown, .has-dropdown-2').removeClass('dropdown-opened');
-                $this.next('.tp-submenu').slideDown();
-                $this.parent().addClass('dropdown-opened');
+                // অন্য সব খোলা সাব-মেনু বন্ধ করে দেবে (ঐচ্ছিক)
+                $parent_li.siblings().find('.tp-submenu').slideUp();
+                $parent_li.siblings().removeClass('dropdown-opened');
+                
+                $submenu.slideDown();
+                $parent_li.addClass('dropdown-opened');
+                $(this).addClass('dropdown-opened');
             }
         });
     }
-	
 
 })(jQuery);
