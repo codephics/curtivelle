@@ -1563,7 +1563,23 @@
         });
 	});
 
-
+// সাব-মেনু মোবাইল ভার্সনে দেখানোর জন্য ফিক্স
+    if($('.tp-main-menu-mobile').length) {
+        $('.tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            
+            if ($this.next('.tp-submenu').is(':visible')) {
+                $this.next('.tp-submenu').slideUp();
+                $this.parent().removeClass('dropdown-opened');
+            } else {
+                $this.closest('ul').find('.tp-submenu').slideUp();
+                $this.closest('ul').find('.has-dropdown, .has-dropdown-2').removeClass('dropdown-opened');
+                $this.next('.tp-submenu').slideDown();
+                $this.parent().addClass('dropdown-opened');
+            }
+        });
+    }
 	
 
 })(jQuery);
