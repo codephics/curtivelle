@@ -41,6 +41,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/custom-animation.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        @media (max-width: 1199px) {
+            /* মোবাইল মেনু কন্টেইনার স্ক্রল করার সুবিধা */
+            .tpoffcanvas {
+                overflow-y: auto !important;
+                height: 100vh !important;
+                padding-bottom: 60px !important;
+            }
+            /* সাব-মেনু যাতে ডিফল্টভাবে হাইড থাকে */
+            .tp-main-menu-mobile .tp-submenu {
+                display: none;
+            }
+            /* ক্লিক করলে যাতে সাব-মেনু দেখায় */
+            .tp-main-menu-mobile .dropdown-opened > .tp-submenu {
+                display: block !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
