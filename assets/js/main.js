@@ -1280,55 +1280,43 @@
 		mobileNavContainer.innerHTML = navContent;
 	
 	
-		let arrow = $(".tp-main-menu-mobile .has-dropdown > a");
+		let arrow = $(".tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a");
 	
 		arrow.each(function () {
 			let self = $(this);
 			let arrowBtn = document.createElement("BUTTON");
 			arrowBtn.classList.add("dropdown-toggle-btn");
+			arrowBtn.setAttribute("type", "button");
 			arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
 	
 			self.append(function () {
 			  return arrowBtn;
 			});
 	
-			self.find("button").on("click", function (e) {
+			self.find(".dropdown-toggle-btn").on("click", function (e) {
 			  e.preventDefault();
-			  let self = $(this);
-			  self.toggleClass("dropdown-opened");
-			  self.parent().toggleClass("expanded");
-			  self.parent().parent().addClass("dropdown-opened").siblings().removeClass("dropdown-opened");
-			  self.parent().parent().children(".tp-submenu").slideToggle();
-			});
-	
-		});
-	}
-	
-	if($('.tp-main-menu-content').length && $('.tp-main-menu-mobile').length){
-		let navContent = document.querySelector(".tp-main-menu-content").outerHTML;
-		let mobileNavContainer = document.querySelector(".tp-main-menu-mobile");
-		mobileNavContainer.innerHTML = navContent;
-	
-	
-		let arrow = $(".tp-main-menu-mobile .has-dropdown-2 > a");
-	
-		arrow.each(function () {
-			let self = $(this);
-			let arrowBtn = document.createElement("BUTTON");
-			arrowBtn.classList.add("dropdown-toggle-btn");
-			arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
-	
-			self.append(function () {
-			  return arrowBtn;
-			});
-	
-			self.find("button").on("click", function (e) {
-			  e.preventDefault();
-			  let self = $(this);
-			  self.toggleClass("dropdown-opened");
-			  self.parent().toggleClass("expanded");
-			  self.parent().parent().addClass("dropdown-opened").siblings().removeClass("dropdown-opened");
-			  self.parent().parent().children(".tp-submenu").slideToggle();
+			  e.stopPropagation();
+
+			  let toggleBtn = $(this);
+			  let parentLi = toggleBtn.closest("li");
+			  let submenu = parentLi.children(".tp-submenu");
+
+			  if (submenu.is(":visible")) {
+				submenu.slideUp();
+				parentLi.removeClass("dropdown-opened");
+				toggleBtn.removeClass("dropdown-opened");
+				toggleBtn.parent().removeClass("expanded");
+			  } else {
+				parentLi.siblings().find(".tp-submenu").slideUp();
+				parentLi.siblings().removeClass("dropdown-opened");
+				parentLi.siblings().find(".dropdown-toggle-btn").removeClass("dropdown-opened");
+				parentLi.siblings().children("a").removeClass("expanded");
+
+				submenu.slideDown();
+				parentLi.addClass("dropdown-opened");
+				toggleBtn.addClass("dropdown-opened");
+				toggleBtn.parent().addClass("expanded");
+			  }
 			});
 	
 		});
