@@ -1563,11 +1563,10 @@
         });
 	});
 
-// মোবাইল মেনু ফিক্স: লেখায় ক্লিক করলে পেজ লোড হবে, বাটনে ক্লিক করলে ড্রপডাউন খুলবে
+
     if($('.tp-main-menu-mobile').length) {
-        // শুধু ড্রপডাউন টগল বাটনের জন্য ক্লিক ইভেন্ট
         $('.tp-main-menu-mobile .dropdown-toggle-btn').on('click', function(e) {
-            e.preventDefault(); // লিঙ্কে যাওয়া আটকাবে শুধু বাটনের জন্য
+            e.preventDefault(); 
             e.stopPropagation();
             
             var $parent_li = $(this).closest('li');
@@ -1577,8 +1576,7 @@
                 $submenu.slideUp();
                 $parent_li.removeClass('dropdown-opened');
                 $(this).removeClass('dropdown-opened');
-            } else {
-                // অন্য সব খোলা সাব-মেনু বন্ধ করে দেবে (ঐচ্ছিক)
+            } else {               
                 $parent_li.siblings().find('.tp-submenu').slideUp();
                 $parent_li.siblings().removeClass('dropdown-opened');
                 
