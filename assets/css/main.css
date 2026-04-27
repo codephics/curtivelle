@@ -16881,30 +16881,27 @@ p.checkout-coupon input[type=text]:focus {
     color: #333;
 }
 
-/* মোবাইল এবং ট্যাবলেটে ইমেজ দেখানোর চূড়ান্ত সমাধান */
+/* মোবাইল ভার্সনে ডিস্টর্ট ইফেক্ট বন্ধ করে ইমেজ দেখানোর ফিক্স */
 @media (max-width: 991px) {
-    /* জাভাস্ক্রিপ্ট ডিস্টর্ট কন্টেইনারকে ফিক্স করা */
     .tp-hover-distort {
+        display: none !important; /* জাভাস্ক্রিপ্ট কন্টেইনার হাইড করবে */
+    }
+    
+    .tp-exp-fea-thumb {
+        position: relative;
         display: block !important;
-        height: 350px !important; /* মোবাইলে ইমেজের উচ্চতা */
-        width: 100% !important;
-        position: relative !important;
-        overflow: hidden !important;
+        overflow: visible !important;
     }
 
-    /* ভেতরকার ইমেজগুলোকে দৃশ্যমান করা */
-    .tp-hover-distort-img.front {
-        opacity: 1 !important;
-        visibility: visible !important;
-        display: block !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        position: relative !important;
-    }
-
-    /* ক্যানভাস হাইড করা যাতে আসল ইমেজ দেখা যায় */
-    .tp-hover-distort .canvas {
-        display: none !important;
+    /* সরাসরি অরিজিনাল ইমেজটি মোবাইলে দেখাবে */
+    .tp-exp-fea-thumb::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 350px; /* আপনার প্রয়োজন অনুযায়ী হাইট কমাতে বা বাড়াতে পারেন */
+        background-image: url('../img/homepage/luxury-curtain-brand.jpeg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px; /* স্টাইলের জন্য */
     }
 }
