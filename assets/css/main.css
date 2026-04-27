@@ -16909,3 +16909,22 @@ p.checkout-coupon input[type=text]:focus {
     will-change: transform, opacity;
     backface-visibility: hidden;
 }
+/* স্ক্রলিং ল্যাগ কমানোর ম্যাজিক কোড */
+.tp-project-3-item, 
+.tp-project-3-thumb img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0); /* এটি ইমেজকে জিপিইউ দিয়ে রেন্ডার করায় */
+    will-change: transform;
+    perspective: 1000;
+}
+/* গ্যালারি স্ক্রলিং স্মুথ করার জন্য মাস্ট কোড */
+.tp-project-3-area, 
+.tp-project-3-item, 
+.tp-project-3-thumb img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+}

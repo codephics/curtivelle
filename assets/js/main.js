@@ -1444,11 +1444,12 @@
 	});
 
 	let smoother = ScrollSmoother.create({
-		smooth: 1.35,
-		effects: true,
+		smooth: 1,
+		effects: false,
 		smoothTouch: true,
 		normalizeScroll: false,
 		ignoreMobileResize: true,
+		speed: 0.8
 	});
 
 	$(document).ready(function() {
