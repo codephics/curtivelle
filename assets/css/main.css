@@ -16880,3 +16880,28 @@ p.checkout-coupon input[type=text]:focus {
     line-height: 1.4;
     color: #333;
 }
+
+/* মোবাইল ভার্সনে ডিস্টর্ট ইফেক্ট বন্ধ করে ইমেজ দেখানোর ফিক্স */
+@media (max-width: 991px) {
+    .tp-hover-distort {
+        display: none !important; /* জাভাস্ক্রিপ্ট কন্টেইনার হাইড করবে */
+    }
+    
+    .tp-exp-fea-thumb {
+        position: relative;
+        display: block !important;
+        overflow: visible !important;
+    }
+
+    /* সরাসরি অরিজিনাল ইমেজটি মোবাইলে দেখাবে */
+    .tp-exp-fea-thumb::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 350px; /* আপনার প্রয়োজন অনুযায়ী হাইট কমাতে বা বাড়াতে পারেন */
+        background-image: url('../img/homepage/luxury-curtain-brand.jpeg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px; /* স্টাইলের জন্য */
+    }
+}
