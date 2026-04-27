@@ -1260,30 +1260,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="swiper-slide">
                     <div class="tp-project-3-item p-relative fix">
                         <div class="tp-project-3-thumb">
-                            <img src="assets/img/gallery/DSC09437.jpg" alt="Gallery" class="w-100" loading="lazy">
-                        </div>
-                        <div class="tp-project-3-info">
-                            <h4 class="tp-project-3-title">California Gallery</h4>
-                            <p>Luxury curtain solutions for modern home interiors.</p>
-                            <a href="#" class="tp-btn-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="tp-project-3-item p-relative fix">
-                        <div class="tp-project-3-thumb">
-                            <img src="assets/img/gallery/DSC09440.jpg" alt="Gallery" class="w-100" loading="lazy">
-                        </div>
-                        <div class="tp-project-3-info">
-                            <h4 class="tp-project-3-title">California Gallery</h4>
-                            <p>Luxury curtain solutions for modern home interiors.</p>
-                            <a href="#" class="tp-btn-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="tp-project-3-item p-relative fix">
-                        <div class="tp-project-3-thumb">
                             <img src="assets/img/gallery/DSC09442.jpg" alt="Gallery" class="w-100" loading="lazy">
                         </div>
                         <div class="tp-project-3-info">
@@ -1879,28 +1855,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <!-- JS here -->
-        <script src="assets/js/vendor/jquery.js"></script>
-        <script src="assets/js/three.js"></script>
-        <script src="assets/js/gsap.js"></script>
-        <script src="assets/js/gsap-scroll-to-plugin.js"></script>
-        <script src="assets/js/gsap-scroll-trigger.js"></script>
-        <script src="assets/js/gsap-scroll-smoother.js"></script>
-        <script src="assets/js/gsap-split-text.js"></script>
-        <script src="assets/js/hover-effect.umd.js"></script>
-        <script src="assets/js/vendor/waypoints.js"></script>
-        <script src="assets/js/bootstrap-bundle.js"></script>
-        <script src="assets/js/ajax-form.js"></script>
-        <script src="assets/js/imagesloaded-pkgd.js"></script>
-        <script src="assets/js/isotope-pkgd.js"></script>
-        <script src="assets/js/jarallax.js"></script>
-        <script src="assets/js/magnific-popup.js"></script>
-        <script src="assets/js/nice-select.js"></script>
-        <script src="assets/js/purecounter.js"></script>
-        <script src="assets/js/range-slider.js"></script>
-        <script src="assets/js/wow.js"></script>
-        <script src="assets/js/slick.js"></script>
-        <script src="assets/js/swiper-bundle.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/vendor/jquery.js" defer></script>
+        <script src="assets/js/three.js" defer></script>
+        <script src="assets/js/gsap.js" defer></script>
+        <script src="assets/js/gsap-scroll-to-plugin.js" defer></script>
+        <script src="assets/js/gsap-scroll-trigger.js" defer></script>
+        <script src="assets/js/gsap-scroll-smoother.js" defer></script>
+        <script src="assets/js/gsap-split-text.js" defer></script>
+        <script src="assets/js/hover-effect.umd.js" defer></script>
+        <script src="assets/js/vendor/waypoints.js" defer></script>
+        <script src="assets/js/bootstrap-bundle.js" defer></script>
+        <script src="assets/js/ajax-form.js" defer></script>
+        <script src="assets/js/imagesloaded-pkgd.js" defer></script>
+        <script src="assets/js/isotope-pkgd.js" defer></script>
+        <script src="assets/js/jarallax.js" defer></script>
+        <script src="assets/js/magnific-popup.js" defer></script>
+        <script src="assets/js/nice-select.js" defer></script>
+        <script src="assets/js/purecounter.js" defer></script>
+        <script src="assets/js/range-slider.js" defer></script>
+        <script src="assets/js/wow.js" defer></script>
+        <script src="assets/js/slick.js" defer></script>
+        <script src="assets/js/swiper-bundle.js" defer></script>
+        <script src="assets/js/main.js" defer></script>
 
         <script>
           document.addEventListener("DOMContentLoaded", function() {
@@ -1909,6 +1885,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             spaceBetween: 20,
             loop: true,
             lazy: true,
+            preloadImages: false, 
+            updateOnImagesReady: true,
             centeredSlides: true, // মাঝখানের স্লাইডকে সেন্টার করবে
             autoplay: {
                 delay: 4000,
