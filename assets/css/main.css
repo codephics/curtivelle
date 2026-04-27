@@ -16905,3 +16905,7 @@ p.checkout-coupon input[type=text]:focus {
         border-radius: 10px; /* স্টাইলের জন্য */
     }
 }
+.tp-project-3-thumb img {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
