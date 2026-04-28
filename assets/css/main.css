@@ -16928,3 +16928,36 @@ p.checkout-coupon input[type=text]:focus {
     backface-visibility: hidden;
     will-change: transform;
 }
+<style>
+    /* Home Page Slider Title Styling */
+    .home-slider-custom .tp-slider-3-title {
+        font-family: 'Playfair Display', serif !important; /* Stylish Serif Font */
+        font-size: 40px !important; /* আপনার চাওয়া সাইজ */
+        font-weight: 900 !important; /* অতিরিক্ত বোল্ড */
+        line-height: 1.2;
+        color: #ffffff;
+        text-transform: uppercase; /* লাক্সারি লুকের জন্য বড় হাতের অক্ষর */
+        letter-spacing: 2px;
+    }
+
+    .home-slider-custom .tp-slider-3-title .second-line {
+        display: block;
+        font-family: 'Playfair Display', serif !important;
+        font-size: 35px !important; /* নিচের লাইনটি একটু ছোট হলে আরও স্টাইলিশ লাগে */
+        font-weight: 700 !important;
+        margin-top: 10px;
+        color: #c6a363; /* আপনার ব্র্যান্ডের গোল্ডেন কালার */
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+
+    /* মোবাইল ডিভাইসের জন্য সাইজ আরও একটু অ্যাডজাস্ট */
+    @media (max-width: 767px) {
+        .home-slider-custom .tp-slider-3-title {
+            font-size: 28px !important;
+        }
+        .home-slider-custom .tp-slider-3-title .second-line {
+            font-size: 24px !important;
+        }
+    }
+</style>
