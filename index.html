@@ -57,15 +57,15 @@
     <link rel="stylesheet" href="assets/css/main.css?v=1.1" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
-    /* ১. গুগল ফন্ট ইমপোর্ট */
+  
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400&family=Montserrat:wght@600&display=swap');
 
-    /* স্লাইডার কন্টেইনার এলাইনমেন্ট */
+  
     .home-slider-custom .tp-slider-3-wrap {
         text-align: left !important;
     }
 
-    /* ২. 'PREMIUM CURTAINS' ছোট লেখাটি */
+  
     .home-slider-custom .tp-slider-3-title-box::before {
         content: "PREMIUM CURTAINS";
         display: block;
@@ -73,12 +73,12 @@
         font-size: 14px !important;
         font-weight: 600 !important;
         letter-spacing: 2px !important;
-        color: #C8A96A !important; /* গোল্ডেন কালার */
+        color: #C8A96A !important; 
         margin-bottom: 15px;
         text-transform: uppercase;
     }
 
-    /* ৩. মেইন টাইটেল (Where Light) */
+   
     .home-slider-custom .tp-slider-3-title {
         font-family: 'Playfair Display', serif !important;
         font-size: 57px !important;
@@ -90,17 +90,17 @@
         margin-bottom: 0 !important;
     }
 
-    /* ৪. গোল্ডেন টাইটেল (Meets Luxury) */
+  
     .home-slider-custom .tp-slider-3-title .second-line {
         font-family: 'Playfair Display', serif !important;
         font-size: 57px !important;
         color: #C8A96A !important;
         font-weight: 300 !important;
         display: block !important;
-        margin-top: -5px !important; /* গ্যাপ কমানোর জন্য */
+        margin-top: -5px !important; 
     }
 
-    /* ৫. টাইটেলের নিচের ছোট গোল্ডেন লাইন */
+   
     .home-slider-custom .tp-slider-3-title-box::after {
         content: "";
         display: block;
@@ -111,17 +111,17 @@
         margin-bottom: 30px;
     }
 
-   /* স্লাইডার সাব-টেক্সট হোয়াইট করার কোড */
+  
 .home-slider-custom .tp-slider-3-content p,
 .home-slider-custom .tp-slider-3-content p b {
     color: #ffffff !important;
-    opacity: 1 !important; /* যদি হালকা ঝাপসা থাকে তবে এটি ক্লিয়ার করবে */
-    font-weight: 400 !important; /* চিকন করার জন্য */
+    opacity: 1 !important;
+    font-weight: 400 !important; 
 }
 
-    /* ৭. বাটন (CALL FOR CURTAIN) */
+   
     .home-slider-custom .tp-btn-black.theme-bg {
-        background-color: #A89B7A !important; /* ইমেজের মতো মিউটেড গোল্ড */
+        background-color: #A89B7A !important; 
         color: #ffffff !important;
         padding: 18px 45px !important;
         height: auto !important;
@@ -133,12 +133,21 @@
         border-radius: 0 !important;
     }
 
-    /* মোবাইল ভিউ ফিক্স */
+   
     @media (max-width: 767px) {
         .home-slider-custom .tp-slider-3-title { font-size: 40px !important; }
         .home-slider-custom .tp-slider-3-title .second-line { font-size: 45px !important; }
         .home-slider-custom .tp-slider-3-content p { font-size: 14px !important; }
     }
+    .tp-project-3-item {
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tp-project-3-slider-active .swiper-slide-active .tp-project-3-item {
+    transform: scale(1.05); /* মাঝখানের ছবিটা একটু বড় দেখাবে */
+    z-index: 5;
+}
 </style>
 </head>
 
@@ -1979,6 +1988,81 @@
                     </div>
                 </div>
                 <!-- Review area end -->
+                 <!--event area start -->
+                 <section class="tp-project-3-area pt-60 pb-60" style="background-color: #f9f7f2;">
+    <div class="container-fluid p-0">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="tp-project-3-title-box text-center mb-60">
+                    <span class="tp-section-subtitle">OUR RECENT EVENTS</span>
+                    <h3 class="tp-section-title">Showcasing Our Memorable Moments</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tp-project-3-slider-active swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09408.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09410.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09412.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09418.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09433.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09440.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                 <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09442.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tp-project-3-item p-relative fix" style="aspect-ratio: 16/9; background: #eee;">
+                        <div class="tp-project-3-thumb">
+                            <img src="assets/img/gallery/DSC09445.webp" alt="Event" class="w-100" style="height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
                 <!-- faq area start -->
                 <div class="tp-faq-area p-relative fix pt-60 pb-60">
@@ -2354,6 +2438,28 @@
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         data-cf-beacon='{"version":"2024.11.0","token":"6c636ad397e14ca486d830290efd2918","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (document.querySelector('.tp-project-3-slider-active')) {
+            new Swiper('.tp-project-3-slider-active', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    '1200': { slidesPerView: 2.5 }, // বড় স্ক্রিনে আড়াইটা ছবি দেখাবে
+                    '992': { slidesPerView: 2 },
+                    '768': { slidesPerView: 1.5 },
+                    '0': { slidesPerView: 1 },
+                },
+            });
+        }
+    });
+</script>
 </body>
 
 </html>
