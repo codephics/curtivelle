@@ -54,18 +54,92 @@
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/custom-animation.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css?v=1.1" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+    /* ১. গুগল ফন্ট ইমপোর্ট */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400&family=Montserrat:wght@600&display=swap');
 
-    <style>
-        .tp-slider-3-title {
-            line-height: 1.2;
-        }
+    /* স্লাইডার কন্টেইনার এলাইনমেন্ট */
+    .home-slider-custom .tp-slider-3-wrap {
+        text-align: left !important;
+    }
 
-        .tp-slider-3-title .second-line {
-            display: block;
-            margin-top: 12px;
-            letter-spacing: 1px;
-        }
-    </style>
+    /* ২. 'PREMIUM CURTAINS' ছোট লেখাটি */
+    .home-slider-custom .tp-slider-3-title-box::before {
+        content: "PREMIUM CURTAINS";
+        display: block;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        letter-spacing: 2px !important;
+        color: #C8A96A !important; /* গোল্ডেন কালার */
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    /* ৩. মেইন টাইটেল (Where Light) */
+    .home-slider-custom .tp-slider-3-title {
+        font-family: 'Playfair Display', serif !important;
+        font-size: 57px !important;
+        font-weight: 300 !important;
+        line-height: 1.1 !important;
+        color: #ffffff !important;
+        text-transform: none !important;
+        letter-spacing: -1px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* ৪. গোল্ডেন টাইটেল (Meets Luxury) */
+    .home-slider-custom .tp-slider-3-title .second-line {
+        font-family: 'Playfair Display', serif !important;
+        font-size: 57px !important;
+        color: #C8A96A !important;
+        font-weight: 300 !important;
+        display: block !important;
+        margin-top: -5px !important; /* গ্যাপ কমানোর জন্য */
+    }
+
+    /* ৫. টাইটেলের নিচের ছোট গোল্ডেন লাইন */
+    .home-slider-custom .tp-slider-3-title-box::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: #C8A96A;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+   /* স্লাইডার সাব-টেক্সট হোয়াইট করার কোড */
+.home-slider-custom .tp-slider-3-content p,
+.home-slider-custom .tp-slider-3-content p b {
+    color: #ffffff !important;
+    opacity: 1 !important; /* যদি হালকা ঝাপসা থাকে তবে এটি ক্লিয়ার করবে */
+    font-weight: 400 !important; /* চিকন করার জন্য */
+}
+
+    /* ৭. বাটন (CALL FOR CURTAIN) */
+    .home-slider-custom .tp-btn-black.theme-bg {
+        background-color: #A89B7A !important; /* ইমেজের মতো মিউটেড গোল্ড */
+        color: #ffffff !important;
+        padding: 18px 45px !important;
+        height: auto !important;
+        line-height: 1 !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1px !important;
+        border-radius: 0 !important;
+    }
+
+    /* মোবাইল ভিউ ফিক্স */
+    @media (max-width: 767px) {
+        .home-slider-custom .tp-slider-3-title { font-size: 40px !important; }
+        .home-slider-custom .tp-slider-3-title .second-line { font-size: 45px !important; }
+        .home-slider-custom .tp-slider-3-content p { font-size: 14px !important; }
+    }
+</style>
 </head>
 
 <body>
@@ -765,7 +839,7 @@
         <div id="smooth-content">
             <main>
                 <!-- slider area start -->
-                <div class="tp-slider-3-area">
+                <div class="tp-slider-3-area home-slider-custom">
                     <div class="tp-slider-3-wrapper p-relative">
                         <div class="tp-slider-dots"></div>
                         <div class="swiper-container tp-slider-3-active">
