@@ -1280,55 +1280,43 @@
 		mobileNavContainer.innerHTML = navContent;
 	
 	
-		let arrow = $(".tp-main-menu-mobile .has-dropdown > a");
+		let arrow = $(".tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a");
 	
 		arrow.each(function () {
 			let self = $(this);
 			let arrowBtn = document.createElement("BUTTON");
 			arrowBtn.classList.add("dropdown-toggle-btn");
+			arrowBtn.setAttribute("type", "button");
 			arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
 	
 			self.append(function () {
 			  return arrowBtn;
 			});
 	
-			self.find("button").on("click", function (e) {
+			self.find(".dropdown-toggle-btn").on("click", function (e) {
 			  e.preventDefault();
-			  let self = $(this);
-			  self.toggleClass("dropdown-opened");
-			  self.parent().toggleClass("expanded");
-			  self.parent().parent().addClass("dropdown-opened").siblings().removeClass("dropdown-opened");
-			  self.parent().parent().children(".tp-submenu").slideToggle();
-			});
-	
-		});
-	}
-	
-	if($('.tp-main-menu-content').length && $('.tp-main-menu-mobile').length){
-		let navContent = document.querySelector(".tp-main-menu-content").outerHTML;
-		let mobileNavContainer = document.querySelector(".tp-main-menu-mobile");
-		mobileNavContainer.innerHTML = navContent;
-	
-	
-		let arrow = $(".tp-main-menu-mobile .has-dropdown-2 > a");
-	
-		arrow.each(function () {
-			let self = $(this);
-			let arrowBtn = document.createElement("BUTTON");
-			arrowBtn.classList.add("dropdown-toggle-btn");
-			arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
-	
-			self.append(function () {
-			  return arrowBtn;
-			});
-	
-			self.find("button").on("click", function (e) {
-			  e.preventDefault();
-			  let self = $(this);
-			  self.toggleClass("dropdown-opened");
-			  self.parent().toggleClass("expanded");
-			  self.parent().parent().addClass("dropdown-opened").siblings().removeClass("dropdown-opened");
-			  self.parent().parent().children(".tp-submenu").slideToggle();
+			  e.stopPropagation();
+
+			  let toggleBtn = $(this);
+			  let parentLi = toggleBtn.closest("li");
+			  let submenu = parentLi.children(".tp-submenu");
+
+			  if (submenu.is(":visible")) {
+				submenu.slideUp();
+				parentLi.removeClass("dropdown-opened");
+				toggleBtn.removeClass("dropdown-opened");
+				toggleBtn.parent().removeClass("expanded");
+			  } else {
+				parentLi.siblings().find(".tp-submenu").slideUp();
+				parentLi.siblings().removeClass("dropdown-opened");
+				parentLi.siblings().find(".dropdown-toggle-btn").removeClass("dropdown-opened");
+				parentLi.siblings().children("a").removeClass("expanded");
+
+				submenu.slideDown();
+				parentLi.addClass("dropdown-opened");
+				toggleBtn.addClass("dropdown-opened");
+				toggleBtn.parent().addClass("expanded");
+			  }
 			});
 	
 		});
@@ -1563,30 +1551,7 @@
         });
 	});
 
-// মোবাইল মেনু ফিক্স: লেখায় ক্লিক করলে পেজ লোড হবে, বাটনে ক্লিক করলে ড্রপডাউন খুলবে
-    if($('.tp-main-menu-mobile').length) {
-        // শুধু ড্রপডাউন টগল বাটনের জন্য ক্লিক ইভেন্ট
-        $('.tp-main-menu-mobile .dropdown-toggle-btn').on('click', function(e) {
-            e.preventDefault(); // লিঙ্কে যাওয়া আটকাবে শুধু বাটনের জন্য
-            e.stopPropagation();
-            
-            var $parent_li = $(this).closest('li');
-            var $submenu = $parent_li.children('.tp-submenu');
-            
-            if ($submenu.is(':visible')) {
-                $submenu.slideUp();
-                $parent_li.removeClass('dropdown-opened');
-                $(this).removeClass('dropdown-opened');
-            } else {
-                // অন্য সব খোলা সাব-মেনু বন্ধ করে দেবে (ঐচ্ছিক)
-                $parent_li.siblings().find('.tp-submenu').slideUp();
-                $parent_li.siblings().removeClass('dropdown-opened');
-                
-                $submenu.slideDown();
-                $parent_li.addClass('dropdown-opened');
-                $(this).addClass('dropdown-opened');
-            }
-        });
-    }
+
+	
 
 })(jQuery);

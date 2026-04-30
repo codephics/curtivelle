@@ -183,463 +183,639 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 243071,
+				"buffer_size": 235420,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					66,
+					102,
 					1,
-					"insert",
-					{
-						"characters": "Curtivelle"
-					},
-					"CgAAAB04AgAAAAAAHjgCAAAAAAAMAAAAIyNzaXRlTmFtZSMjHjgCAAAAAAAfOAIAAAAAAAAAAAAfOAIAAAAAACA4AgAAAAAAAAAAACA4AgAAAAAAITgCAAAAAAAAAAAAITgCAAAAAAAiOAIAAAAAAAAAAAAiOAIAAAAAACM4AgAAAAAAAAAAACM4AgAAAAAAJDgCAAAAAAAAAAAAJDgCAAAAAAAlOAIAAAAAAAAAAAAlOAIAAAAAACY4AgAAAAAAAAAAACY4AgAAAAAAJzgCAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAdOAIAAAAAACk4AgAAAAAAAAAAAAAA8L8"
+					"left_delete",
+					null,
+					"AQAAACINAAAAAAAAIg0AAAAAAAAPAQAACiAgICAgIDwhLS0gR29vZ2xlIFRhZyBNYW5hZ2VyIChub3NjcmlwdCkgLS0+CiAgICAgIDxub3NjcmlwdD48aWZyYW1lIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vbnMuaHRtbD9pZD1HVE0tNVFQMktSRjMiCiAgICAgICAgIGhlaWdodD0iMCIgd2lkdGg9IjAiIHN0eWxlPSJkaXNwbGF5Om5vbmU7dmlzaWJpbGl0eTpoaWRkZW4iPjwvaWZyYW1lPjwvbm9zY3JpcHQ+CiAgICAgIDwhLS0gRW5kIEdvb2dsZSBUYWcgTWFuYWdlciAobm9zY3JpcHQpIC0tPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiDQAAAAAAADEOAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"paste",
+					null,
+					"AQAAAHtlAQAAAAAA12UBAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADMZQEAAAAAAMxlAQAAAAAAAAAAAAAA8L8"
 				],
 				[
 					13,
 					1,
 					"paste",
 					null,
-					"AQAAAL4eAgAAAAAAyh4CAAAAAAAKAAAAQ29uc3VsdGlvbg",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAvh4CAAAAAADIHgIAAAAAAAAAAAAAAPC/"
+					"AQAAANdlAQAAAAAAM2YBAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAoZgEAAAAAAChmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					25,
-					2,
-					"left_delete",
-					null,
-					"AgAAADc0AgAAAAAANzQCAAAAAAACAAAAaW42NAIAAAAAADY0AgAAAAAAAQAAACA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAANzQCAAAAAAA5NAIAAAAAAAAAAAAAAPC/"
-				],
-				[
-					39,
-					1,
-					"cut",
-					null,
-					"AQAAAMlnAgAAAAAAyWcCAAAAAAAXAAAASW50ZXJpb3ItYmFzZWQgY3VydGFpbnM",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADJZwIAAAAAAOBnAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					42,
+					15,
 					1,
 					"paste",
 					null,
-					"AQAAAJhoAgAAAAAAr2gCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACYaAIAAAAAAJhoAgAAAAAAAAAAAAAA8L8"
+					"AQAAADNmAQAAAAAAj2YBAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACEZgEAAAAAAIRmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					45,
-					1,
-					"cut",
-					null,
-					"AQAAAK9oAgAAAAAAr2gCAAAAAAAXAAAAV2hlcmUgaW50ZXJpb3JzIGJyZWF0aGU",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACvaAIAAAAAAMZoAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					48,
+					17,
 					1,
 					"paste",
 					null,
-					"AQAAAMlnAgAAAAAA4GcCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADJZwIAAAAAAMlnAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					11,
-					1,
-					"insert",
-					{
-						"characters": "span"
-					},
-					"CAAAABsMAgAAAAAAHAwCAAAAAAACAAAAaDFSCwIAAAAAAFMLAgAAAAAAAgAAAGgxGwwCAAAAAAAcDAIAAAAAAAAAAABTCwIAAAAAAFQLAgAAAAAAAAAAAB0MAgAAAAAAHgwCAAAAAAAAAAAAVAsCAAAAAABVCwIAAAAAAAAAAAAfDAIAAAAAACAMAgAAAAAAAAAAAFULAgAAAAAAVgsCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAABSCwIAAAAAAFQLAgAAAAAAAAAAAAAA8L8bDAIAAAAAAB0MAgAAAAAAAAAAAAAA8L8"
+					"AQAAAI9mAQAAAAAA62YBAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADgZgEAAAAAAOBmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
 					20,
 					1,
-					"insert",
-					{
-						"characters": "span"
-					},
-					"CAAAACEaAgAAAAAAIhoCAAAAAAACAAAAaDFUGQIAAAAAAFUZAgAAAAAAAgAAAGgxIRoCAAAAAAAiGgIAAAAAAAAAAABVGQIAAAAAAFYZAgAAAAAAAAAAACMaAgAAAAAAJBoCAAAAAAAAAAAAVhkCAAAAAABXGQIAAAAAAAAAAAAlGgIAAAAAACYaAgAAAAAAAAAAAFcZAgAAAAAAWBkCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAABUGQIAAAAAAFYZAgAAAAAAAAAAAAAA8L8hGgIAAAAAACMaAgAAAAAAAAAAAAAA8L8"
+					"paste",
+					null,
+					"AQAAABtmAQAAAAAAK2YBAAAAAAAOAAAAR2xvc3N5IEN1cnRhaW4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAbZgEAAAAAAClmAQAAAAAAAAAAAAAA8L8"
+				],
+				[
+					23,
+					1,
+					"paste",
+					null,
+					"AQAAAHlmAQAAAAAAiWYBAAAAAAAOAAAAR2xvc3N5IEN1cnRhaW4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5ZgEAAAAAAIdmAQAAAAAAAAAAAAAA8L8"
+				],
+				[
+					26,
+					1,
+					"paste",
+					null,
+					"AQAAANdmAQAAAAAA5GYBAAAAAAAOAAAAR2xvc3N5IEN1cnRhaW4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADXZgEAAAAAAOVmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
 					29,
 					1,
-					"insert",
-					{
-						"characters": "span"
-					},
-					"CAAAALglAgAAAAAAuSUCAAAAAAACAAAAaDGEJQIAAAAAAIUlAgAAAAAAAgAAAGgxuCUCAAAAAAC5JQIAAAAAAAAAAACFJQIAAAAAAIYlAgAAAAAAAAAAALolAgAAAAAAuyUCAAAAAAAAAAAAhiUCAAAAAACHJQIAAAAAAAAAAAC8JQIAAAAAAL0lAgAAAAAAAAAAAIclAgAAAAAAiCUCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAACEJQIAAAAAAIYlAgAAAAAAAAAAAAAA8L+4JQIAAAAAALolAgAAAAAAAAAAAAAA8L8"
+					"paste",
+					null,
+					"AQAAADJnAQAAAAAASWcBAAAAAAAOAAAAR2xvc3N5IEN1cnRhaW4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAyZwEAAAAAAEBnAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					111,
+					44,
 					1,
 					"paste",
 					null,
-					"AQAAAO0KAgAAAAAAdAsCAAAAAAB4AQAAPGRpdiBjbGFzcz0idHAtc2xpZGVyLTMtdGl0bGUtYm94Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ0cC1zbGlkZXItMy10aXRsZSBtYi0yNSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgV2hlcmUgTGlnaHQgPGJyIC8+TWVldHMgTHV4dXJ5CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADtCgIAAAAAAGUMAgAAAAAAAAAAAAAA8L8"
+					"AQAAAAtmAQAAAAAAE2YBAAAAAAAGAAAAZ2xvc3N5",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAALZgEAAAAAABFmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					114,
-					15,
-					"indent",
-					null,
-					"PAAAABELAgAAAAAAFQsCAAAAAAAAAAAAPwsCAAAAAABDCwIAAAAAAAAAAABqCwIAAAAAAG4LAgAAAAAAAAAAAHkLAgAAAAAAfQsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABDCwIAAAAAAEcLAgAAAAAAAAAAAHILAgAAAAAAdgsCAAAAAAAAAAAAhQsCAAAAAACJCwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAEcLAgAAAAAASwsCAAAAAAAAAAAAegsCAAAAAAB+CwIAAAAAAAAAAACRCwIAAAAAAJULAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAASwsCAAAAAABPCwIAAAAAAAAAAACCCwIAAAAAAIYLAgAAAAAAAAAAAJ0LAgAAAAAAoQsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABPCwIAAAAAAFMLAgAAAAAAAAAAAIoLAgAAAAAAjgsCAAAAAAAAAAAAqQsCAAAAAACtCwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAFMLAgAAAAAAVwsCAAAAAAAAAAAAkgsCAAAAAACWCwIAAAAAAAAAAAC1CwIAAAAAALkLAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAVwsCAAAAAABbCwIAAAAAAAAAAACaCwIAAAAAAJ4LAgAAAAAAAAAAAMELAgAAAAAAxQsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABbCwIAAAAAAF8LAgAAAAAAAAAAAKILAgAAAAAApgsCAAAAAAAAAAAAzQsCAAAAAADRCwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAF8LAgAAAAAAYwsCAAAAAAAAAAAAqgsCAAAAAACuCwIAAAAAAAAAAADZCwIAAAAAAN0LAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAYwsCAAAAAABnCwIAAAAAAAAAAACyCwIAAAAAALYLAgAAAAAAAAAAAOULAgAAAAAA6QsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABnCwIAAAAAAGsLAgAAAAAAAAAAALoLAgAAAAAAvgsCAAAAAAAAAAAA8QsCAAAAAAD1CwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAGsLAgAAAAAAbwsCAAAAAAAAAAAAwgsCAAAAAADGCwIAAAAAAAAAAAD9CwIAAAAAAAEMAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAbwsCAAAAAABzCwIAAAAAAAAAAADKCwIAAAAAAM4LAgAAAAAAAAAAAAkMAgAAAAAADQwCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABzCwIAAAAAAHcLAgAAAAAAAAAAANILAgAAAAAA1gsCAAAAAAAAAAAAFQwCAAAAAAAZDAIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAHcLAgAAAAAAewsCAAAAAAAAAAAA2gsCAAAAAADeCwIAAAAAAAAAAAAhDAIAAAAAACUMAgAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0CwIAAAAAADILAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					123,
+					47,
 					1,
 					"insert",
 					{
-						"characters": "h1"
+						"characters": "c"
 					},
-					"BAAAABwMAgAAAAAAHQwCAAAAAAADAAAAZGl2UgsCAAAAAABTCwIAAAAAAAMAAABkaXYbDAIAAAAAABwMAgAAAAAAAAAAAFMLAgAAAAAAVAsCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAABSCwIAAAAAAFULAgAAAAAAAAAAAAAA8L8cDAIAAAAAAB8MAgAAAAAAAAAAAAAA8L8"
+					"AQAAAAtmAQAAAAAADGYBAAAAAAABAAAAQw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAALZgEAAAAAAAxmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					132,
+					71,
+					1,
+					"paste",
+					null,
+					"BgAAACRnAQAAAAAAJGcBAAAAAAAGAAAAZ2xvc3N5JGcBAAAAAAAzZwEAAAAAAAAAAADJZgEAAAAAAMlmAQAAAAAABgAAAGdsb3NzeclmAQAAAAAAzmYBAAAAAAAAAAAAa2YBAAAAAABrZgEAAAAAAAYAAABnbG9zc3lrZgEAAAAAAHNmAQAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAMAAABrZgEAAAAAAHFmAQAAAAAAAAAAAAAA8L/JZgEAAAAAAM9mAQAAAAAAAAAAAAAA8L8kZwEAAAAAACpnAQAAAAAAAAAAAAAA8L8"
+				],
+				[
+					74,
 					1,
 					"insert",
 					{
-						"characters": "\n<syt"
+						"characters": "b"
 					},
-					"BQAAAGkJAgAAAAAAlgkCAAAAAAAAAAAAlgkCAAAAAACXCQIAAAAAAAAAAACXCQIAAAAAAJgJAgAAAAAAAAAAAJgJAgAAAAAAmQkCAAAAAAAAAAAAmQkCAAAAAACaCQIAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABpCQIAAAAAAGkJAgAAAAAAAAAAAAAA8L8"
+					"AQAAAGtmAQAAAAAAbGYBAAAAAAABAAAAQg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABrZgEAAAAAAGxmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					133,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJkJAgAAAAAAmQkCAAAAAAABAAAAdA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACaCQIAAAAAAJoJAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					134,
-					1,
-					"insert_completion",
-					{
-						"completion": "style>$0</style>",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "style"
-					},
-					"AgAAAJcJAgAAAAAAlwkCAAAAAAACAAAAc3mXCQIAAAAAAKUJAgAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZCQIAAAAAAJkJAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					135,
-					1,
-					"auto_indent_tag",
-					null,
-					"AQAAAJ0JAgAAAAAA+wkCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACdCQIAAAAAAJ0JAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					137,
-					1,
-					"paste",
-					null,
-					"AQAAAM4JAgAAAAAAAAoCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADOCQIAAAAAAM4JAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					146,
+					77,
 					1,
 					"insert",
 					{
-						"characters": "div"
+						"characters": "d"
 					},
-					"BgAAAOcMAgAAAAAA6AwCAAAAAAACAAAAaDEeDAIAAAAAAB8MAgAAAAAAAgAAAGgx5wwCAAAAAADoDAIAAAAAAAAAAAAfDAIAAAAAACAMAgAAAAAAAAAAAOkMAgAAAAAA6gwCAAAAAAAAAAAAIAwCAAAAAAAhDAIAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAAAeDAIAAAAAACAMAgAAAAAAAAAAAAAA8L/nDAIAAAAAAOkMAgAAAAAAAAAAAAAA8L8"
+					"AQAAAMtmAQAAAAAAzGYBAAAAAAABAAAARA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADMZgEAAAAAAMtmAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					158,
-					1,
-					"left_delete",
-					null,
-					"AQAAAGkJAgAAAAAAaQkCAAAAAADMAAAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0eWxlPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAudHAtc2xpZGVyLTMtdGl0bGUgewogICAgZGlzcGxheTogaW5saW5lLWJsb2NrOwp9CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3R5bGU+",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABpCQIAAAAAADUKAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					163,
-					1,
-					"paste",
-					null,
-					"AQAAAO0KAgAAAAAAlwsCAAAAAAB2AQAAPGRpdiBjbGFzcz0idHAtc2xpZGVyLTMtdGl0bGUtYm94Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRwLXNsaWRlci0zLXRpdGxlIG1iLTI1Ij4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBXaGVyZSBMaWdodCA8YnIgLz5NZWV0cyBMdXh1cnkKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADtCgIAAAAAAGMMAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					166,
-					15,
-					"indent",
-					null,
-					"SwAAABELAgAAAAAAFQsCAAAAAAAAAAAAPwsCAAAAAABDCwIAAAAAAAAAAABXCwIAAAAAAFsLAgAAAAAAAAAAAJELAgAAAAAAlQsCAAAAAAAAAAAAoAsCAAAAAACkCwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAEMLAgAAAAAARwsCAAAAAAAAAAAAXwsCAAAAAABjCwIAAAAAAAAAAACdCwIAAAAAAKELAgAAAAAAAAAAALALAgAAAAAAtAsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABHCwIAAAAAAEsLAgAAAAAAAAAAAGcLAgAAAAAAawsCAAAAAAAAAAAAqQsCAAAAAACtCwIAAAAAAAAAAADACwIAAAAAAMQLAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAASwsCAAAAAABPCwIAAAAAAAAAAABvCwIAAAAAAHMLAgAAAAAAAAAAALULAgAAAAAAuQsCAAAAAAAAAAAA0AsCAAAAAADUCwIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAE8LAgAAAAAAUwsCAAAAAAAAAAAAdwsCAAAAAAB7CwIAAAAAAAAAAADBCwIAAAAAAMULAgAAAAAAAAAAAOALAgAAAAAA5AsCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABTCwIAAAAAAFcLAgAAAAAAAAAAAH8LAgAAAAAAgwsCAAAAAAAAAAAAzQsCAAAAAADRCwIAAAAAAAAAAADwCwIAAAAAAPQLAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAVwsCAAAAAABbCwIAAAAAAAAAAACHCwIAAAAAAIsLAgAAAAAAAAAAANkLAgAAAAAA3QsCAAAAAAAAAAAAAAwCAAAAAAAEDAIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAFsLAgAAAAAAXwsCAAAAAAAAAAAAjwsCAAAAAACTCwIAAAAAAAAAAADlCwIAAAAAAOkLAgAAAAAAAAAAABAMAgAAAAAAFAwCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABfCwIAAAAAAGMLAgAAAAAAAAAAAJcLAgAAAAAAmwsCAAAAAAAAAAAA8QsCAAAAAAD1CwIAAAAAAAAAAAAgDAIAAAAAACQMAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAYwsCAAAAAABnCwIAAAAAAAAAAACfCwIAAAAAAKMLAgAAAAAAAAAAAP0LAgAAAAAAAQwCAAAAAAAAAAAAMAwCAAAAAAA0DAIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAGcLAgAAAAAAawsCAAAAAAAAAAAApwsCAAAAAACrCwIAAAAAAAAAAAAJDAIAAAAAAA0MAgAAAAAAAAAAAEAMAgAAAAAARAwCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAABrCwIAAAAAAG8LAgAAAAAAAAAAAK8LAgAAAAAAswsCAAAAAAAAAAAAFQwCAAAAAAAZDAIAAAAAAAAAAABQDAIAAAAAAFQMAgAAAAAAAAAAABELAgAAAAAAFQsCAAAAAAAAAAAAbwsCAAAAAABzCwIAAAAAAAAAAAC3CwIAAAAAALsLAgAAAAAAAAAAACEMAgAAAAAAJQwCAAAAAAAAAAAAYAwCAAAAAABkDAIAAAAAAAAAAAARCwIAAAAAABULAgAAAAAAAAAAAHMLAgAAAAAAdwsCAAAAAAAAAAAAvwsCAAAAAADDCwIAAAAAAAAAAAAtDAIAAAAAADEMAgAAAAAAAAAAAHAMAgAAAAAAdAwCAAAAAAAAAAAAEQsCAAAAAAAVCwIAAAAAAAAAAAB3CwIAAAAAAHsLAgAAAAAAAAAAAMcLAgAAAAAAywsCAAAAAAAAAAAAOQwCAAAAAAA9DAIAAAAAAAAAAACADAIAAAAAAIQMAgAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACXCwIAAAAAACoLAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					168,
-					1,
-					"left_delete",
-					null,
-					"AQAAAMIMAgAAAAAAwgwCAAAAAAABAAAACg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADDDAIAAAAAAMMMAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					171,
+					80,
 					1,
 					"insert",
 					{
-						"characters": "\n\n<st"
+						"characters": "w"
 					},
-					"BgAAAD8IAAAAAAAASAgAAAAAAAAAAAAASAgAAAAAAABRCAAAAAAAAAAAAABACAAAAAAAAEAIAAAAAAAACAAAACAgICAgICAgSQgAAAAAAABKCAAAAAAAAAAAAABKCAAAAAAAAEsIAAAAAAAAAAAAAEsIAAAAAAAATAgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/CAAAAAAAAD8IAAAAAAAAAAAAAAAA8L8"
+					"AQAAACVnAQAAAAAAJmcBAAAAAAABAAAAVw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAlZwEAAAAAACZnAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					172,
+					83,
 					1,
-					"insert_completion",
+					"insert",
 					{
-						"completion": "style>$0</style>",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "style"
+						"characters": "r"
 					},
-					"AgAAAEoIAAAAAAAASggAAAAAAAACAAAAc3RKCAAAAAAAAFgIAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABMCAAAAAAAAEwIAAAAAAAAAAAAAAAA8L8"
+					"AQAAACtnAQAAAAAALGcBAAAAAAABAAAAUg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArZwEAAAAAACxnAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					173,
+					126,
 					1,
-					"auto_indent_tag",
+					"",
 					null,
-					"AQAAAFAIAAAAAAAAZggAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABQCAAAAAAAAFAIAAAAAAAAAAAAAAAA8L8"
+					"AQAAAKJlAQAAAAAAXmcBAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACiZQEAAAAAAF5nAQAAAAAAAAAAAAAA8L8"
 				],
 				[
-					174,
-					1,
-					"paste",
-					null,
-					"AQAAAF0IAAAAAAAA8ggAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABdCAAAAAAAAF0IAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					177,
-					4,
-					"indent",
-					null,
-					"HAAAAHIIAAAAAAAAdggAAAAAAAAAAAAAjAgAAAAAAACQCAAAAAAAAAAAAACTCAAAAAAAAJcIAAAAAAAAAAAAALkIAAAAAAAAvQgAAAAAAAAAAAAA0QgAAAAAAADVCAAAAAAAAAAAAADrCAAAAAAAAO8IAAAAAAAAAAAAAAgJAAAAAAAADAkAAAAAAAAAAAAAcggAAAAAAAB2CAAAAAAAAAAAAACQCAAAAAAAAJQIAAAAAAAAAAAAAJsIAAAAAAAAnwgAAAAAAAAAAAAAxQgAAAAAAADJCAAAAAAAAAAAAADhCAAAAAAAAOUIAAAAAAAAAAAAAP8IAAAAAAAAAwkAAAAAAAAAAAAAIAkAAAAAAAAkCQAAAAAAAAAAAAByCAAAAAAAAHYIAAAAAAAAAAAAAJQIAAAAAAAAmAgAAAAAAAAAAAAAowgAAAAAAACnCAAAAAAAAAAAAADRCAAAAAAAANUIAAAAAAAAAAAAAPEIAAAAAAAA9QgAAAAAAAAAAAAAEwkAAAAAAAAXCQAAAAAAAAAAAAA4CQAAAAAAADwJAAAAAAAAAAAAAHIIAAAAAAAAdggAAAAAAAAAAAAAmAgAAAAAAACcCAAAAAAAAAAAAACrCAAAAAAAAK8IAAAAAAAAAAAAAN0IAAAAAAAA4QgAAAAAAAAAAAAAAQkAAAAAAAAFCQAAAAAAAAAAAAAnCQAAAAAAACsJAAAAAAAAAAAAAFAJAAAAAAAAVAkAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADyCAAAAAAAAIAIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					178,
-					1,
-					"unindent",
-					null,
-					"BwAAAHIIAAAAAAAAcggAAAAAAAAEAAAAICAgIJQIAAAAAAAAlAgAAAAAAAAEAAAAICAgIKMIAAAAAAAAowgAAAAAAAAEAAAAICAgINEIAAAAAAAA0QgAAAAAAAAEAAAAICAgIPEIAAAAAAAA8QgAAAAAAAAEAAAAICAgIBMJAAAAAAAAEwkAAAAAAAAEAAAAICAgIDgJAAAAAAAAOAkAAAAAAAAEAAAAICAgIA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABiCQAAAAAAAJAIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					180,
+					131,
 					1,
 					"left_delete",
 					null,
-					"AQAAAEUJAAAAAAAARQkAAAAAAAABAAAACg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABGCQAAAAAAAEYJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					191,
-					1,
-					"paste",
-					null,
-					"AQAAAFUbAgAAAAAAxxsCAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABVGwIAAAAAAFUbAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					194,
-					1,
-					"cut",
-					null,
-					"AQAAAEobAgAAAAAAShsCAAAAAAALAAAAaW4gRWxlZ2FuY2U",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABKGwIAAAAAAFUbAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					197,
-					1,
-					"paste",
-					null,
-					"AQAAAKkbAgAAAAAAtBsCAAAAAAAMAAAATWVldHMgTHV4dXJ5",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACpGwIAAAAAALUbAgAAAAAAAAAAAAAA8L8"
-				],
-				[
-					200,
-					1,
-					"left_delete",
-					null,
-					"AQAAAEMbAgAAAAAAQxsCAAAAAAAHAAAAIDxiciAvPg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDGwIAAAAAAEobAgAAAAAAAAAAAAAA8L8"
+					"AQAAAF5nAQAAAAAAXmcBAAAAAACIAQAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABeZwEAAAAAAOZoAQAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
 		{
-			"file": "our-mission-vision.html",
+			"file": "dobby-curtain.html",
 			"settings":
 			{
-				"buffer_size": 207806,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "<!doctype html>"
-			}
-		},
-		{
-			"file": "style-based-curtain.html",
-			"settings":
-			{
-				"buffer_size": 258823,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "interior-based-curtain.html",
-			"settings":
-			{
-				"buffer_size": 242557,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "seasonal-curtain.html",
-			"settings":
-			{
-				"buffer_size": 246821,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "contact-us.html",
-			"settings":
-			{
-				"buffer_size": 206886,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "mission-vision.html",
-			"settings":
-			{
-				"buffer_size": 207814,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "our-profile.html",
-			"settings":
-			{
-				"buffer_size": 207823,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "about-us.html",
-			"settings":
-			{
-				"buffer_size": 228912,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sitemap.xml",
-			"settings":
-			{
-				"buffer_size": 1535,
+				"buffer_size": 211386,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					5,
-					2,
-					"right_delete",
+					19,
+					1,
+					"paste",
 					null,
-					"AgAAAAkFAAAAAAAACQUAAAAAAAADAAAAb3VyCQUAAAAAAAAJBQAAAAAAAAEAAAAt",
-					"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAJBQAAAAAAAAwFAAAAAAAAAAAAAAAA8L8"
+					"AQAAAIoVAgAAAAAAjxUCAAAAAAAIAAAAQmxhY2tvdXQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKFQIAAAAAAJIVAgAAAAAAAAAAAAAA8L8"
 				],
 				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": "-us"
-					},
-					"AwAAAJwFAAAAAAAAnQUAAAAAAAAAAAAAnQUAAAAAAACeBQAAAAAAAAAAAACeBQAAAAAAAJ8FAAAAAAAAAAAAAA",
-					"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACcBQAAAAAAAJwFAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "assets/scss/layout/header/_header-2.scss",
-			"settings":
-			{
-				"buffer_size": 13049,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-				[
-					55,
+					22,
 					1,
 					"left_delete",
 					null,
-					"AQAAAAgEAAAAAAAACAQAAAAAAACBAAAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb3VudGVyLWluY3JlbWVudDogY291bnQ7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZW50OiBjb3VudGVyKGNvdW50LCBkZWNpbWFsLWxlYWRpbmctemVybyk7",
-					"CAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAIBAAAAAAAAIkEAAAAAAAAAAAAAAAA8L8"
+					"AQAAADcXAgAAAAAANxcCAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA4FwIAAAAAADgXAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAI8VAgAAAAAAkBUCAAAAAAAxAAAACiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADAFQIAAAAAAI8VAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": "C"
+					},
+					"AQAAAJAVAgAAAAAAkRUCAAAAAAABAAAAYw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACQFQIAAAAAAJEVAgAAAAAAAAAAAAAA8L8"
+				],
+				[
+					38,
+					1,
+					"",
+					null,
+					"AgAAAErdAQAAAAAAyN8BAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+GUQBAAAAAACXRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZRAEAAAAAAJdGAQAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
 		{
-			"contents": "Searching 124 files for \"counter-increment\"\n\nD:\\xampp\\htdocs\\curtivelle\\assets\\css\\bootstrap.css:\n    4   * Copyright 2011-2022 Twitter, Inc.\n    5   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)\n    6: <skipped 94794 characters> ...list-group-active-border-color:#0d6efd;display:flex;flex-direction:column;padding-left:0;margin-bottom:0;border-radius:var(--bs-list-group-border-radius)}.list-group-numbered{list-style-type:none;counter-reset:section}.list-group-numbered>.list-group-item::before{content:counters(section, \".\") \". \";counter-increment:section}.list-group-item-action{width:100%;color:var(--bs-list-group-action-color);text-align:inherit}.list-group-item-action:focus,.list-group-item-action:hover{z-index:1;color:var(--bs-list-group-action-hover-color);text-decoration:none;background-color:var(--bs-list-group-action-hover-bg)}.list-... <skipped 99213 characters> ...\n\nD:\\xampp\\htdocs\\curtivelle\\assets\\css\\main.css:\n 5582  .tp-header-2-menu > nav > ul > li > a::after {\n 5583    position: absolute;\n 5584:   counter-increment: count;\n 5585    content: counter(count, decimal-leading-zero);\n 5586    left: 0;\n\n2 matches across 2 files\n\n\nSearching 124 files for \"counter-increment\"\n\nD:\\xampp\\htdocs\\curtivelle\\assets\\css\\bootstrap.css:\n    4   * Copyright 2011-2022 Twitter, Inc.\n    5   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)\n    6: <skipped 94794 characters> ...list-group-active-border-color:#0d6efd;display:flex;flex-direction:column;padding-left:0;margin-bottom:0;border-radius:var(--bs-list-group-border-radius)}.list-group-numbered{list-style-type:none;counter-reset:section}.list-group-numbered>.list-group-item::before{content:counters(section, \".\") \". \";counter-increment:section}.list-group-item-action{width:100%;color:var(--bs-list-group-action-color);text-align:inherit}.list-group-item-action:focus,.list-group-item-action:hover{z-index:1;color:var(--bs-list-group-action-hover-color);text-decoration:none;background-color:var(--bs-list-group-action-hover-bg)}.list-... <skipped 99213 characters> ...\n\n1 match in 1 file\n\n\nSearching 125 files for \"<p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\"\n\nD:\\xampp\\htdocs\\curtivelle\\contact-us.html:\n  218           </div>\n  219           <div class=\"tpoffcanvas__title\">\n  220:             <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n  221           </div>\n  222           <div class=\"tp-main-menu-mobile d-xl-none\"></div>\n  ...\n  797                                </div>\n  798                                <div class=\"tp-footer-text pb-10\">\n  799:                                  <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n  800                                </div>\n  801                             </div>\n\nD:\\xampp\\htdocs\\curtivelle\\index.html:\n  228           </div>\n  229           <div class=\"tpoffcanvas__title\">\n  230:             <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n  231           </div>\n  232           <div class=\"tp-main-menu-mobile d-xl-none\"></div>\n  ...\n 1336                             </div>\n 1337                             <div class=\"tp-footer-text pb-10\">\n 1338:                               <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n 1339                             </div>\n 1340                          </div>\n\nD:\\xampp\\htdocs\\curtivelle\\style-based-curtain.html:\n  218           </div>\n  219           <div class=\"tpoffcanvas__title\">\n  220:             <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n  221           </div>\n  222           <div class=\"tp-main-menu-mobile d-xl-none\"></div>\n  ...\n 1119                                </div>\n 1120                                <div class=\"tp-footer-text pb-10\">\n 1121:                                  <p>Curtivelle is a luxury curtain brand crafting elegance, comfort, and timeless design for modern interiors. Premium fabrics, refined aesthetics, and bespoke solutions—where every window becomes a statement.</p>\n 1122                                </div>\n 1123                             </div>\n\n6 matches across 3 files\n\n\nSearching 125 files for \"##siteName##\"\n\nD:\\xampp\\htdocs\\curtivelle\\index.html:\n 1164                                                  <p>\n 1165                                                      If you’re searching for curtain dealers near me or a curtain\n 1166:                                                     showroom near me in Dhaka, ##siteName## offers premium, custom\n 1167                                                      curtain solutions designed for modern living. From luxury homes and\n 1168                                                      apartments to offices, hotels, and commercial spaces across\n\n1 match in 1 file\n",
+			"contents": "Searching 150 files for \"<li><a href=\"floral-curtain\">Floral Curtain</a></li>\n                                            <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n                                            <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                       <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n                                       <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n                                       <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n                                       <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n                                            <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n                                            <li><a href=\"blackout\">Blackout Curtain</a></li>\n                                            <li><a href=\"dobby\">Dobby Curtain</a></li>\n                                            <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\"\n\nD:\\xampp\\htdocs\\curtivelle\\best-living-room-curtains-guide.html:\n  465                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  466                                          <ul class=\"submenu tp-submenu\">\n  467:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  468:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  469:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  470:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  471:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  472:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  473:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  474:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  475:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  476:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  477:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  478                                          </ul>\n  479                                      </li>\n  ...\n  698                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  699                                          <ul class=\"submenu tp-submenu\">\n  700:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  701:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  702:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  703:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  704:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  705:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  706:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  707:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  708:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  709:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  710:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  711                                          </ul>\n  712                                      </li>\n\nD:\\xampp\\htdocs\\curtivelle\\blackout-curtain.html:\n  468                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  469                                          <ul class=\"submenu tp-submenu\">\n  470:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  471:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  472:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  473:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  474:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  475:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  476:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  477:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  478:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  479:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  480:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  481                                          </ul>\n  482                                      </li>\n  ...\n  699                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  700                                          <ul class=\"submenu tp-submenu\">\n  701:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  702:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  703:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  704:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  705:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  706:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  707:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  708:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  709:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  710:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  711:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  712                                          </ul>\n  713                                      </li>\n\nD:\\xampp\\htdocs\\curtivelle\\chenille-curtain.html:\n  468                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  469                                          <ul class=\"submenu tp-submenu\">\n  470:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  471:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  472:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  473:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  474:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  475:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  476:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  477:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  478:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  479:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  480:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  481                                          </ul>\n  482                                      </li>\n  ...\n  699                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  700                                          <ul class=\"submenu tp-submenu\">\n  701:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  702:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  703:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  704:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  705:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  706:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  707:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  708:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  709:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  710:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  711:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  712                                          </ul>\n  713                                      </li>\n\nD:\\xampp\\htdocs\\curtivelle\\curtain-shop-in-dhanmondi.html:\n  465                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  466                                          <ul class=\"submenu tp-submenu\">\n  467:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  468:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  469:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  470:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  471:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  472:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  473:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  474:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  475:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  476:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  477:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  478                                          </ul>\n  479                                      </li>\n  ...\n  697                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  698                                          <ul class=\"submenu tp-submenu\">\n  699:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  700:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  701:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  702:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  703:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  704:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  705:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  706:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  707:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  708:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  709:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  710                                          </ul>\n  711                                      </li>\n\nD:\\xampp\\htdocs\\curtivelle\\dobby-curtain.html:\n  465                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  466                                          <ul class=\"submenu tp-submenu\">\n  467:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  468:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  469:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  470:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  471:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  472:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  473:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  474:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  475:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  476:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  477:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  478                                          </ul>\n  479                                      </li>\n  ...\n  696                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  697                                          <ul class=\"submenu tp-submenu\">\n  698:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  699:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  700:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  701:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  702:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  703:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  704:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  705:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  706:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  707:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  708:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  709                                          </ul>\n  710                                      </li>\n\nD:\\xampp\\htdocs\\curtivelle\\water-resistant-curtain:\n  463                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  464                                          <ul class=\"submenu tp-submenu\">\n  465:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  466:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  467:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  468:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  469:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  470:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  471:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  472:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  473:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  474:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  475:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  476                                          </ul>\n  477                                      </li>\n  ...\n  694                                          <a href=\"style-based-curtain\">Style Based Curtain</a>\n  695                                          <ul class=\"submenu tp-submenu\">\n  696:                                             <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n  697:                                             <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n  698:                                             <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n  699:                                        <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n  700:                                        <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n  701:                                        <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n  702:                                        <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n  703:                                             <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n  704:                                             <li><a href=\"blackout\">Blackout Curtain</a></li>\n  705:                                             <li><a href=\"dobby\">Dobby Curtain</a></li>\n  706:                                             <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>\n  707                                          </ul>\n  708                                      </li>\n\n12 matches across 6 files\n",
 			"settings":
 			{
-				"buffer_size": 5713,
+				"buffer_size": 18683,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "assets/css/bootstrap.css",
+			"file": "water-resistant-curtain.html",
 			"settings":
 			{
-				"buffer_size": 194852,
+				"buffer_size": 215550,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAAkoDAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					2,
+					1,
+					"",
+					null,
+					"AgAAAIncAQAAAAAARd4BAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPuBEAQAAAAAAnEYBAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAACSgMAAAAAAAJKAwAAAAAAAAAAAAAA8L8"
+				],
+				[
+					3,
+					1,
+					"",
+					null,
+					"AgAAAE/dAQAAAAAAzd8BAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+HkQBAAAAAACcRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAASTQMAAAAAABJNAwAAAAAAAAAAAAAA8L8"
+				]
+			]
 		},
 		{
-			"file": "assets/scss/main.scss",
+			"file": "winter-curtain.html",
 			"settings":
 			{
-				"buffer_size": 59,
+				"buffer_size": 214961,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"",
+					null,
+					"AQAAAJFFAQAAAAAATUcBAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "best-living-room-curtains-guide.html",
+			"settings":
+			{
+				"buffer_size": 234380,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAkJMDAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					2,
+					1,
+					"",
+					null,
+					"AgAAAMTcAQAAAAAAgN4BAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPvdEAQAAAAAAs0YBAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACQkwMAAAAAAJCTAwAAAAAAAAAAAAAA8L8"
+				],
+				[
+					3,
+					1,
+					"",
+					null,
+					"AgAAAIrdAQAAAAAACOABAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+NUQBAAAAAACzRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACglgMAAAAAAKCWAwAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "blackout-curtain.html",
+			"settings":
+			{
+				"buffer_size": 210965,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"",
+					null,
+					"AgAAAFDdAQAAAAAAzt8BAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+H0QBAAAAAACdRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "chenille-curtain.html",
+			"settings":
+			{
+				"buffer_size": 218329,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"",
+					null,
+					"AgAAAFTdAQAAAAAA0t8BAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+I0QBAAAAAAChRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "curtain-shop-in-dhanmondi.html",
+			"settings":
+			{
+				"buffer_size": 223052,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAUGcDAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					2,
+					1,
+					"",
+					null,
+					"AgAAAMLcAQAAAAAAft4BAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPu9EAQAAAAAAq0YBAAAAAAA0AAAAPGxpPjxhIGhyZWY9Imdsb3NzeS1jdXJ0YWluIj5HbG9zc3kgQ3VydGFpbjwvYT48L2xpPg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABQZwMAAAAAAFBnAwAAAAAAAAAAAAAA8L8"
+				],
+				[
+					3,
+					1,
+					"",
+					null,
+					"AgAAAIjdAQAAAAAABuABAAAAAAAIBAAAPGxpPjxhIGhyZWY9ImZsb3JhbC1jdXJ0YWluIj5GbG9yYWwgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJwYXJ0eS1tb2RlLWN1cnRhaW4iPlBhcnR5IE1vZGU8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iZ2xvc3N5LWN1cnRhaW4iPkdsb3NzeSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dC1jdXJ0YWluIj5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieS1jdXJ0YWluIj5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQtY3VydGFpbiI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGEgaHJlZj0iY2hlbmlsbGUtY3VydGFpbi1wcmljZSI+Q2hlbmlsbGUgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJibGFja291dCI+QmxhY2tvdXQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJkb2JieSI+RG9iYnkgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJ3YXRlci1yZXNpc3RhbnQiPldhdGVyLVJlc2lzdGFudCBDdXJ0YWluPC9hPjwvbGk+LUQBAAAAAACrRgEAAAAAAAgEAAA8bGk+PGEgaHJlZj0iZmxvcmFsLWN1cnRhaW4iPkZsb3JhbCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9InBhcnR5LW1vZGUtY3VydGFpbiI+UGFydHkgTW9kZTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJnbG9zc3ktY3VydGFpbiI+R2xvc3N5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImNoZW5pbGxlLWN1cnRhaW4iPkNoZW5pbGxlIEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0LWN1cnRhaW4iPkJsYWNrb3V0IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5LWN1cnRhaW4iPkRvYmJ5IEN1cnRhaW48L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudC1jdXJ0YWluIj5XYXRlci1SZXNpc3RhbnQgQ3VydGFpbjwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48YSBocmVmPSJjaGVuaWxsZS1jdXJ0YWluLXByaWNlIj5DaGVuaWxsZSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImJsYWNrb3V0Ij5CbGFja291dCBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9ImRvYmJ5Ij5Eb2JieSBDdXJ0YWluPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxhIGhyZWY9IndhdGVyLXJlc2lzdGFudCI+V2F0ZXItUmVzaXN0YW50IEN1cnRhaW48L2E+PC9saT4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABgagMAAAAAAGBqAwAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "sitemap.xml",
+			"settings":
+			{
+				"buffer_size": 4937,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					3,
+					"paste",
+					null,
+					"AwAAACsEAAAAAAAAyAQAAAAAAAAAAAAAyAQAAAAAAABlBQAAAAAAAAAAAABlBQAAAAAAAAIGAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArBAAAAAAAACsEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"paste",
+					null,
+					"AQAAAFcEAAAAAAAAZwQAAAAAAAAOAAAAZ2xvc3N5LWN1cnRhaW4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABXBAAAAAAAAGUEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					15,
+					1,
+					"paste",
+					null,
+					"AQAAAPYEAAAAAAAA/gQAAAAAAAAGAAAAZ2xvc3N5",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD2BAAAAAAAAPwEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					20,
+					1,
+					"paste",
+					null,
+					"AQAAAJUFAAAAAAAAmgUAAAAAAAAGAAAAZ2xvc3N5",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACVBQAAAAAAAJsFAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					25,
+					1,
+					"paste",
+					null,
+					"AQAAAAUGAAAAAAAAoQYAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAFBgAAAAAAAAUGAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					30,
+					1,
+					"paste",
+					null,
+					"AQAAADEGAAAAAAAAQAYAAAAAAAAFAAAAZG9iYnk",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxBgAAAAAAADYGAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					35,
+					1,
+					"paste",
+					null,
+					"AQAAAPIHAAAAAAAAlAgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADyBwAAAAAAAPIHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					38,
+					1,
+					"paste",
+					null,
+					"AQAAAB4IAAAAAAAAPQgAAAAAAAATAAAAcmVzaWRlbnRpYWwtY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAeCAAAAAAAADEIAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					47,
+					1,
+					"paste",
+					null,
+					"AQAAAIcSAAAAAAAAKRMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACHEgAAAAAAAIcSAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					48,
+					3,
+					"paste",
+					null,
+					"AwAAACkTAAAAAAAAyxMAAAAAAAAAAAAAyxMAAAAAAABtFAAAAAAAAAAAAABtFAAAAAAAAA8VAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAApEwAAAAAAACkTAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					49,
+					1,
+					"paste",
+					null,
+					"AQAAAA8VAAAAAAAAsRUAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAPFQAAAAAAAA8VAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					54,
+					1,
+					"paste",
+					null,
+					"AQAAALMSAAAAAAAAzhIAAAAAAAATAAAAaG9zcGl0YWxpdHktY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACzEgAAAAAAAMYSAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					57,
+					1,
+					"paste",
+					null,
+					"AQAAAF0TAAAAAAAAeBMAAAAAAAATAAAAaG9zcGl0YWxpdHktY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABdEwAAAAAAAHATAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					60,
+					1,
+					"paste",
+					null,
+					"AQAAAAcUAAAAAAAAIhQAAAAAAAATAAAAaG9zcGl0YWxpdHktY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAHFAAAAAAAABoUAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					63,
+					1,
+					"paste",
+					null,
+					"AQAAALEUAAAAAAAAzBQAAAAAAAATAAAAaG9zcGl0YWxpdHktY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACxFAAAAAAAAMQUAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					66,
+					1,
+					"paste",
+					null,
+					"AQAAAFsVAAAAAAAAdhUAAAAAAAATAAAAaG9zcGl0YWxpdHktY3VydGFpbg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABbFQAAAAAAAG4VAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					71,
+					1,
+					"paste",
+					null,
+					"AQAAAG4TAAAAAAAAdBMAAAAAAAAKAAAAYmFuZ2xhZGVzaA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABuEwAAAAAAAHgTAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					76,
+					1,
+					"paste",
+					null,
+					"AQAAABQUAAAAAAAAHRQAAAAAAAAKAAAAYmFuZ2xhZGVzaA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAUFAAAAAAAAB4UAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					81,
+					1,
+					"paste",
+					null,
+					"AQAAAL0UAAAAAAAAxhQAAAAAAAAKAAAAYmFuZ2xhZGVzaA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC9FAAAAAAAAMcUAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					86,
+					1,
+					"paste",
+					null,
+					"AQAAAGYVAAAAAAAAbxUAAAAAAAAKAAAAYmFuZ2xhZGVzaA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABmFQAAAAAAAHAVAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					103,
+					1,
+					"insert",
+					{
+						"characters": "shop"
+					},
+					"EAAAAF0VAAAAAAAAXhUAAAAAAAAFAAAAcHJpY2W0FAAAAAAAALUUAAAAAAAABQAAAHByaWNlCxQAAAAAAAAMFAAAAAAAAAUAAABwcmljZWUTAAAAAAAAZhMAAAAAAAAFAAAAcHJpY2VSFQAAAAAAAFMVAAAAAAAAAAAAAK0UAAAAAAAArhQAAAAAAAAAAAAACBQAAAAAAAAJFAAAAAAAAAAAAABmEwAAAAAAAGcTAAAAAAAAAAAAAFYVAAAAAAAAVxUAAAAAAAAAAAAAsBQAAAAAAACxFAAAAAAAAAAAAAAKFAAAAAAAAAsUAAAAAAAAAAAAAGcTAAAAAAAAaBMAAAAAAAAAAAAAWhUAAAAAAABbFQAAAAAAAAAAAACzFAAAAAAAALQUAAAAAAAAAAAAAAwUAAAAAAAADRQAAAAAAAAAAAAAaBMAAAAAAABpEwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAQAAABlEwAAAAAAAGoTAAAAAAAAAAAAAAAA8L8LFAAAAAAAABAUAAAAAAAAAAAAAAAA8L+0FAAAAAAAALkUAAAAAAAAAAAAAAAA8L9dFQAAAAAAAGIVAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					106,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFMPAAAAAAAAUw8AAAAAAACqAAAACiAgIDx1cmw+CiAgICAgIDxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9jdXJ0YWluLXByaWNlLWluLWJhbmdsYWRlc2g8L2xvYz4KICAgICAgPGxhc3Rtb2Q+MjAyNi0wMy0xN1QwOTo0MTozMyswMDowMDwvbGFzdG1vZD4KICAgICAgPHByaW9yaXR5PjAuNjQ8L3ByaW9yaXR5PgogICA8L3VybD4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABTDwAAAAAAAP0PAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					111,
+					1,
+					"cut",
+					null,
+					"AQAAAFMPAAAAAAAAUw8AAAAAAAClAAAACiAgIDx1cmw+CiAgICAgIDxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9zbWFsbC1iZWRyb29tLWN1cnRhaW5zPC9sb2M+CiAgICAgIDxsYXN0bW9kPjIwMjYtMDMtMTdUMDk6NDE6MzMrMDA6MDA8L2xhc3Rtb2Q+CiAgICAgIDxwcmlvcml0eT4wLjY0PC9wcmlvcml0eT4KICAgPC91cmw+",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABTDwAAAAAAAPgPAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					114,
+					1,
+					"paste",
+					null,
+					"AQAAAPUPAAAAAAAAmhAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD1DwAAAAAAAPUPAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					117,
+					1,
+					"cut",
+					null,
+					"AQAAAPUPAAAAAAAA9Q8AAAAAAAClAAAACiAgIDx1cmw+CiAgICAgIDxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9zbWFsbC1iZWRyb29tLWN1cnRhaW5zPC9sb2M+CiAgICAgIDxsYXN0bW9kPjIwMjYtMDMtMTdUMDk6NDE6MzMrMDA6MDA8L2xhc3Rtb2Q+CiAgICAgIDxwcmlvcml0eT4wLjY0PC9wcmlvcml0eT4KICAgPC91cmw+",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD1DwAAAAAAAJoQAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					120,
+					1,
+					"paste",
+					null,
+					"AQAAAPIHAAAAAAAAlwgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADyBwAAAAAAAPIHAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					123,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJoQAAAAAAAAmhAAAAAAAABDAQAACiAgIDx1cmw+CiAgICAgIDxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9jb21tZXJjaWFsLWN1cnRhaW48L2xvYz4KICAgICAgPGxhc3Rtb2Q+MjAyNi0wMy0xN1QwOTo0MTozMyswMDowMDwvbGFzdG1vZD4KICAgICAgPHByaW9yaXR5PjAuNjQ8L3ByaW9yaXR5PgogICA8L3VybD4KICAgPHVybD4KICAgICAgPGxvYz5odHRwczovL2N1cnRpdmVsbGUuY29tL2hvc3BpdGFsaXR5LWN1cnRhaW48L2xvYz4KICAgICAgPGxhc3Rtb2Q+MjAyNi0wMy0xN1QwOTo0MTozMyswMDowMDwvbGFzdG1vZD4KICAgICAgPHByaW9yaXR5PjAuNjQ8L3ByaW9yaXR5PgogICA8L3VybD4",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACaEAAAAAAAAN0RAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					126,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPgPAAAAAAAA+A8AAAAAAACiAAAACiAgIDx1cmw+CiAgICAgIDxsb2M+aHR0cHM6Ly9jdXJ0aXZlbGxlLmNvbS9yZXNpZGVudGlhbC1jdXJ0YWluPC9sb2M+CiAgICAgIDxsYXN0bW9kPjIwMjYtMDMtMTdUMDk6NDE6MzMrMDA6MDA8L2xhc3Rtb2Q+CiAgICAgIDxwcmlvcml0eT4wLjY0PC9wcmlvcml0eT4KICAgPC91cmw+",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACaEAAAAAAAAPgPAAAAAAAAAAAAAAAA8L8"
+				]
+			]
 		},
 		{
 			"file": "assets/css/main.css",
@@ -667,14 +843,6 @@
 			{
 				"buffer_size": 19204,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Downloads/Curtivelle/curtivelle-logo/curtivelle-logo.svg",
-			"settings":
-			{
-				"buffer_size": 21154,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -714,10 +882,46 @@
 	],
 	"file_history":
 	[
-		"/D/xampp/htdocs/curtivelle/index_decorated.html",
-		"/D/xampp/htdocs/curtivelle/error.html",
+		"/D/xampp/htdocs/curtivelle/hospitality-curtain.html",
+		"/D/xampp/htdocs/curtivelle/curtain-shop-in-gulshan-2.html",
+		"/D/xampp/htdocs/curtivelle/glossy-curtain.html",
+		"/D/xampp/htdocs/curtivelle/gallery.html",
+		"/D/xampp/htdocs/curtivelle/floral-curtain.html",
+		"/D/xampp/htdocs/curtivelle/blog.html",
+		"/D/xampp/htdocs/curtivelle/dobby-curtain.html",
+		"/D/xampp/htdocs/curtivelle/blackout-curtain.html",
+		"/D/xampp/htdocs/curtivelle/curtain-shop-in-baridhara.html",
+		"/D/xampp/htdocs/curtivelle/curtain-shop-in-banani.html",
+		"/D/xampp/htdocs/curtivelle/curtain-price-in-bangladesh.html",
+		"/D/xampp/htdocs/curtivelle/spring-curtain.html",
+		"/D/xampp/htdocs/curtivelle/contact-us.html",
+		"/D/xampp/htdocs/curtivelle/commercial-curtain.html",
+		"/D/xampp/htdocs/curtivelle/city-shop.html",
+		"/D/xampp/htdocs/curtivelle/chenille-curtain.html",
+		"/D/xampp/htdocs/curtivelle/about-us.html",
+		"/D/xampp/htdocs/curtivelle/summer-curtain.html",
+		"/D/xampp/htdocs/curtivelle/style-based-curtain.html",
+		"/D/xampp/htdocs/curtivelle/small-bedroom-curtains.html",
+		"/D/xampp/htdocs/curtivelle/seasonal-curtain.html",
+		"/D/xampp/htdocs/curtivelle/residential-curtain.html",
+		"/D/xampp/htdocs/curtivelle/party-mode-curtain.html",
+		"/D/xampp/htdocs/curtivelle/our-profile.html",
+		"/D/xampp/htdocs/curtivelle/our-mission-vision.html",
+		"/D/xampp/htdocs/curtivelle/mission-vision.html",
+		"/D/xampp/htdocs/curtivelle/luxury-curtain-shop-in-dhaka.html",
+		"/D/xampp/htdocs/curtivelle/interior-based-curtain.html",
 		"/D/xampp/htdocs/curtivelle/faq.html",
+		"/D/xampp/htdocs/curtivelle/error.html",
 		"/D/xampp/htdocs/curtivelle/sitemap.xml",
+		"/D/xampp/htdocs/curtivelle/winter-curtain.html",
+		"/D/xampp/htdocs/curtivelle/index_decorated.html",
+		"/D/xampp/htdocs/curtivelle/README.md",
+		"/D/xampp/htdocs/curtivelle/assets/img/homepage/luxury-curtain-brand.jpeg",
+		"/D/Downloads/Curtivelle/curtivelle-logo/curtivelle-logo.svg",
+		"/D/xampp/htdocs/curtivelle/assets/scss/main.scss",
+		"/D/xampp/htdocs/curtivelle/assets/scss/layout/header/_header-2.scss",
+		"/D/xampp/htdocs/curtivelle/assets/css/bootstrap.css",
+		"/D/xampp/htdocs/curtivelle/.htaccess",
 		"/D/xampp/htdocs/curtivelle/curtivelle.sublime-project",
 		"/D/xampp/htdocs/tailoreditbd.github.io/index.html",
 		"/D/xampp/htdocs/tailoreditbd.github.io/e-commerce-solutions.html",
@@ -805,47 +1009,11 @@
 		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/pre-order/list.blade.php",
 		"/D/xampp/htdocs/codephics/.env.ecommerce-core-to-johnfashionworld",
 		"/D/xampp/htdocs/codephics/database/seeders/RolesSeeder.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/partials/purchase-process.blade.php",
-		"/D/xampp/htdocs/codephics/scripts/deploy-ecommerce-core-to-johnfashionworld.sh",
-		"/D/xampp/htdocs/codephics/Modules/Bookstore/resources/views/web/checkout/index.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Bookstore/resources/views/web/checkout/create.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/checkout.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/cart.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/EcommerceCore/app/Http/Controllers/CartController.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/order-invoice.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/order/invoice-print.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/order/detail.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/profile.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/user/order-list.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/pages/user/profile.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/User/app/Http/Controllers/UserController.php",
-		"/D/xampp/htdocs/codephics/Modules/User/routes/web.php",
-		"/D/xampp/htdocs/codephics/scripts/deploy-codephics-ecommerce-core-to-projectile-electronics.sh",
-		"/D/xampp/htdocs/codephics/.env.codephics-ecommerce-core",
-		"/D/xampp/htdocs/codephics/Modules/Order/app/Models/PreOrder.php",
-		"/D/xampp/htdocs/codephics/Modules/Order/app/Http/Controllers/PreOrderController.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/pre-order/detail.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Order/app/Models/OrderItem.php",
-		"/D/xampp/htdocs/codephics/Modules/Order/database/migrations/2025_08_31_100002_create_order_items_table.php",
-		"/D/xampp/htdocs/codephics/Modules/Order/database/migrations/2025_08_31_100001_create_orders_table.php",
-		"/D/xampp/htdocs/codephics/storage/logs/laravel.log",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/layouts/master.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Bookstore/resources/views/web/shop/show.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Accounting/app/Http/Controllers/AccountingController.php",
-		"/D/xampp/htdocs/codephics/Modules/Accounting/routes/web.php",
-		"/D/xampp/htdocs/codephics/Modules/Inventory/resources/views/admin/themes/porto/partials/_sidebar.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/inventory/edit.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/EcommerceCore/app/Http/Controllers/ItemVariantController.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/variant/index.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/variant/create.blade.php",
-		"/D/xampp/htdocs/codephics/Modules/Inventory/routes/web.php",
-		"/D/xampp/htdocs/codephics/Modules/Inventory/app/Http/Controllers/InventoryController.php",
-		"/D/xampp/htdocs/codephics/Modules/Inventory/app/Models/Inventory.php",
-		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/admin/themes/porto/shop/inventory/index.blade.php"
+		"/D/xampp/htdocs/codephics/Modules/Template/resources/views/web/themes/porto/shop/partials/purchase-process.blade.php"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -860,6 +1028,102 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"curtain-shop",
+			"<li><a href=\"floral-curtain\">Floral Curtain</a></li>\n                                            <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n                                            <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                       <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n                                       <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n                                       <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n                                       <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n                                            <li><a href=\"chenille-curtain-price\">Chenille Curtain</a></li>\n                                            <li><a href=\"blackout\">Blackout Curtain</a></li>\n                                            <li><a href=\"dobby\">Dobby Curtain</a></li>\n                                            <li><a href=\"water-resistant\">Water-Resistant Curtain</a></li>",
+			"Blackout",
+			"gloss",
+			"<li><a href=\"glossy-curtain\">Glossy Curtain</a></li>",
+			"<ul class=\"submenu tp-submenu\">\n                                       <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n                                       <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n                                       <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                    </ul>",
+			"Style Based Curtain",
+			"<body>",
+			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />",
+			"Amanullah",
+			"https://www.google.com/maps/@23.8223586,90.3661283,15z",
+			"Amanullah",
+			"<a href=\"#\">Amanullah Trade Center (7th Floor),<br />\n 1391                                                          Gulshan Avenue, Circle-02, Gulshan-02,<br />\n 1392                                                          Dhaka, Bangladesh, 1212</a>",
+			"Amanullah Trade Center (7th Floor)",
+			"<a href=\"#\"\n                                                            >Amanullah Trade Center (7th Floor), Gulshan Avenue,\n                                                            Circle-02, Gulshan-02, Dhaka, Bangladesh, 1212</a\n                                                        >",
+			"Amanullah",
+			" Amanullah",
+			"add",
+			">\n",
+			"about us",
+			"\"our-pro\"",
+			"\"blog\"",
+			"No. 1 luxury curtain brand",
+			"Best curtains shop",
+			".html",
+			"contact-us.html",
+			".html",
+			"mission-vision.html",
+			".html",
+			"our-profile.html",
+			".html",
+			"seasonal-curtain.html",
+			".html",
+			"interior-based-curtain.html",
+			".html",
+			"style-based-curtain.html",
+			".html",
+			"about-us.html",
+			".html",
+			"gallary.html",
+			".html",
+			"hospitality-curtain.html",
+			".html",
+			"commercial-curtain.html",
+			".html",
+			"residential-curtain.html",
+			".html",
+			"curtain-shop-in-baridhara.html",
+			".html",
+			"curtain-shop-in-banani.html",
+			".html",
+			"curtain-shop-in-gulshan-2.html",
+			".html",
+			"curtain-price-in-bangladesh..html",
+			".html",
+			"small-bedroom-curtains.html",
+			".html",
+			"curtain-price-in-bangladesh.html",
+			".html",
+			"\"blog.html\"",
+			".html",
+			"index",
+			"home.html",
+			"Curtivelle is a luxury curtain brand crafting elegance",
+			"index.html",
+			"Gallery",
+			"photo",
+			"<ul class=\"submenu tp-submenu\">\n                                            <li><a href=\"our-profile\">Our Profile</a></li>\n                                            <li><a href=\"mission-vision\">Mission & Vision</a></li>\n                                            <li><a href=\"contact-us\">Contact Us</a></li>\n                                        </ul>",
+			"about",
+			"gall",
+			"â€“",
+			"Gallery",
+			"Photo Gallery",
+			"Photo",
+			"Gallery",
+			"about-us",
+			"About Us",
+			"ga",
+			"galler",
+			"<ul class=\"submenu tp-submenu\">\n                                                <li><a href=\"our-profile\">Our Profile</a></li>\n                                                <li><a href=\"mission-vision\">Mission & Vision</a></li>\n                                                <li><a href=\"contact-us\">Contact Us</a></li>\n                                            </ul>",
+			"small-bedroom-curtains",
+			"curtain-price-in-bangladesh",
+			"blog",
+			"our-profile",
+			"seasonal-curtain",
+			"interior-based-curtain",
+			"style-based-curtain",
+			"about-us",
+			"<header",
+			".html",
+			"<header",
+			">home",
+			"<home",
+			"home",
+			"header",
+			"â€”",
 			"<h1",
 			"interio",
 			"drape",
@@ -891,21 +1155,7 @@
 			"Seasonal curtains collection",
 			"\">\n",
 			"Style-based curtains collection in Bangladesh",
-			"No. 1 luxury curtain",
-			"style-based-curtain.html",
-			"Curtains aren’t just fabric hanging on a rod—they control light",
-			"Mission & Vision",
-			"base",
-			"Style-based curtains are where function meets",
-			".tp-btn-black.theme-bg {",
-			"tp-theme-1",
-			".tp-btn-black.theme-bg {",
-			"Discover Curtivelle",
-			"discover",
-			"base",
-			"count",
-			"nav",
-			"logo"
+			"No. 1 luxury curtain"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -913,6 +1163,36 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<li><a href=\"floral-curtain\">Floral Curtain</a></li>\n                                            <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n                                            <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                       <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n                                       <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n                                       <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n                                       <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>",
+			"<li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                       <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n                                       <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n                                       <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n                                       <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>",
+			"<ul class=\"submenu tp-submenu\">\n                                       <li><a href=\"floral-curtain\">Floral Curtain</a></li>\n                                       <li><a href=\"party-mode-curtain\">Party Mode</a></li>\n                                       <li><a href=\"glossy-curtain\">Glossy Curtain</a></li>\n                                       <li><a href=\"chenille-curtain\">Chenille Curtain</a></li>\n                                       <li><a href=\"blackout-curtain\">Blackout Curtain</a></li>\n                                       <li><a href=\"dobby-curtain\">Dobby Curtain</a></li>\n                                       <li><a href=\"water-resistant-curtain\">Water-Resistant Curtain</a></li>\n                                    </ul>",
+			"    <body>\n\n        <!-- Google Tag Manager (noscript) -->\n        <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5QP2KRF3\"\n        height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n        <!-- End Google Tag Manager (noscript) -->",
+			"        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\n        <!-- Google tag (gtag.js) -->\n        <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-Q2RG2K7K7W\"></script>\n        <script>\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n\n          gtag('config', 'G-Q2RG2K7K7W');\n        </script>\n\n        <!-- Google Tag Manager -->\n        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,'script','dataLayer','GTM-5QP2KRF3');</script>\n        <!-- End Google Tag Manager -->",
+			"https://maps.app.goo.gl/kxUfwEU1NZusfp1u5",
+			"<a href=\"https://maps.app.goo.gl/kxUfwEU1NZusfp1u5\">Amanullah Trade Center (7th Floor),<br />\n 1391                                                          Gulshan Avenue, Circle-02, Gulshan-02,<br />\n 1392                                                          Dhaka, Bangladesh, 1212</a>",
+			"<a href=\"https://maps.app.goo.gl/kxUfwEU1NZusfp1u5\"\n                                                            >Amanullah Trade Center (7th Floor), Gulshan Avenue,\n                                                            Circle-02, Gulshan-02, Dhaka, Bangladesh, 1212</a\n                                                        >",
+			"contact-us",
+			"mission-vision",
+			"our-profile",
+			"seasonal-curtain",
+			"interior-based-curtain",
+			"style-based-curtain",
+			"about-us",
+			"gallary",
+			"hospitality-curtain",
+			"commercial-curtain",
+			"residential-curtain",
+			"curtain-shop-in-baridhara",
+			"curtain-shop-in-banani",
+			"curtain-shop-in-gulshan-2",
+			"curtain-price-in-bangladesh",
+			"small-bedroom-curtains",
+			"curtain-price-in-bangladesh",
+			"\"blog\"",
+			"index",
+			"<ul class=\"submenu tp-submenu\">\n                                            <li><a href=\"our-profile\">Our Profile</a></li>\n                                            <li><a href=\"mission-vision\">Mission & Vision</a></li>\n                                            <li><a href=\"gallery\">Gallery</a></li>\n                                            <li><a href=\"contact-us\">Contact Us</a></li>\n                                        </ul>",
+			"<ul class=\"submenu tp-submenu\">\n                                                <li><a href=\"our-profile\">Our Profile</a></li>\n                                                <li><a href=\"mission-vision\">Mission & Vision</a></li>\n                                                <li><a href=\"gallery\">Gallery</a></li>\n                                                <li><a href=\"contact-us\">Contact Us</a></li>\n                                            </ul>",
+			" ",
 			"<p>Curtivelle is widely recognized as one of the best curtain shops in Dhaka, trusted by homeowners, designers, and businesses looking for high-quality curtains that truly elevate interiors.</p>",
 			"contact-us.html"
 		],
@@ -932,123 +1212,28 @@
 				{
 					"buffer": 0,
 					"file": "index.html",
-					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 243071,
+						"buffer_size": 235420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								144770,
-								144773
+								91998,
+								91998
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 3,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 34410.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "our-mission-vision.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207806,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207806,
-								207806
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<!doctype html>",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 48912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "style-based-curtain.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 258823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								258823,
-								258823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 60648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "interior-based-curtain.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 242557,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								242557,
-								242557
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 56796.0,
+						"translation.y": 20406.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
@@ -1056,20 +1241,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "seasonal-curtain.html",
+					"buffer": 1,
+					"file": "dobby-curtain.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 246821,
+						"buffer_size": 211386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								246821,
-								246821
+								82969,
+								83213
 							]
 						],
 						"settings":
@@ -1079,7 +1264,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 57696.0,
+						"translation.y": 16158.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
@@ -1087,197 +1272,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "contact-us.html",
+					"buffer": 2,
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 206886,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								206886,
-								206886
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 48912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "mission-vision.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207814,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207806,
-								207806
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 48912.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "our-profile.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								207823,
-								207823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 48894.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "about-us.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 228912,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								228912,
-								228912
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 53844.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "sitemap.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1535,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1439,
-								1436
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "assets/scss/layout/header/_header-2.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13049,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1032,
-								1032
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5713,
+						"buffer_size": 18683,
 						"regions":
 						{
 							"match":
@@ -1286,44 +1286,52 @@
 								"regions":
 								[
 									[
-										562,
-										579
+										1356,
+										2458
 									],
 									[
-										1055,
-										1072
+										2798,
+										3900
 									],
 									[
-										1745,
-										1762
+										4285,
+										5387
 									],
 									[
-										2493,
-										2705
+										5727,
+										6829
 									],
 									[
-										2957,
-										3169
+										7214,
+										8316
 									],
 									[
-										3386,
-										3598
+										8656,
+										9758
 									],
 									[
-										3841,
-										4053
+										10152,
+										11254
 									],
 									[
-										4278,
-										4490
+										11594,
+										12696
 									],
 									[
-										4742,
-										4954
+										13078,
+										14180
 									],
 									[
-										5412,
-										5424
+										14520,
+										15622
+									],
+									[
+										16009,
+										17111
+									],
+									[
+										17451,
+										18553
 									]
 								],
 								"scope": ""
@@ -1332,15 +1340,15 @@
 						"selection":
 						[
 							[
-								5420,
-								5420
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 4,
+							"output_tag": 1,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1348,7 +1356,38 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1530.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "water-resistant-curtain.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214337,
+								214338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 44304.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1356,41 +1395,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "assets/css/bootstrap.css",
+					"buffer": 4,
+					"file": "winter-curtain.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 194852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95322,
-								95347
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 783304.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "assets/scss/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 59,
+						"buffer_size": 214961,
 						"regions":
 						{
 						},
@@ -1403,18 +1413,175 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 9,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 5,
+					"file": "best-living-room-curtains-guide.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 234380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234380,
+								234380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 48552.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "blackout-curtain.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 210965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "chenille-curtain.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 218329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "curtain-shop-in-dhanmondi.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 223052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223052,
+								223052
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 46680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "sitemap.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1926,
+								1926
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2310.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "assets/css/main.css",
 					"semi_transient": false,
 					"settings":
@@ -1440,12 +1607,12 @@
 						"translation.y": 100063.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 11,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 11,
 					"file": "assets/scss/layout/header/_header-1.scss",
 					"semi_transient": false,
 					"settings":
@@ -1471,38 +1638,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/D/Downloads/Curtivelle/curtivelle-logo/curtivelle-logo.svg",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								21154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
+					"stack_index": 10,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -1551,7 +1687,7 @@
 	"project": "curtivelle.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 266.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1571,7 +1707,7 @@
 		[
 			[
 				"",
-				"D:\\xampp\\htdocs\\codephics\\scripts\\sublime\\ecommerce.sublime-workspace"
+				"D:\\xampp\\htdocs\\codephics\\scripts\\sublime\\codephics-static-sections.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1593,7 +1729,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 495.0,
+	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
