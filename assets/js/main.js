@@ -1432,14 +1432,11 @@
 	});
 
 	let smoother = ScrollSmoother.create({
-		smooth: 1,
+		smooth: 0.8,
 		effects: false,
-		smoothTouch: 0.1,
-		normalizeScroll: false,
+		smoothTouch: 0,
+		normalizeScroll: true,
 		ignoreMobileResize: true,
-		getVelocity: function(e) {
-			return Math.min(Math.max(Math.abs(this.getVELOCITY()), 0), 200);
-		}
 	});
 
 	$(document).ready(function() {

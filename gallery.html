@@ -1885,6 +1885,27 @@
         <script src="assets/js/main.js"></script>
 
         <script>
+        // Progressive loading for gallery images
+        document.addEventListener("DOMContentLoaded", function() {
+            const galleryImages = document.querySelectorAll('.tp-project-3-thumb img');
+            
+            galleryImages.forEach(img => {
+                // Add loaded class when image is fully loaded
+                if (img.complete) {
+                    img.classList.add('loaded');
+                } else {
+                    img.addEventListener('load', function() {
+                        img.classList.add('loaded');
+                    });
+                    img.addEventListener('error', function() {
+                        img.classList.add('loaded');
+                    });
+                }
+            });
+        });
+        </script>
+
+        <script>
           document.addEventListener("DOMContentLoaded", function() {
         new Swiper('.tp-project-3-slider-active', {
             slidesPerView: 1,
