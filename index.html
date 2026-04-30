@@ -48,15 +48,37 @@
       <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
       <link rel="stylesheet" href="assets/css/spacing.css" />
       <link rel="stylesheet" href="assets/css/custom-animation.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="assets/css/main.css" />
       <style>
-         .tp-slider-3-title {
-         line-height: 1.2;
+         .home-slider-custom .tp-slider-3-title,
+         .home-slider-custom .tp-slider-3-title .second-line {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 1.1;
+            letter-spacing: 1px;
+            color: #ffffff;
          }
-         .tp-slider-3-title .second-line {
-         display: block;
-         margin-top: 12px;
-         letter-spacing: 1px;
+         .home-slider-custom .tp-slider-3-title .second-line {
+            display: block;
+            margin-top: 4px;
+            color: #c8a96a;
+         }
+         @media (max-width: 991px) {
+            .home-slider-custom .tp-slider-3-title,
+            .home-slider-custom .tp-slider-3-title .second-line {
+               font-size: 42px;
+               line-height: 1.12;
+            }
+         }
+         @media (max-width: 575px) {
+            .home-slider-custom .tp-slider-3-title,
+            .home-slider-custom .tp-slider-3-title .second-line {
+               font-size: 34px;
+               line-height: 1.15;
+            }
          }
       </style>
    </head>
@@ -1031,7 +1053,7 @@
          <div id="smooth-content">
             <main>
                <!-- slider area start -->
-               <div class="tp-slider-3-area">
+               <div class="tp-slider-3-area home-slider-custom">
                   <div class="tp-slider-3-wrapper p-relative">
                      <div class="tp-slider-dots"></div>
                      <div class="swiper-container tp-slider-3-active">
