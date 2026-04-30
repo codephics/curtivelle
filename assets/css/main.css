@@ -8406,9 +8406,26 @@ body .ui-tooltip {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
+.tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-copyright-style-2 .tp-copyright-left p {
     font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
+    font-size: 13px;
+    white-space: normal;
+  }
+}
+@media (max-width: 767px) {
+  .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
+    font-size: 12px;
+    line-height: 1.7;
   }
 }
 .tp-copyright-style-2 .tp-copyright-right a {
