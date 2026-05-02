@@ -8420,19 +8420,26 @@ body .ui-tooltip {
 @media (max-width: 991px) {
   .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
     font-size: 12px !important;
-    white-space: nowrap !important;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
   .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
-    font-size: 10px !important;
+    max-width: 100%;
+    font-size: 11px !important;
     line-height: 1.6;
     letter-spacing: 0.2px;
+    margin-bottom: 12px;
+  }
+  .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text a {
+    display: inline-block;
   }
 }
 @media (max-width: 420px) {
   .tp-copyright-style-2 .tp-copyright-left .footer-copyright-text {
-    font-size: 9px !important;
+    font-size: 10px !important;
   }
 }
 .tp-copyright-style-2 .tp-copyright-right a {
