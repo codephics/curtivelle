@@ -5397,7 +5397,7 @@ body .ui-tooltip {
   letter-spacing: 1.2px;
   padding: 0;
   text-transform: capitalize;
-  color: var(--tp-common-black);
+  color: #C5A367 !important;
   position: relative;
 }
 .tp-header-menu > nav > ul > li > .submenu > li > a::after {
@@ -5408,7 +5408,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: var(--tp-theme-1);
+  background-color: #C5A367 !important;
   transition: 0.7s;
   display: inline-block;
 }
@@ -5416,13 +5416,13 @@ body .ui-tooltip {
   width: 100%;
   right: auto;
   left: 0;
-  background-color: var(--tp-common-black);
+  background-color: #C5A367 !important;
 }
 .tp-header-menu > nav > ul > li:hover > a::after {
   width: 100%;
   right: auto;
   left: 0;
-  background-color: var(--tp-common-black);
+  background-color: #C5A367 !important;
 }
 .tp-header-menu > nav > ul > li:hover .submenu {
   opacity: 1;
@@ -5666,7 +5666,7 @@ body .ui-tooltip {
   letter-spacing: 1.2px;
   padding: 0;
   text-transform: capitalize;
-  color: var(--tp-common-black);
+  color: #C5A367 !important;
   position: relative;
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li > a::after {
@@ -5677,7 +5677,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: var(--tp-common-black);
+  background-color: #C5A367 !important;
   transition: 0.7s;
   display: inline-block;
 }
@@ -5685,7 +5685,7 @@ body .ui-tooltip {
   width: 100%;
   right: auto;
   left: 0;
-  background-color: var(--tp-common-black);
+  background-color: #C5A367 !important;
 }
 .tp-header-2-menu > nav > ul > li.has-dropdown::after {
   content: "\f107";
@@ -16972,23 +16972,3 @@ p.checkout-coupon input[type=text]:focus {
 
 /*# sourceMappingURL=main.css.map */
 
-/* স্লাইডারের কল এবং কনসালটেশন বাটন গোল্ডেন করার জন্য */
-.tp-slider-3-btn a, 
-.tp-btn, 
-.btn-gold {
-    background-color: #C5A367 !important;
-    color: #ffffff !important;
-    border: 1px solid #C5A367 !important;
-    padding: 12px 30px;
-    display: inline-block;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-/* মাউস নিলে কালার ডার্ক গোল্ড হবে */
-.tp-slider-3-btn a:hover, 
-.tp-btn:hover {
-    background-color: #B8860B !important;
-    border-color: #B8860B !important;
-    color: #ffffff !important;
-}
