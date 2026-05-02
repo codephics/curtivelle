@@ -8372,6 +8372,9 @@ body .ui-tooltip {
 .tp-copyright-right a:not(:last-child) {
   margin-right: 60px;
 }
+.text-golden {
+  color: #D4AF37 !important;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-copyright-right a:not(:last-child) {
     margin-right: 30px;
