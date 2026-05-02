@@ -12259,6 +12259,24 @@ body .ui-tooltip {
   opacity: 0;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .tp-hover-distort-wrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .tp-hover-distort-wrapper .canvas {
+    display: none;
+  }
+  .tp-hover-distort-img.front {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  .tp-hover-distort-img.back {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-hover-distort-img {
     width: 100%;
