@@ -123,7 +123,7 @@
 	////////////////////////////////////////////////////
 	// 03. Common Js
 	$("[data-background").each(function () {
-		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+		$(this).css("background-image", "url(\"" + $(this).attr("data-background") + "\")");
 	});
 
 	$("[data-width]").each(function () {
