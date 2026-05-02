@@ -2837,6 +2837,19 @@ div.demo img {
   display: flex;
   align-items: start;
 }
+.tp-custom-accordion .accordion-buttons:hover {
+  background-color: #f0f0f0;
+}
+.tp-custom-accordion .accordion-buttons:focus {
+  box-shadow: none !important;
+}
+.tp-custom-accordion .accordion-buttons.collapsed {
+  background-color: #F8F8F8;
+  color: var(--tp-common-black);
+}
+.tp-custom-accordion .accordion-buttons.collapsed:hover {
+  background-color: #f0f0f0;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-custom-accordion .accordion-buttons {
     font-size: 17px;
@@ -2881,6 +2894,11 @@ div.demo img {
   color: var(--tp-theme-1);
   border: 1px solid var(--tp-theme-1);
 }
+.tp-custom-accordion .accordion-buttons.collapsed::after {
+  content: "\f067";
+  color: var(--tp-theme-1);
+  border: 1px solid var(--tp-theme-1);
+}
 @media (max-width: 767px) {
   .tp-custom-accordion .accordion-buttons::after {
     right: 20px;
@@ -2890,9 +2908,7 @@ div.demo img {
   margin-right: 5px;
   display: inline-block;
 }
-.tp-custom-accordion .accordion-buttons.collapsed::after {
-  content: "\f067";
-}
+
 .tp-custom-accordion .collapsed {
   position: relative;
   z-index: 99;
