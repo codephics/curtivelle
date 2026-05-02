@@ -769,7 +769,7 @@ div.demo img {
   height: 44px;
   line-height: 44px;
   text-align: center;
-  background: var(--tp-theme-1);
+  background: #C5A367 !important;
   box-shadow: 0px 8px 16px rgba(3, 4, 28, 0.3);
   color: var(--tp-common-white);
   border-radius: 50%;
@@ -1132,8 +1132,9 @@ div.demo img {
   letter-spacing: 1.2px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
-  color: var(--tp-common-white);
-  background-color: var(--tp-theme-1);
+  color: #ffffff !important;
+  background-color: #C5A367 !important;
+  border: none !important;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -1164,8 +1165,8 @@ div.demo img {
   color: var(--tp-common-white);
 }
 .tp-btn-theme:hover {
-  color: var(--tp-common-white);
-  background-color: var(--tp-common-black);
+  color: #ffffff !important;
+  background-color: #A68954 !important;
 }
 
 .tp-btn-black {
@@ -1179,8 +1180,9 @@ div.demo img {
   letter-spacing: 1.2px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
-  color: var(--tp-common-white);
-  background-color: var(--tp-common-black);
+  color: #ffffff !important;
+  background-color: #C5A367 !important;
+  border: none !important;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -1197,26 +1199,26 @@ div.demo img {
   height: 60px;
   line-height: 60px;
 }
-.tp-btn-black.theme-bg {
+.tp-btn-black.theme-#C5A367 !important
   background-color: var(--tp-theme-1);
 }
 .tp-btn-black.theme-bg svg {
   color: var(--tp-common-black);
 }
 .tp-btn-black.theme-bg:hover {
-  color: var(--tp-common-white);
-  background-color: var(--tp-common-black);
+  color: #ffffff !important;
+  background-color: #A68954 !important;
 }
 .tp-btn-black.hover-2 {
   transition: 0.3s;
 }
 .tp-btn-black.hover-2:hover {
-  color: var(--tp-common-black);
-  background-color: var(--tp-common-white);
+  color: #ffffff !important;
+  background-color: #A68954 !important;
 }
 .tp-btn-black:hover {
-  color: var(--tp-common-white);
-  background-color: var(--tp-theme-1);
+  color: #ffffff !important;
+  background-color: #A68954 !important;
 }
 
 .tp-btn-black-lg {
@@ -1230,14 +1232,15 @@ div.demo img {
   letter-spacing: 1.2px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
-  color: var(--tp-common-white);
-  background-color: var(--tp-common-black);
+  color: #ffffff !important;
+  background-color: #C5A367 !important;
+  border: none !important;
   text-align: center;
   position: relative;
   z-index: 1;
 }
-.tp-btn-black-lg:hover {
-  color: var(--tp-common-white);
+.tp-btn-b#ffffff !important;
+  background-color: #A68954 !important
   background-color: var(--tp-theme-1);
 }
 
@@ -1251,8 +1254,9 @@ div.demo img {
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: capitalize;
-  transition: all 0.3s ease-in-out;
-  color: var(--tp-common-white);
+  transit#ffffff !important;
+  background-color: #C5A367 !important;
+  border: none !important
   background-color: var(--tp-common-black);
   text-align: center;
   position: relative;
@@ -1265,8 +1269,8 @@ div.demo img {
   right: -25px;
   color: var(--tp-theme-1);
   display: inline-block;
-}
-.tp-btn-black-sm:hover {
+}#ffffff !important;
+  background-color: #A68954 !important
   color: var(--tp-common-black);
   background-color: var(--tp-common-white);
 }
@@ -2204,14 +2208,14 @@ div.demo img {
   height: 40px;
   line-height: 38px;
   font-size: 20px;
-  text-align: center;
-  background-color: transparent;
-  color: var(--tp-text-2);
+  text-align: center#C5A367 !important;
+  color: #ffffff !important;
+  border: none !important
   border: 1px solid rgba(2, 6, 38, 0.1);
   border-radius: 50%;
 }
-.tp-swiper-arrow button:hover {
-  background-color: var(--tp-theme-primary);
+.tp-swiper-arrow but#A68954 !important;
+  color: #ffffff !importanteme-primary);
   color: var(--tp-common-white);
 }
 /* tp swiper scrollbar */
@@ -2270,20 +2274,20 @@ div.demo img {
   margin: 0 4px;
 }
 .tp-slick-dot .slick-dots li.slick-active button {
-  background-color: var(--tp-common-white);
+  background-color: #A68954 !important;
 }
 .tp-slick-dot .slick-dots li button {
   font-size: 0;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: 50%#C5A367 !important
   background-color: rgba(255, 255, 255, 0.2);
 }
 .tp-slick-dot-blue .slick-dots li.slick-active button {
-  background-color: var(--tp-theme-primary);
+  background-color: #A68954 !important;
 }
 .tp-slick-dot-blue .slick-dots li button {
-  background-color: var(--tp-grey-3);
+  background-color: #C5A367 !important;
 }
 
 /*----------------------------------------*/
@@ -5137,8 +5141,12 @@ body .ui-tooltip {
   color: var(--tp-theme-1);
 }
 .tp-onepage-header.header-sticky.tp-header-style-4 .tp-header-bar button {
-  color: var(--tp-theme-1);
-  border-color: var(--tp-theme-1);
+  color: #C5A367 !important;
+  border-color: #C5A367 !important;
+}
+.tp-onepage-header.header-sticky.tp-header-style-4 .tp-header-bar button i,
+.tp-onepage-header.header-sticky.tp-header-style-4 .tp-header-bar button .fa-bars {
+  color: #C5A367 !important;
 }
 .tp-onepage-header.header-sticky.tp-header-style-5.background-bg {
   background-color: var(--tp-common-black);
@@ -5164,8 +5172,12 @@ body .ui-tooltip {
 }
 .tp-header-area.tp-header-sticky-cloned .tp-header-bar button {
   border-radius: 0;
-  color: var(--tp-common-black);
-  border-color: var(--tp-common-black);
+  color: #C5A367 !important;
+  border-color: #C5A367 !important;
+}
+.tp-header-area.tp-header-sticky-cloned .tp-header-bar button i,
+.tp-header-area.tp-header-sticky-cloned .tp-header-bar button .fa-bars {
+  color: #C5A367 !important;
 }
 .tp-header-area.tp-header-sticky-cloned .tp-header-icon a.cart-icon svg {
   color: var(--tp-common-black);
@@ -5472,8 +5484,8 @@ body .ui-tooltip {
   margin: 15px 0;
   margin-left: 20px;
   font-size: 18px;
-  color: var(--tp-common-black);
-  border: 1px solid var(--tp-common-black);
+  color: #C5A367 !important;
+  border: 1px solid #C5A367 !important;
 }
 
 .tp-header-menu > nav > ul.tp-onepage-menu > li > a.active::after {
@@ -5788,14 +5800,22 @@ body .ui-tooltip {
   width: 40px;
   border-radius: 50%;
   line-height: 40px;
-  color: var(--tp-common-white);
-  border-color: var(--tp-common-white);
+  color: #C5A367 !important;
+  border-color: #C5A367 !important;
+}
+.tp-header-style-4 .tp-header-bar button i,
+.tp-header-style-4 .tp-header-bar button .fa-bars {
+  color: #C5A367 !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-style-4 .tp-header-bar button {
     border-radius: 0;
-    color: var(--tp-common-black);
-    border-color: var(--tp-common-black);
+    color: #C5A367 !important;
+    border-color: #C5A367 !important;
+  }
+  .tp-header-style-4 .tp-header-bar button i,
+  .tp-header-style-4 .tp-header-bar button .fa-bars {
+    color: #C5A367 !important;
   }
 }
 .tp-header-style-4 .tp-header-icon a.cart-icon {
@@ -5841,12 +5861,21 @@ body .ui-tooltip {
   background-color: var(--tp-common-white);
 }
 .tp-header-style-5 .tp-header-bar button {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: #C5A367 !important;
+  color: #C5A367 !important;
+}
+.tp-header-style-5 .tp-header-bar button i,
+.tp-header-style-5 .tp-header-bar button .fa-bars {
+  color: #C5A367 !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-style-5 .tp-header-bar button {
     border-radius: 50%;
-    color: var(--tp-common-white);
+    color: #C5A367 !important;
+  }
+  .tp-header-style-5 .tp-header-bar button i,
+  .tp-header-style-5 .tp-header-bar button .fa-bars {
+    color: #C5A367 !important;
   }
 }
 .tp-header-style-5 .tp-header-icon a.cart-icon span::after {
@@ -16942,3 +16971,24 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* স্লাইডারের কল এবং কনসালটেশন বাটন গোল্ডেন করার জন্য */
+.tp-slider-3-btn a, 
+.tp-btn, 
+.btn-gold {
+    background-color: #C5A367 !important;
+    color: #ffffff !important;
+    border: 1px solid #C5A367 !important;
+    padding: 12px 30px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* মাউস নিলে কালার ডার্ক গোল্ড হবে */
+.tp-slider-3-btn a:hover, 
+.tp-btn:hover {
+    background-color: #B8860B !important;
+    border-color: #B8860B !important;
+    color: #ffffff !important;
+}
