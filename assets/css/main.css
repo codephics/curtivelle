@@ -11673,6 +11673,11 @@ body .ui-tooltip {
   }
 }
 
+.tp-exp-fea-right .tp-section-title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 .tp-progress {
   height: 72px;
   width: 72px;
