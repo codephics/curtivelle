@@ -8608,6 +8608,11 @@ body .ui-tooltip {
   padding-left: 0;
   padding-right: 0;
 }
+.footer-cols-2-1 .tp-footer-logo img {
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+}
 .footer-cols-2-2 {
   width: fit-content;
   margin-left: auto;
