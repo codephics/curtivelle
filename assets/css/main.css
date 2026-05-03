@@ -5413,7 +5413,7 @@ body .ui-tooltip {
   letter-spacing: 1.2px;
   padding: 0;
   text-transform: capitalize;
-  color: #C5A367 !important;
+  color: #000 !important;
   position: relative;
 }
 .tp-header-menu > nav > ul > li > .submenu > li > a::after {
@@ -5424,7 +5424,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: #C5A367 !important;
+  background-color: #000 !important;
   transition: 0.7s;
   display: inline-block;
 }
@@ -5432,7 +5432,7 @@ body .ui-tooltip {
   width: 100%;
   right: auto;
   left: 0;
-  background-color: #C5A367 !important;
+  background-color: #000 !important;
 }
 .tp-header-menu > nav > ul > li:hover > a::after {
   width: 100%;
@@ -5682,7 +5682,7 @@ body .ui-tooltip {
   letter-spacing: 1.2px;
   padding: 0;
   text-transform: capitalize;
-  color: #C5A367 !important;
+  color: #000 !important;
   position: relative;
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li > a::after {
@@ -5693,7 +5693,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: #C5A367 !important;
+  background-color: #000 !important;
   transition: 0.7s;
   display: inline-block;
 }
