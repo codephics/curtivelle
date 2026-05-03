@@ -5397,24 +5397,28 @@ body .ui-tooltip {
   transform: translate3d(15px, 0px, 0px);
   transform-origin: top center;
   text-align: start;
-  background-color: rgb(255, 255, 255);
-  border-top: 3px solid var(--tp-theme-1);
-  backdrop-filter: blur(12.5px);
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 3px solid #C5A367;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .tp-header-menu > nav > ul > li > .submenu > li {
   margin: 0;
   margin-bottom: 0px;
   display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .tp-header-menu > nav > ul > li > .submenu > li > a {
+  display: block;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
-  padding: 0;
+  padding: 12px 0;
   text-transform: capitalize;
-  color: #000 !important;
+  color: #ffffff !important;
   position: relative;
+}
+.tp-header-menu > nav > ul > li > .submenu > li > a:hover {
+  color: #C5A367 !important;
 }
 .tp-header-menu > nav > ul > li > .submenu > li > a::after {
   content: "";
@@ -5424,7 +5428,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: #000 !important;
+  background-color: #C5A367 !important;
   transition: 0.7s;
   display: inline-block;
 }
@@ -5432,7 +5436,7 @@ body .ui-tooltip {
   width: 100%;
   right: auto;
   left: 0;
-  background-color: #000 !important;
+  background-color: #C5A367 !important;
 }
 .tp-header-menu > nav > ul > li:hover > a::after {
   width: 100%;
@@ -5667,23 +5671,28 @@ body .ui-tooltip {
   transform: translate3d(15px, 0px, 0px);
   transform-origin: top center;
   text-align: start;
-  background-color: rgb(255, 255, 255);
-  border-top: 3px solid var(--tp-theme-1);
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 3px solid #C5A367;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li {
   margin: 0;
   margin-bottom: 0px;
   display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li > a {
+  display: block;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.2px;
-  padding: 0;
+  padding: 12px 0;
   text-transform: capitalize;
-  color: #000 !important;
+  color: #ffffff !important;
   position: relative;
+}
+.tp-header-2-menu > nav > ul > li > .submenu > li > a:hover {
+  color: #C5A367 !important;
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li > a::after {
   content: "";
@@ -5693,7 +5702,7 @@ body .ui-tooltip {
   left: auto;
   height: 1px;
   width: 0;
-  background-color: #000 !important;
+  background-color: #C5A367 !important;
   transition: 0.7s;
   display: inline-block;
 }
