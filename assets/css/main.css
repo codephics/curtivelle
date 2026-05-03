@@ -17050,5 +17050,24 @@ p.checkout-coupon input[type=text]:focus {
   padding: 0 23px;
 }
 
+.tp-btn-theme:hover,
+.tp-btn-black:hover,
+.tp-btn-black.hover-2:hover,
+.tp-btn-black.theme-bg:hover,
+.tp-btn-black-lg:hover,
+.tp-btn-black-sm:hover,
+.back-to-top-btn:hover {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.tp-btn-theme:hover span svg,
+.tp-btn-black:hover span svg,
+.tp-btn-black-lg:hover span svg,
+.tp-btn-black-sm:hover span svg,
+.back-to-top-btn:hover svg {
+  color: #ffffff !important;
+}
+
 /*# sourceMappingURL=main.css.map */
 
