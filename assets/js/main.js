@@ -123,7 +123,7 @@
 	////////////////////////////////////////////////////
 	// 03. Common Js
 	$("[data-background").each(function () {
-		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+		$(this).css("background-image", "url(\"" + $(this).attr("data-background") + "\")");
 	});
 
 	$("[data-width]").each(function () {
@@ -219,6 +219,45 @@
 			a11y: false,
 		},
 
+	});
+	const eventSwiper = new Swiper('.tp-events-active', {
+		speed: 1000,
+		loop: true,
+		slidesPerView: 3,
+		spaceBetween: 24,
+		watchSlidesProgress: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.tp-events-dots',
+			clickable: true,
+		},
+		breakpoints: {
+			'1200': {
+				slidesPerView: 3,
+			},
+			'768': {
+				slidesPerView: 2,
+			},
+			'0': {
+				slidesPerView: 1,
+				spaceBetween: 16,
+			},
+		},
+		on: {
+			init: function () {
+				if (typeof ScrollTrigger !== 'undefined') {
+					ScrollTrigger.refresh();
+				}
+			},
+			resize: function () {
+				if (typeof ScrollTrigger !== 'undefined') {
+					ScrollTrigger.refresh();
+				}
+			},
+		},
 	});
 	// 13. Swiper Js
 	const product2swiper = new Swiper('.tp-product-2-active', {
@@ -1432,10 +1471,13 @@
 	});
 
 	let smoother = ScrollSmoother.create({
-		smooth: 1.35,
-		effects: true,
-		smoothTouch: true,
-		normalizeScroll: false,
+		smooth: 0.8,
+		effects: false,
+		smoothTouch: 0,
+		normalizeScroll: {
+			allowNestedScroll: true,
+			ignore: '.swiper, .swiper-container, .tp-events-active',
+		},
 		ignoreMobileResize: true,
 	});
 

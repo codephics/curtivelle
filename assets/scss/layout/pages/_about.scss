@@ -560,6 +560,17 @@
     &-img{
         opacity: 0;
         object-fit: cover;
+        @media #{$xs}{
+            &.front{
+                display: block;
+                width: 100%;
+                height: auto;
+                opacity: 1;
+            }
+            &.back{
+                display: none;
+            }
+        }
         @media #{$md}{
             width: 100%;
         }
@@ -570,6 +581,17 @@
             left: 0;
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+@media #{$xs}{
+    .tp-hover-distort-wrapper{
+        width: 100% !important;
+        height: auto !important;
+
+        .canvas{
+            display: none;
         }
     }
 }
