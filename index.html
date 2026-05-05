@@ -52,6 +52,30 @@
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&display=swap" rel="stylesheet" />
  <link rel="stylesheet" href="assets/css/main.css" />
  <style>
+    /* কার্ডে মাউস নিলে ব্যাকগ্রাউন্ড গুগল ব্লু হবে */
+.curtivelle-home-review-card:hover {
+    transform: translateY(-4px);
+    background-color: #4285F4 !important; /* Google Blue Color */
+}
+
+/* ব্যাকগ্রাউন্ড ব্লু হলে ভেতরের লেখাগুলো সাদা হয়ে যাবে, যাতে ক্লিয়ার দেখা যায় */
+.curtivelle-home-review-card:hover .curtivelle-home-review-text,
+.curtivelle-home-review-card:hover .curtivelle-home-review-text a,
+.curtivelle-home-review-card:hover .curtivelle-home-review-name,
+.curtivelle-home-review-card:hover .curtivelle-home-review-name a {
+    color: #ffffff !important;
+}
+
+/* রিভিউ ব্যাজের ব্যাকগ্রাউন্ডটাও একটু মানানসই করা */
+.curtivelle-home-review-card:hover .curtivelle-home-review-badge {
+    background: #ffffff !important;
+    color: #4285F4 !important;
+}
+    /* Slider Social Icons - Move to Right */
+.home-slider-custom .tp-slider-3-social {
+    left: auto !important;
+    right: 50px !important;
+}
  .home-slider-custom .tp-slider-3-title,
  .home-slider-custom .tp-slider-3-title .second-line {
  font-family: 'Playfair Display', serif;
@@ -120,6 +144,112 @@
  }
  .curtains-golden-text {
  color: #c8a96a;
+ }
+ .curtivelle-home-review-card {
+ background: #ffffff;
+ border-radius: 15px;
+ display: flex;
+ flex-direction: column;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+ height: 100%;
+ min-height: 420px;
+ padding: 34px 28px;
+ text-align: center;
+ transition: all 0.3s ease;
+ }
+ .curtivelle-home-review-card:hover {
+ transform: translateY(-4px);
+ }
+ .curtivelle-home-review-rating {
+ align-items: center;
+ border-bottom: 1px solid #eeeeee;
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ margin-bottom: 22px;
+ padding-bottom: 18px;
+ }
+ .curtivelle-home-review-stars {
+ color: #ffb400;
+ font-size: 18px;
+ letter-spacing: 1px;
+ line-height: 1;
+ }
+ .curtivelle-home-google-icon img {
+ height: 20px;
+ width: 20px;
+ }
+ .curtivelle-home-review-badge {
+ background: #fff0e6;
+ border-radius: 5px;
+ color: #000000;
+ display: inline-block;
+ font-size: 14px;
+ font-weight: 700;
+ margin-bottom: 18px;
+ padding: 5px 15px;
+ }
+ .curtivelle-home-review-text {
+ color: #555555;
+ flex: 1 1 auto;
+ font-size: 16px;
+ line-height: 1.65;
+ margin-bottom: 22px;
+ }
+ .curtivelle-home-review-text a,
+ .curtivelle-home-review-name a {
+ color: inherit;
+ text-decoration: none;
+ }
+ .curtivelle-home-review-text a:hover,
+ .curtivelle-home-review-name a:hover {
+ color: #c5a367;
+ }
+ .curtivelle-home-review-name {
+ color: #c5a367;
+ font-size: 17px;
+ font-weight: 700;
+ }
+ .curtivelle-home-review-grid {
+ padding-top: 42px;
+ row-gap: 68px;
+ }
+ .curtivelle-home-review-grid > [class*="col-"]:nth-child(3n + 2) {
+ transform: translateY(-42px);
+ }
+ .curtivelle-home-review-btn {
+ background: #c5a367;
+ border-radius: 5px;
+ color: #ffffff;
+ display: inline-block;
+ font-size: 16px;
+ font-weight: 700;
+ padding: 14px 30px;
+ text-decoration: none;
+ transition: all 0.3s ease;
+ }
+ .curtivelle-home-review-btn:hover {
+ background: #111111;
+ color: #ffffff;
+ }
+ @media (max-width: 1199px) {
+ .curtivelle-home-review-grid {
+ padding-top: 0;
+ row-gap: 24px;
+ }
+ .curtivelle-home-review-grid > [class*="col-"]:nth-child(3n + 2) {
+ transform: none;
+ }
+ }
+ @media (max-width: 767px) {
+ .curtivelle-home-review-card {
+ min-height: auto;
+ padding: 28px 22px;
+ }
+ .curtivelle-home-review-text {
+ font-size: 15px;
+ line-height: 1.55;
+ }
  }
  </style>
  </head>
@@ -830,6 +960,7 @@
  <li><a href="our-profile">Our Profile</a></li>
  <li><a href="mission-vision">Mission & Vision</a></li>
  <li><a href="gallery">Gallery</a></li>
+ <li><a href="reviews">Review</a></li>
  <li><a href="blog">Blog</a></li>
  <li><a href="contact-us">Contact Us</a></li>
  </ul>
@@ -1052,6 +1183,7 @@
  <li><a href="our-profile">Our Profile</a></li>
  <li><a href="mission-vision">Mission & Vision</a></li>
  <li><a href="gallery">Gallery</a></li>
+ <li><a href="reviews">Review</a></li>
  <li><a href="blog">Blog</a></li>
  <li><a href="contact-us">Contact Us</a></li>
  </ul>
@@ -2434,6 +2566,59 @@
  </div>
  </div>
  </div>
+ </div>
+ <div class="row g-4 curtivelle-home-review-grid">
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">Premium Quality</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/IENHsw1x71HyvEPfP" target="_blank" rel="noopener">"Really wonderful collection! If you want luxury curtain, premium quality and want to align with your interior design. Choose Curtivelle undoubtedly!"</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/IENHsw1x71HyvEPfP" target="_blank" rel="noopener">A Rahman T-IT</a></div>
+ </div>
+ </div>
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">Highly Recommended</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/oFNikkknzT1vfq1LX" target="_blank" rel="noopener">"I had a wonderful experience with this curtain shop. They have a huge collection of modern and classic designs. The stitching, finishing and fitting were absolutely perfect. Highly recommended!"</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/oFNikkknzT1vfq1LX" target="_blank" rel="noopener">Kanij Mim</a></div>
+ </div>
+ </div>
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">Luxury Curtains</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/mMHsCu0StWACnX4wf" target="_blank" rel="noopener">"Very nice and qualitative curtains. Recommended for luxury people."</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/mMHsCu0StWACnX4wf" target="_blank" rel="noopener">Tailored IT BD Official</a></div>
+ </div>
+ </div>
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">Stylish Curtains</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/ZPvJu7gVkTndlPAVq" target="_blank" rel="noopener">"The curtains from Curtivelle are very stylish and well made. The fabric feels premium and comfortable. It fits perfectly in my room after installation."</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/ZPvJu7gVkTndlPAVq" target="_blank" rel="noopener">FF ID 80</a></div>
+ </div>
+ </div>
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">New Review</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/ea9DztqOSJzhX0uzZ" target="_blank" rel="noopener">"Curtivelle provided a really good curtain solution for my home. The product quality is better than I expected. The color and design matched perfectly with my interior."</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/ea9DztqOSJzhX0uzZ" target="_blank" rel="noopener">Id Mx</a></div>
+ </div>
+ </div>
+ <div class="col-xl-4 col-md-6">
+ <div class="curtivelle-home-review-card">
+ <div class="curtivelle-home-review-rating"><span class="curtivelle-home-review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="curtivelle-home-google-icon"><img src="assets/img/icon/google-logo.svg" alt="Google" /></span></div>
+ <span class="curtivelle-home-review-badge">Best Curtain Shop</span>
+ <p class="curtivelle-home-review-text"><a href="https://share.google/J9zX7BUXQOjETRaSf" target="_blank" rel="noopener">"Best curtain shop in Dhaka, Bangladesh! Curtivelle provides excellent quality curtains with professional service. Highly recommended for anyone looking for premium curtain solutions."</a></p>
+ <div class="curtivelle-home-review-name"><a href="https://share.google/J9zX7BUXQOjETRaSf" target="_blank" rel="noopener">Mahdi Hasan</a></div>
+ </div>
+ </div>
+ </div>
+ <div class="text-center mt-50">
+ <a class="curtivelle-home-review-btn" href="review.html">View All Reviews</a>
  </div>
  <!-- <div class="row">
  <div class="col-xl-12">
