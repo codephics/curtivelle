@@ -123,23 +123,97 @@
  margin-bottom: 22px !important;
  }
  }
+ .curtivelle-best-shop-section .tp-hover-distort-wrapper {
+ width: 100%;
+ overflow: hidden;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-thumb {
+ margin-right: 48px;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-wrapper,
+ .curtivelle-best-shop-section .tp-hover-distort {
+ min-height: 500px;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort,
+ .curtivelle-best-shop-section .tp-hover-distort-img.front {
+ width: 100%;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-img.front {
+ height: 500px;
+ max-width: 100%;
+ object-fit: cover;
+ object-position: center;
+ }
+ @media (min-width: 1400px) {
+ .curtivelle-best-shop-section .tp-hover-distort-wrapper,
+ .curtivelle-best-shop-section .tp-hover-distort {
+ min-height: 560px;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-img.front {
+ height: 560px;
+ }
+ }
+ @media only screen and (min-width: 992px) and (max-width: 1199px) {
+ .curtivelle-best-shop-section .tp-exp-fea-thumb {
+ margin-right: 30px;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-wrapper,
+ .curtivelle-best-shop-section .tp-hover-distort {
+ min-height: 430px;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-img.front {
+ height: 430px;
+ }
+ }
  @media (max-width: 991px) {
- .tp-exp-fea-thumb .tp-hover-distort-wrapper,
- .tp-exp-fea-thumb .tp-hover-distort {
+ .curtivelle-best-shop-section {
+ padding-top: 45px !important;
+ padding-bottom: 45px !important;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-top {
+ margin-bottom: 0 !important;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-thumb {
+ margin-right: 0 !important;
+ margin-bottom: 24px !important;
+ }
+ .curtivelle-best-shop-section .tp-hover-distort-wrapper,
+ .curtivelle-best-shop-section .tp-hover-distort {
  display: block !important;
  width: 100% !important;
+ min-height: 0 !important;
  height: auto !important;
  }
- .tp-exp-fea-thumb .canvas,
- .tp-exp-fea-thumb .tp-hover-distort-img.back {
+ .curtivelle-best-shop-section .canvas,
+ .curtivelle-best-shop-section .tp-hover-distort-img.back {
  display: none !important;
  }
- .tp-exp-fea-thumb .tp-hover-distort-img.front {
+ .curtivelle-best-shop-section .tp-hover-distort-img.front {
  display: block !important;
  width: 100% !important;
  height: auto !important;
  opacity: 1 !important;
  visibility: visible !important;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-right {
+ margin-bottom: 0 !important;
+ }
+ }
+ @media (max-width: 575px) {
+ .curtivelle-best-shop-section {
+ padding-top: 35px !important;
+ padding-bottom: 35px !important;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-thumb {
+ margin-bottom: 20px !important;
+ }
+ .curtivelle-best-shop-section .tp-section-title {
+ font-size: 30px !important;
+ line-height: 1.2 !important;
+ }
+ .curtivelle-best-shop-section .tp-exp-fea-text p {
+ font-size: 15px;
+ line-height: 1.7;
  }
  }
  .curtains-golden-text {
@@ -299,7 +373,7 @@
  <div class="search__wrapper">
  <div class="search__top d-flex justify-content-between align-items-center">
  <div class="search__logo">
- <a href="/">
+ <a href="./">
  <?xml version="1.0" encoding="UTF-8"?>
  <svg
  id="Layer_1"
@@ -540,7 +614,7 @@
  <button class="close-btn"><i class="fal fa-times"></i></button>
  </div>
  <div class="tpoffcanvas__logo">
- <a href="/">
+ <a href="./">
  <?xml version="1.0" encoding="UTF-8"?>
  <svg
  id="Layer_1"
@@ -755,7 +829,7 @@
  <div class="row align-items-center">
  <div class="col-xl-2 col-lg-4 col-6">
  <div class="tp-header-logo">
- <a href="/">
+ <a href="./">
  <?xml version="1.0" encoding="UTF-8"?>
  <svg
  id="Layer_1"
@@ -925,7 +999,7 @@
  <div class="tp-header-2-menu">
  <nav class="tp-main-menu-content">
  <ul>
- <li><a href="/">Home</a></li>
+ <li><a href="./">Home</a></li>
  <li class="has-dropdown">
  <a href="style-based-curtain">Style Based Curtain</a>
  <ul class="submenu tp-submenu">
@@ -1174,7 +1248,7 @@
  <div class="tp-header-2-menu">
  <nav class="tp-main-menu-content">
  <ul>
- <li><a href="/">Home</a></li>
+ <li><a href="./">Home</a></li>
  <li><a href="style-based-curtain">Style Based Curtain</a></li>
  <li><a href="interior-based-curtain">Interior Based Curtain</a></li>
  <li><a href="seasonal-curtain">Seasonal Curtain</a></li>
@@ -1502,7 +1576,7 @@
  </div>
  <!-- slider area end -->
  <!-- expart-feature area start -->
- <div class="tp-exp-fea-area fix pt-60 pb-60">
+ <div class="tp-exp-fea-area curtivelle-best-shop-section fix pt-60 pb-60">
  <div class="container">
  <div class="tp-exp-fea-top mb-10">
  <div class="row align-items-center">
@@ -1516,12 +1590,12 @@
  >
  <img
  class="tp-hover-distort-img front"
- src="assets/img/homepage/luxury-curtain-brand.jpeg"
+ src="assets/img/homepage/best-curtains-shop.png"
  alt=""
  />
  <img
  class="tp-hover-distort-img back"
- src="assets/img/homepage/luxury-curtain-brand.jpeg"
+ src="assets/img/homepage/best-curtains-shop.png"
  alt=""
  />
  </div>
@@ -3015,7 +3089,7 @@ I am fully satisfied with the purchase."</a></p>
  <div class="col-lg-4 col-12 mb-50">
  <div class="tp-footer-widget footer-cols-2-1">
  <div class="tp-footer-logo">
- <a href="/">
+ <a href="./">
  <img src="assets/img/logo/logo-white.png" alt="" />
  </a>
  </div>
