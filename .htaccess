@@ -1,19 +1,19 @@
 RewriteEngine On
+RewriteBase /
 
-
+# ১. কেউ যদি index, index.html বা index.php লিখে ঢোকার চেষ্টা করে, তাকে মেইন ডোমেইনে পাঠাও
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(html|php|htm)\ HTTP/ [NC,OR]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/ [NC]
-RewriteRule ^index(\.html|\.php|\.htm)?$ / [R=301,L]
+RewriteRule ^index(\.html|\.php|\.htm)?$ https://curtivelle.com/ [R=301,L]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
-RewriteRule ^index$ / [R=301,L]
+# ২. ডিরেক্টরি ইনডেক্স সেট করা যাতে সার্ভার নিজে থেকে /index না খোঁজে
+DirectoryIndex index.html
 
-
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+# ৩. যেকোনো পেজের শেষে .html লিখে সার্চ করলে তাকে ক্লিন ইউআরএলে ফোর্স রিডাইরেক্ট করবে
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/ [NC]
 RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 
-
+# ৪. ইন্টারনাল রুল: ইউআরএলে .html না থাকলেও সার্ভার যেন ফাইলটি চেনে
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
