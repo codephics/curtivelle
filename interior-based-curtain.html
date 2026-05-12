@@ -43,6 +43,8 @@
     <style>
     .curtivelle-interior-hero .tp-exp-fea-thumb {
         margin-right: 48px;
+        width: 100%;
+        max-width: 679px;
     }
     .curtivelle-interior-hero .tp-hover-distort-wrapper {
         width: 100%;
@@ -50,14 +52,15 @@
     }
     .curtivelle-interior-hero .tp-hover-distort-wrapper,
     .curtivelle-interior-hero .tp-hover-distort {
-        min-height: 500px;
+        aspect-ratio: 1358 / 854;
     }
     .curtivelle-interior-hero .tp-hover-distort,
     .curtivelle-interior-hero .tp-hover-distort-img.front {
         width: 100%;
     }
     .curtivelle-interior-hero .tp-hover-distort-img.front {
-        height: 500px;
+        height: 100%;
+        aspect-ratio: auto 1358 / 854;
         max-width: 100%;
         object-fit: cover;
         object-position: center;
@@ -65,10 +68,10 @@
     @media (min-width: 1400px) {
         .curtivelle-interior-hero .tp-hover-distort-wrapper,
         .curtivelle-interior-hero .tp-hover-distort {
-            min-height: 560px;
+            aspect-ratio: 1358 / 854;
         }
         .curtivelle-interior-hero .tp-hover-distort-img.front {
-            height: 560px;
+            height: 100%;
         }
     }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -77,10 +80,10 @@
         }
         .curtivelle-interior-hero .tp-hover-distort-wrapper,
         .curtivelle-interior-hero .tp-hover-distort {
-            min-height: 430px;
+            aspect-ratio: 1358 / 854;
         }
         .curtivelle-interior-hero .tp-hover-distort-img.front {
-            height: 430px;
+            height: 100%;
         }
     }
     @media (max-width: 991px) {
@@ -94,6 +97,7 @@
         .curtivelle-interior-hero .tp-exp-fea-thumb {
             margin-right: 0 !important;
             margin-bottom: 24px !important;
+            max-width: none !important;
         }
         .curtivelle-interior-hero .tp-hover-distort-wrapper,
         .curtivelle-interior-hero .tp-hover-distort {
@@ -101,6 +105,7 @@
             width: 100% !important;
             min-height: 0 !important;
             height: auto !important;
+            aspect-ratio: 1358 / 854 !important;
         }
         .curtivelle-interior-hero .canvas,
         .curtivelle-interior-hero .tp-hover-distort-img.back {
@@ -109,7 +114,8 @@
         .curtivelle-interior-hero .tp-hover-distort-img.front {
             display: block !important;
             width: 100% !important;
-            height: auto !important;
+            height: 100% !important;
+            object-fit: cover;
             opacity: 1 !important;
             visibility: visible !important;
         }
