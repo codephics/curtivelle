@@ -1,9 +1,17 @@
 RewriteEngine On
 
-# Skip if real file or folder exists
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# ১. index.html বা শুধু index লেখা থাকলে সেটা রিমুভ করে মেইন ডোমেইনে (/) নিয়ে যাবে
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(html|php)\ HTTP/
+RewriteRule ^index\.(html|php)$ / [R=301,L]
 
-# Internally serve .html file for extensionless URL
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
+RewriteRule ^index$ / [R=301,L]
+
+# ২. কেউ যদি সরাসরি .html লিখে ঢুকে, তাকে রিডাইরেক্ট করে .html ছাড়া ভার্সনে পাঠাবে
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# ৩. ইউআরএলে .html না থাকলেও সার্ভার যেন ফাইলটি খুঁজে পায় (আপনার আগের কোডের উন্নত ভার্সন)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
