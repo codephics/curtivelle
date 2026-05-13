@@ -72,6 +72,19 @@
     background: #ffffff !important;
     color: #4285F4 !important;
 }
+@media (min-width: 1200px) {
+ .tp-header-2-menu > nav > ul {
+ display: flex;
+ flex-wrap: nowrap;
+ align-items: center;
+ }
+ .tp-header-2-menu > nav > ul > li {
+ flex: 0 0 auto;
+ white-space: nowrap;
+ margin-left: 14px;
+ margin-right: 14px;
+ }
+}
     /* Slider Social Icons - Move to Right */
 .home-slider-custom .tp-slider-3-social {
     left: auto !important;
@@ -1254,11 +1267,37 @@
  <div class="col-xl-8 d-none d-xl-block">
  <div class="tp-header-2-menu">
  <nav class="tp-main-menu-content">
- <ul>
+  <ul>
  <li><a href="./">Home</a></li>
- <li><a href="style-based-curtain">Style Based Curtain</a></li>
- <li><a href="interior-based-curtain">Interior Based Curtain</a></li>
- <li><a href="seasonal-curtain">Seasonal Curtain</a></li>
+ <li class="has-dropdown">
+ <a href="style-based-curtain">Style Based Curtain</a>
+ <ul class="submenu tp-submenu">
+ <li><a href="floral-curtain">Floral Curtain</a></li>
+ <li><a href="party-mode-curtain">Party Mode</a></li>
+ <li><a href="glossy-curtain">Glossy Curtain</a></li>
+ <li><a href="chenille-curtain">Chenille Curtain</a></li>
+ <li><a href="blackout-curtain">Blackout Curtain</a></li>
+ <li><a href="dobby-curtain">Dobby Curtain</a></li>
+ <li><a href="water-resistant-curtain">Water-Resistant Curtain</a></li>
+ <li><a href="acoustic-curtain-price-bd">Acoustic Curtain</a></li>
+ </ul>
+ </li>
+ <li class="has-dropdown">
+ <a href="interior-based-curtain">Interior Based Curtain</a>
+ <ul class="submenu tp-submenu">
+ <li><a href="residential-curtain">Residential Curtain</a></li>
+ <li><a href="commercial-curtain">Commercial Curtain</a></li>
+ <li><a href="hospitality-curtain">Hospitality Curtain</a></li>
+ </ul>
+ </li>
+ <li class="has-dropdown">
+ <a href="seasonal-curtain">Seasonal Curtain</a>
+ <ul class="submenu tp-submenu">
+ <li><a href="summer-curtain">Summer curtain</a></li>
+ <li><a href="winter-curtain">Winter Curtain</a></li>
+ <li><a href="spring-curtain">Spring Curtain</a></li>
+ </ul>
+ </li>
  <li class="has-dropdown">
  <a href="about-us">About Us</a>
  <ul class="submenu tp-submenu">
