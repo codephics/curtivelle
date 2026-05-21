@@ -41,7 +41,31 @@
     <link rel="stylesheet" href="assets/css/spacing.css" />
     <link rel="stylesheet" href="assets/css/custom-animation.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-</head>
+
+<style>
+ .curtain-box-table td {
+ padding: 0 !important;
+ overflow: hidden;
+ transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+ }
+ .curtain-box-table td:hover {
+ background-color: #c6a363;
+ border-color: #c6a363 !important;
+ box-shadow: 0 8px 20px rgba(198, 163, 99, 0.2);
+ }
+ .curtain-box-link {
+ display: block;
+ width: 100%;
+ padding: 20px;
+ color: #111;
+ text-decoration: none;
+ transition: color 0.3s ease, transform 0.3s ease;
+ }
+ .curtain-box-table td:hover .curtain-box-link {
+ color: #fff;
+ transform: translateY(-6px);
+ }
+</style></head>
 
     <body>
 
@@ -900,22 +924,22 @@
                         <div class="row justify-content-center mt-30">
                             <div class="col-xl-9 col-lg-10">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered text-center" style="border-color: #ddd;">
+                                    <table class="table table-bordered text-center curtain-box-table" style="border-color: #ddd;">
                                         <tbody style="color: #111; font-size: 20px; font-weight: 600;">
                                             <tr>
-                                                <td style="padding: 20px; width: 33.33%;">Floral Curtain</td>
-                                                <td style="padding: 20px; width: 33.33%;">Party mode Curtain</td>
-                                                <td style="padding: 20px; width: 33.33%;">Glossy Curtain</td>
+                                                <td style="padding: 20px; width: 33.33%;"><a class="curtain-box-link" href="floral-curtain">Floral Curtain</a></td>
+                                                <td style="padding: 20px; width: 33.33%;"><a class="curtain-box-link" href="party-mode-curtain">Party mode Curtain</a></td>
+                                                <td style="padding: 20px; width: 33.33%;"><a class="curtain-box-link" href="glossy-curtain">Glossy Curtain</a></td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 20px;">Residential Curtain</td>
-                                                <td style="padding: 20px;">Commercial Curtain</td>
-                                                <td style="padding: 20px;">Hospitality Curtain</td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="residential-curtain">Residential Curtain</a></td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="commercial-curtain">Commercial Curtain</a></td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="hospitality-curtain">Hospitality Curtain</a></td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 20px;">Summer Curtain</td>
-                                                <td style="padding: 20px;">Winter Curtain</td>
-                                                <td style="padding: 20px;">Spring Curtain</td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="summer-curtain">Summer Curtain</a></td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="winter-curtain">Winter Curtain</a></td>
+                                                <td style="padding: 20px;"><a class="curtain-box-link" href="spring-curtain">Spring Curtain</a></td>
                                             </tr>
                                         </tbody>
                                     </table>
