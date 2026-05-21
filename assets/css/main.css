@@ -95,7 +95,7 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Satisfy&family=Poppins:wght@300;400;500;600;700&family=Schoolbell&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Satisfy&family=Poppins:wght@300;400;500;600;700&family=Schoolbell&display=swap');
 .tp-product-tab-2 .nav-tabs .nav-link .tp-product-tab-tooltip, .tp-tab-line, .tp-swiper-dot .swiper-pagination-bullet, .tp-swiper-dot-border .swiper-pagination-bullet, .tp-swiper-scrollbar, .back-to-top-wrapper, a,
 button,
 p,
@@ -132,8 +132,8 @@ li,
   /**
   @font family declaration
   */
-  --tp-ff-body: 'Montserrat', sans-serif;
-  --tp-ff-heading: 'Montserrat', sans-serif;
+  --tp-ff-body: 'Hind Siliguri', 'Noto Sans Bengali', 'SolaimanLipi', 'Montserrat', sans-serif;
+  --tp-ff-heading: 'Hind Siliguri', 'Noto Sans Bengali', 'SolaimanLipi', 'Montserrat', sans-serif;
   --tp-ff-satisfy: 'Satisfy', cursive;
   --tp-ff-poppins: 'Poppins', sans-serif;
   --tp-ff-fontawesome: "Font Awesome 6 Pro";
@@ -17070,3 +17070,16 @@ p.checkout-coupon input[type=text]:focus {
 
 /*# sourceMappingURL=main.css.map */
 
+/* Bengali Font Fix for Headings & Body Text */
+body {
+  font-family: var(--tp-ff-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--tp-ff-heading);
+}
