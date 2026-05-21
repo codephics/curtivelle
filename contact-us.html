@@ -36,10 +36,77 @@
  <link rel="stylesheet" href="assets/css/slick.css" />
  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
- <link rel="stylesheet" href="assets/css/spacing.css" />
- <link rel="stylesheet" href="assets/css/custom-animation.css" />
- <link rel="stylesheet" href="assets/css/main.css" />
- </head>
+<link rel="stylesheet" href="assets/css/spacing.css" />
+<link rel="stylesheet" href="assets/css/custom-animation.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+.contact-social-box {
+  margin-bottom: 36px;
+  padding: 26px 28px;
+  border: 1px solid #E0E2E3;
+  background-color: #F8F8F8;
+}
+
+.contact-social-box__label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--tp-common-black);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.contact-social-box__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.contact-social-box__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 22px;
+  border: 1px solid #D8DADC;
+  color: var(--tp-common-black);
+  background-color: var(--tp-common-white);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.contact-social-box__links a i {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.contact-social-box__links a:hover {
+  border-color: var(--tp-common-black);
+  color: var(--tp-common-white);
+  background-color: var(--tp-common-black);
+}
+
+@media (max-width: 767px) {
+  .contact-social-box {
+    margin-bottom: 30px;
+    padding: 22px 18px;
+  }
+
+  .contact-social-box__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact-social-box__links a {
+    width: 100%;
+    min-height: 50px;
+  }
+}
+</style>
+</head>
 
  <body>
 
@@ -1139,14 +1206,35 @@
  <!-- breadcrumb area end -->
 
  <!-- form area start -->
- <div class="tp-form-area pt-145 pb-150">
+ <div class="tp-form-area pt-50 pb-50">
  <div class="container">
  <div class="tp-form-top pb-100">
- <div class="row">
- <div class="col-xl-8 col-lg-8 mb-50">
- <div class="tp-form-box tp-form-box-style-2">
- <h4 class="tp-section-title pb-60">Enter Your Personal Details</h4>
- <form id="contact-form" onsubmit="return sendToWhatsAppContact(event);">
+<div class="row">
+<div class="col-xl-8 col-lg-8 mb-50">
+<div class="tp-form-box tp-form-box-style-2">
+<div class="contact-social-box">
+<span class="contact-social-box__label">Connect with Curtivelle on social media</span>
+<div class="contact-social-box__links">
+<a href="https://www.facebook.com/curtivelle" target="_blank" rel="noopener" aria-label="Visit Curtivelle on Facebook">
+<i class="fab fa-facebook-f"></i>
+<span>Facebook</span>
+</a>
+<a href="https://www.instagram.com/curtivelle" target="_blank" rel="noopener" aria-label="Visit Curtivelle on YouTube">
+<i class="fab fa-instagram"></i>
+<span>Instagram</span>
+</a>
+<a href="https://www.youtube.com/@curtivelle" target="_blank" rel="noopener" aria-label="Visit Curtivelle on YouTube">
+<i class="fab fa-youtube"></i>
+<span>YouTube</span>
+</a>
+<a href="https://www.tiktok.com/@curtivelle" target="_blank" rel="noopener" aria-label="Visit Curtivelle on YouTube">
+<i class="fab fa-tiktok"></i>
+<span>TikTok</span>
+</a>
+</div>
+</div>
+<h4 class="tp-section-title pb-60">Enter Your Personal Details</h4>
+<form id="contact-form" onsubmit="return sendToWhatsAppContact(event);">
  <div class="row">
  <div class="col-xl-6 col-lg-6 mb-30">
  <div class="tp-form-input-box">
