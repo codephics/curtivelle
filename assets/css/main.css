@@ -2557,6 +2557,10 @@ div.demo img {
   -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition-duration: 0.6s;
+  overscroll-behavior: contain;
+}
+body.tp-offcanvas-open {
+  overflow: hidden;
 }
 .tpoffcanvas__title p {
   font-size: 15px;

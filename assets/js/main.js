@@ -1357,6 +1357,16 @@
 				toggleBtn.parent().addClass("expanded");
 			  }
 			});
+
+			self.on("click", function (e) {
+			  if ($(e.target).closest(".dropdown-toggle-btn").length) {
+				return;
+			  }
+
+			  e.preventDefault();
+			  e.stopPropagation();
+			  self.find(".dropdown-toggle-btn").trigger("click");
+			});
 	
 		});
 	}
@@ -1367,11 +1377,13 @@
 	$(".tp-menu-bar").on("click", function () {
 		$(".tpoffcanvas").addClass("opened");
 		$(".body-overlay").addClass("apply");
+		$("body").addClass("tp-offcanvas-open");
 	});
 
 	$(".close-btn, .body-overlay, .tp-main-menu-mobile .tp-onepage-menu li a  > *:not(button)").on("click", function () {
 		$(".tpoffcanvas").removeClass("opened");
 		$(".body-overlay").removeClass("apply");
+		$("body").removeClass("tp-offcanvas-open");
 	});
 
 
