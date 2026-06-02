@@ -42,9 +42,37 @@
  <link href="assets/css/spacing.css" rel="stylesheet" />
  <link href="assets/css/custom-animation.css" rel="stylesheet" />
  <link href="assets/css/main.css" rel="stylesheet" />
+ <style>
+ .blog-page .tp-exp-fea-thumb,
+ .blog-page .tp-hover-distort-wrapper,
+ .blog-page .tp-hover-distort {
+   height: 420px;
+ }
+ .blog-page .tp-exp-fea-thumb img,
+ .blog-page .tp-hover-distort-img.front,
+ .blog-page .tp-hover-distort-img.back {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ @media (max-width: 991px) {
+   .blog-page .tp-exp-fea-thumb,
+   .blog-page .tp-hover-distort-wrapper,
+   .blog-page .tp-hover-distort {
+     height: 320px !important;
+   }
+ }
+ @media (max-width: 575px) {
+   .blog-page .tp-exp-fea-thumb,
+   .blog-page .tp-hover-distort-wrapper,
+   .blog-page .tp-hover-distort {
+     height: 260px !important;
+   }
+ }
+ </style>
 </head>
 
- <body>
+ <body class="blog-page">
 
  <!-- Google Tag Manager (noscript) -->
  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QP2KRF3"
