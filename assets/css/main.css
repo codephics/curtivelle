@@ -2531,6 +2531,7 @@ div.demo img {
 }
 .tpoffcanvas .tp-main-menu-mobile {
   margin-bottom: 50px;
+  touch-action: pan-y;
 }
 .tpoffcanvas .tp-main-menu-mobile {
   margin-bottom: 50px;

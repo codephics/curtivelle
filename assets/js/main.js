@@ -1317,6 +1317,41 @@
 		let navContent = document.querySelector(".tp-main-menu-content").outerHTML;
 		let mobileNavContainer = document.querySelector(".tp-main-menu-mobile");
 		mobileNavContainer.innerHTML = navContent;
+
+		let touchStartX = 0;
+		let touchStartY = 0;
+		let touchDragged = false;
+		let suppressClicksUntil = 0;
+
+		mobileNavContainer.addEventListener("touchstart", function (e) {
+			let touch = e.touches[0];
+			touchStartX = touch.clientX;
+			touchStartY = touch.clientY;
+			touchDragged = false;
+		}, { passive: true });
+
+		mobileNavContainer.addEventListener("touchmove", function (e) {
+			let touch = e.touches[0];
+			let movedX = Math.abs(touch.clientX - touchStartX);
+			let movedY = Math.abs(touch.clientY - touchStartY);
+
+			if (movedX > 10 || movedY > 10) {
+				touchDragged = true;
+			}
+		}, { passive: true });
+
+		mobileNavContainer.addEventListener("touchend", function () {
+			if (touchDragged) {
+				suppressClicksUntil = Date.now() + 450;
+			}
+		}, { passive: true });
+
+		mobileNavContainer.addEventListener("click", function (e) {
+			if (Date.now() < suppressClicksUntil) {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+			}
+		}, true);
 	
 	
 		let arrow = $(".tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a");
