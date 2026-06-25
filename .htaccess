@@ -10,8 +10,8 @@ RewriteRule ^index(\.html|\.php|\.htm)?$ https://curtivelle.com/ [R=301,L]
 DirectoryIndex index.html
 
 # ৩. যেকোনো পেজের শেষে .html লিখে সার্চ করলে তাকে ক্লিন ইউআরএলে ফোর্স রিডাইরেক্ট করবে
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html\ HTTP/ [NC]
-RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
 
 # ৪. ইন্টারনাল রুল: ইউআরএলে .html না থাকলেও সার্ভার যেন ফাইলটি চেনে
 RewriteCond %{REQUEST_FILENAME} !-d
