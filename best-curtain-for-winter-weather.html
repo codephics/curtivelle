@@ -102,9 +102,12 @@
 
     .winter-weather-page { background: #fbf7f0; font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif; color: #2f2b27; }
     .winter-weather-page h1, .winter-weather-page h2, .winter-weather-page h3, .winter-weather-page h4, .winter-weather-page h5, .winter-weather-page h6, .winter-weather-page .breadcrumb__title { font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif !important; letter-spacing: 0 !important; text-transform: none !important; }
-    .winter-weather-page .ww-hero { position: relative; overflow: hidden; margin-top: 30px; background: #2b211c; color: #fff; }
-    .winter-weather-page .ww-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(43, 33, 28, .94), rgba(43, 33, 28, .78) 48%, rgba(43, 33, 28, .2)), url('assets/img/product/seasonal-curtain/winter-curtain.jpg'); background-size: cover; background-position: center; }
-    .winter-weather-page .ww-hero .container { position: relative; z-index: 1; }
+    .winter-weather-page .ww-hero { background: #fff; position: relative; overflow: hidden; color: #2f2b27; margin-top: 30px; }
+    .winter-weather-page .ww-hero-copy-panel { background: #c6a363; padding: 58px 42px; min-height: 430px; display: flex; flex-direction: column; justify-content: center; }
+    .winter-weather-page .ww-hero-copy-panel h1, .winter-weather-page .ww-hero-copy-panel p { color: #fff !important; }
+    .winter-weather-page .ww-hero-copy-panel .ww-kicker { color: #2b211c; }
+    .winter-weather-page .ww-hero-copy-panel .ww-kicker::before { background: #2b211c; }
+    .winter-weather-page .ww-hero-media { position: relative; max-width: 650px; aspect-ratio: 4 / 3; margin: 0 auto; overflow: hidden; border: 1px solid rgba(198, 163, 99, .42); background: #fff; box-shadow: 0 24px 55px rgba(20, 20, 20, .08), inset 0 0 0 12px #f8f3ea; }
     .winter-weather-page .ww-hero h1 { font-size: 36px !important; line-height: 1.3 !important; color: #fff; max-width: 760px; }
     .winter-weather-page .ww-hero p { color: #f4eadf; font-size: 17px; line-height: 1.85; max-width: 820px; }
     .winter-weather-page .ww-kicker { display: inline-flex; align-items: center; gap: 10px; color: #f0b15d; font-weight: 700; margin-bottom: 18px; }
@@ -129,7 +132,7 @@
     .winter-weather-page .ww-color { min-height: 96px; padding: 16px; display: flex; align-items: end; color: #fff; font-weight: 700; }
     .winter-weather-page .ww-color.brown { background: #5d3929; } .winter-weather-page .ww-color.beige { background: #bfa789; color: #2f2b27; } .winter-weather-page .ww-color.maroon { background: #682438; } .winter-weather-page .ww-color.navy { background: #25314f; } .winter-weather-page .ww-color.olive { background: #59613c; } .winter-weather-page .ww-color.charcoal { background: #343331; } .winter-weather-page .ww-color.gold { background: #bb8437; } .winter-weather-page .ww-color.coffee { background: #4a3028; }
     .winter-weather-page .ww-faq h2, .winter-weather-page .ww-faq .accordion-buttons { font-size: 20px !important; line-height: 1.35 !important; }
-    @media (max-width: 991px) { .winter-weather-page .ww-color-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .winter-weather-page .ww-hero::before { background: linear-gradient(rgba(43, 33, 28, .9), rgba(43, 33, 28, .84)), url('assets/img/product/seasonal-curtain/winter-curtain.jpg'); background-size: cover; background-position: center; } }
+    @media (max-width: 991px) { .winter-weather-page .ww-color-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .winter-weather-page .ww-hero-media { margin-top: 30px; } }
     @media (max-width: 767px) { .winter-weather-page .ww-hero { margin-top: 22px; } .winter-weather-page .ww-card { padding: 24px 18px; } .winter-weather-page .ww-color-grid { grid-template-columns: 1fr; } .winter-weather-page .ww-hero p, .winter-weather-page .ww-card p, .winter-weather-page .ww-card li, .winter-weather-page .ww-faq .accordion-body { font-size: 15px; line-height: 1.75; } }
 </style>
 </head>
@@ -929,14 +932,21 @@
         </div>
     </div>
 
-    <section class="ww-hero pt-120 pb-110">
-        <div class="container">
-            <span class="ww-kicker">Winter curtain guide</span>
-            <h1 class="tp-section-title pb-15">শীতে কোন পর্দা ব্যবহার করবেন?</h1>
-            <p><strong>শীতের</strong> সময় ঘরকে আরামদায়ক, উষ্ণ এবং সুন্দর রাখার জন্য সঠিক পর্দা নির্বাচন খুব গুরুত্বপূর্ণ। শুধু সাজসজ্জার জন্য নয়, ভালো মানের পর্দা ঘরের ভেতরের তাপ ধরে রাখতে, ঠান্ডা বাতাস কমাতে এবং প্রাইভেসি বাড়াতে সাহায্য করে। তাই <strong>শীতের</strong> জন্য পর্দা বাছাই করার সময় কাপড়, রং, লেয়ারিং, ফিটিং এবং ঘরের প্রয়োজন সবচেয়ে বেশি বিবেচনা করা উচিত।</p>
-            <p><strong>Curtivelle</strong>-এ আপনি আপনার ঘরের ধরন, ইন্টেরিয়র স্টাইল এবং শীতের প্রয়োজন অনুযায়ী প্রিমিয়াম পর্দা পেতে পারেন। বেডরুম, লিভিং রুম, অফিস বা হোটেল-প্রতিটি জায়গার জন্য আলাদা পর্দার সমাধান ঘরকে আরও আরামদায়ক ও premium করে তোলে।</p>
-            <a class="tp-btn-black mt-20" href="tel:+8801329856367"><span>পরামর্শের জন্য যোগাযোগ করুন</span></a>
-        </div>
+    <section class="ww-hero pt-90 pb-80">
+        <div class="container"><div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="ww-hero-copy-panel">
+                <span class="ww-kicker">Winter curtain guide</span>
+                <h1 class="tp-section-title pb-15">শীতে কোন পর্দা ব্যবহার করবেন?</h1>
+                <p><strong>শীতের</strong> সময় ঘরকে আরামদায়ক, উষ্ণ এবং সুন্দর রাখার জন্য সঠিক পর্দা নির্বাচন খুব গুরুত্বপূর্ণ। শুধু সাজসজ্জার জন্য নয়, ভালো মানের পর্দা ঘরের ভেতরের তাপ ধরে রাখতে, ঠান্ডা বাতাস কমাতে এবং প্রাইভেসি বাড়াতে সাহায্য করে। তাই <strong>শীতের</strong> জন্য পর্দা বাছাই করার সময় কাপড়, রং, লেয়ারিং, ফিটিং এবং ঘরের প্রয়োজন সবচেয়ে বেশি বিবেচনা করা উচিত।</p>
+                <p><strong>Curtivelle</strong>-এ আপনি আপনার ঘরের ধরন, ইন্টেরিয়র স্টাইল এবং শীতের প্রয়োজন অনুযায়ী প্রিমিয়াম পর্দা পেতে পারেন। বেডরুম, লিভিং রুম, অফিস বা হোটেল-প্রতিটি জায়গার জন্য আলাদা পর্দার সমাধান ঘরকে আরও আরামদায়ক ও premium করে তোলে।</p>
+                <a class="tp-btn-black mt-20" href="tel:+8801329856367"><span>পরামর্শের জন্য যোগাযোগ করুন</span></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="ww-hero-media" aria-hidden="true"></div>
+            </div>
+        </div></div>
     </section>
 
     <section class="ww-section pt-80 pb-40"><div class="container"><div class="row g-4">
