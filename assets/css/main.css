@@ -17088,3 +17088,784 @@ h5,
 h6 {
   font-family: var(--tp-ff-heading);
 }
+
+/* Blog article structure reset: keeps content intact while matching the curtain price article layout. */
+.luxury-bedroom-page,
+.premium-living-page,
+.hot-weather-page,
+.winter-weather-page,
+.cleaning-guide-page,
+.office-curtain-page,
+.hotel-curtain-page,
+.resort-curtain-page {
+  background: #ffffff !important;
+  color: #353535 !important;
+}
+
+.luxury-bedroom-page section,
+.premium-living-page section,
+.hot-weather-page section,
+.winter-weather-page section,
+.cleaning-guide-page section,
+.office-curtain-page section,
+.hotel-curtain-page section,
+.resort-curtain-page section {
+  background: #ffffff !important;
+}
+
+.luxury-bedroom-page .lb-hero,
+.premium-living-page .pl-hero,
+.hot-weather-page .hw-hero,
+.winter-weather-page .ww-hero,
+.cleaning-guide-page .cg-hero,
+.office-curtain-page .office-curtain-hero,
+.hotel-curtain-page .hc-hero,
+.resort-curtain-page .rc-hero {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.luxury-bedroom-page .tp-section-title,
+.premium-living-page .tp-section-title,
+.hot-weather-page .tp-section-title,
+.winter-weather-page .tp-section-title,
+.cleaning-guide-page .tp-section-title,
+.office-curtain-page .tp-section-title,
+.hotel-curtain-page .tp-section-title,
+.resort-curtain-page .tp-section-title {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.luxury-bedroom-page p,
+.luxury-bedroom-page li,
+.premium-living-page p,
+.premium-living-page li,
+.hot-weather-page p,
+.hot-weather-page li,
+.winter-weather-page p,
+.winter-weather-page li,
+.cleaning-guide-page p,
+.cleaning-guide-page li,
+.office-curtain-page p,
+.office-curtain-page li,
+.hotel-curtain-page p,
+.hotel-curtain-page li,
+.resort-curtain-page p,
+.resort-curtain-page li {
+  color: #3f3f3f !important;
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+}
+
+.luxury-bedroom-page .lb-link,
+.premium-living-page .pl-link,
+.hot-weather-page .hw-link,
+.winter-weather-page .ww-link,
+.cleaning-guide-page .cg-link,
+.office-curtain-page .oc-gold,
+.hotel-curtain-page .hc-gold,
+.resort-curtain-page .rc-gold {
+  color: #c6a363 !important;
+}
+
+.luxury-bedroom-page .lb-card,
+.luxury-bedroom-page .lb-card.soft,
+.luxury-bedroom-page .lb-card.dark,
+.luxury-bedroom-page .lb-visual-strip,
+.premium-living-page .pl-card,
+.premium-living-page .pl-card.soft,
+.premium-living-page .pl-card.dark,
+.premium-living-page .pl-visual-strip,
+.hot-weather-page .hw-card,
+.hot-weather-page .hw-card.soft,
+.hot-weather-page .hw-card.dark,
+.hot-weather-page .hw-visual-strip,
+.winter-weather-page .ww-card,
+.winter-weather-page .ww-card.soft,
+.winter-weather-page .ww-card.dark,
+.winter-weather-page .ww-visual-strip,
+.cleaning-guide-page .cg-card,
+.cleaning-guide-page .cg-card.soft,
+.cleaning-guide-page .cg-card.dark,
+.cleaning-guide-page .cg-step,
+.office-curtain-page .oc-price-card,
+.hotel-curtain-page .hc-card,
+.hotel-curtain-page .hc-price-card,
+.resort-curtain-page .rc-editorial-card,
+.resort-curtain-page .rc-suite-card,
+.resort-curtain-page .rc-ladder,
+.resort-curtain-page .rc-ladder-card,
+.resort-curtain-page .rc-choose-panel,
+.resort-curtain-page .rc-buy-list p,
+.resort-curtain-page .rc-value-item {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #353535 !important;
+  min-height: 0 !important;
+}
+
+.luxury-bedroom-page .lb-card,
+.luxury-bedroom-page .lb-visual-strip,
+.premium-living-page .pl-card,
+.premium-living-page .pl-visual-strip,
+.hot-weather-page .hw-card,
+.hot-weather-page .hw-visual-strip,
+.winter-weather-page .ww-card,
+.winter-weather-page .ww-visual-strip,
+.cleaning-guide-page .cg-card,
+.cleaning-guide-page .cg-step,
+.office-curtain-page .oc-price-card,
+.hotel-curtain-page .hc-card,
+.hotel-curtain-page .hc-price-card,
+.resort-curtain-page .rc-editorial-card,
+.resort-curtain-page .rc-suite-card,
+.resort-curtain-page .rc-ladder-card,
+.resort-curtain-page .rc-choose-panel {
+  padding: 0 !important;
+}
+
+.office-curtain-page .oc-dark,
+.hotel-curtain-page .hc-dark,
+.resort-curtain-page .rc-types-section,
+.resort-curtain-page .rc-faq-section,
+.resort-curtain-page .rc-price-section,
+.resort-curtain-page .rc-buy-section {
+  background: #ffffff !important;
+}
+
+.office-curtain-page .oc-dark h1,
+.office-curtain-page .oc-dark h2,
+.office-curtain-page .oc-dark h3,
+.office-curtain-page .oc-dark p,
+.office-curtain-page .oc-dark li,
+.hotel-curtain-page .hc-dark h1,
+.hotel-curtain-page .hc-dark h2,
+.hotel-curtain-page .hc-dark h3,
+.hotel-curtain-page .hc-dark p,
+.hotel-curtain-page .hc-dark li,
+.resort-curtain-page .rc-types-section h1,
+.resort-curtain-page .rc-types-section h2,
+.resort-curtain-page .rc-types-section h3,
+.resort-curtain-page .rc-types-section p,
+.resort-curtain-page .rc-types-section li,
+.resort-curtain-page .rc-editorial-card h1,
+.resort-curtain-page .rc-editorial-card h2,
+.resort-curtain-page .rc-editorial-card h3,
+.resort-curtain-page .rc-editorial-card p,
+.resort-curtain-page .rc-choose-panel h1,
+.resort-curtain-page .rc-choose-panel h2,
+.resort-curtain-page .rc-choose-panel h3,
+.resort-curtain-page .rc-choose-panel p {
+  color: #353535 !important;
+}
+
+.luxury-bedroom-page .lb-list,
+.premium-living-page .pl-list,
+.hot-weather-page .hw-list,
+.winter-weather-page .ww-list,
+.cleaning-guide-page .cg-list,
+.office-curtain-page .oc-list,
+.office-curtain-page .oc-copy-list,
+.hotel-curtain-page .hc-list,
+.resort-curtain-page .rc-factor-list,
+.resort-curtain-page .rc-buy-list,
+.resort-curtain-page .rc-choose-points {
+  display: block !important;
+  margin-top: 20px !important;
+  padding-left: 0 !important;
+}
+
+.luxury-bedroom-page .lb-list li,
+.premium-living-page .pl-list li,
+.hot-weather-page .hw-list li,
+.winter-weather-page .ww-list li,
+.cleaning-guide-page .cg-list li,
+.office-curtain-page .oc-list li,
+.office-curtain-page .oc-copy-list li,
+.hotel-curtain-page .hc-list li {
+  list-style: none !important;
+  margin-bottom: 12px !important;
+  padding-left: 28px !important;
+  position: relative !important;
+}
+
+.luxury-bedroom-page .lb-list li:before,
+.premium-living-page .pl-list li:before,
+.hot-weather-page .hw-list li:before,
+.winter-weather-page .ww-list li:before,
+.cleaning-guide-page .cg-list li:before,
+.office-curtain-page .oc-list li:before,
+.office-curtain-page .oc-copy-list li:before,
+.hotel-curtain-page .hc-list li:before {
+  color: #c6a363 !important;
+  content: "\f058" !important;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 2px !important;
+}
+
+.office-curtain-page .oc-list li i,
+.hotel-curtain-page .hc-list li i {
+  display: none !important;
+}
+
+.resort-curtain-page .rc-value-grid,
+.resort-curtain-page .rc-suite-grid,
+.resort-curtain-page .rc-ladder,
+.office-curtain-page .oc-grid,
+.hotel-curtain-page .hc-grid {
+  display: grid !important;
+  gap: 24px !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.resort-curtain-page .rc-factor-list span,
+.resort-curtain-page .rc-choose-points span,
+.resort-curtain-page .rc-buy-list p,
+.resort-curtain-page .rc-value-item p {
+  display: block !important;
+  margin-bottom: 12px !important;
+  padding-left: 28px !important;
+  position: relative !important;
+}
+
+.resort-curtain-page .rc-factor-list span:before,
+.resort-curtain-page .rc-choose-points span:before,
+.resort-curtain-page .rc-buy-list p:before,
+.resort-curtain-page .rc-value-item p:before,
+.resort-curtain-page .rc-suite-card p:before,
+.resort-curtain-page .rc-ladder-card p:before {
+  color: #c6a363 !important;
+  content: "\f058" !important;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 2px !important;
+}
+
+.resort-curtain-page .rc-suite-card p,
+.resort-curtain-page .rc-ladder-card p {
+  padding-left: 28px !important;
+  position: relative !important;
+}
+
+.luxury-bedroom-page .lb-hero-media,
+.premium-living-page .pl-hero-media,
+.hot-weather-page .hw-hero-media,
+.winter-weather-page .ww-hero-media,
+.cleaning-guide-page .cg-hero-media,
+.office-curtain-page .oc-hero-media,
+.hotel-curtain-page .hc-hero-media,
+.resort-curtain-page .rc-hero-img {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  min-height: 420px !important;
+  overflow: hidden !important;
+}
+
+.luxury-bedroom-page .lb-hero-media img,
+.premium-living-page .pl-hero-media img,
+.hot-weather-page .hw-hero-media img,
+.winter-weather-page .ww-hero-media img,
+.cleaning-guide-page .cg-hero-media img {
+  display: block !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
+.luxury-bedroom-page .tp-custom-accordion .accordion-items,
+.premium-living-page .tp-custom-accordion .accordion-items,
+.hot-weather-page .tp-custom-accordion .accordion-items,
+.winter-weather-page .tp-custom-accordion .accordion-items,
+.cleaning-guide-page .tp-custom-accordion .accordion-items,
+.office-curtain-page .tp-custom-accordion .accordion-items,
+.hotel-curtain-page .tp-custom-accordion .accordion-items,
+.resort-curtain-page .tp-custom-accordion .accordion-items {
+  background: #ffffff !important;
+  border: 1px solid #eee6d8 !important;
+  box-shadow: none !important;
+  margin-bottom: 14px !important;
+}
+
+@media (max-width: 991px) {
+  .resort-curtain-page .rc-value-grid,
+  .resort-curtain-page .rc-suite-grid,
+  .resort-curtain-page .rc-ladder,
+  .office-curtain-page .oc-grid,
+  .hotel-curtain-page .hc-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .luxury-bedroom-page .lb-hero-media,
+  .premium-living-page .pl-hero-media,
+  .hot-weather-page .hw-hero-media,
+  .winter-weather-page .ww-hero-media,
+  .cleaning-guide-page .cg-hero-media,
+  .office-curtain-page .oc-hero-media,
+  .hotel-curtain-page .hc-hero-media,
+  .resort-curtain-page .rc-hero-img {
+    margin-top: 30px !important;
+    min-height: 320px !important;
+  }
+}
+/* Stronger overrides for older dark/feature cards on the same blog article pages. */
+body .luxury-bedroom-page .lb-card.dark h1,
+body .luxury-bedroom-page .lb-card.dark h2,
+body .luxury-bedroom-page .lb-card.dark h3,
+body .luxury-bedroom-page .lb-card.dark h4,
+body .luxury-bedroom-page .lb-card.dark p,
+body .luxury-bedroom-page .lb-card.dark li,
+body .luxury-bedroom-page .lb-visual-strip h1,
+body .luxury-bedroom-page .lb-visual-strip h2,
+body .luxury-bedroom-page .lb-visual-strip h3,
+body .luxury-bedroom-page .lb-visual-strip h4,
+body .luxury-bedroom-page .lb-visual-strip p,
+body .luxury-bedroom-page .lb-visual-strip li,
+body .premium-living-page .pl-card.dark h1,
+body .premium-living-page .pl-card.dark h2,
+body .premium-living-page .pl-card.dark h3,
+body .premium-living-page .pl-card.dark h4,
+body .premium-living-page .pl-card.dark p,
+body .premium-living-page .pl-card.dark li,
+body .premium-living-page .pl-visual-strip h1,
+body .premium-living-page .pl-visual-strip h2,
+body .premium-living-page .pl-visual-strip h3,
+body .premium-living-page .pl-visual-strip h4,
+body .premium-living-page .pl-visual-strip p,
+body .premium-living-page .pl-visual-strip li,
+body .hot-weather-page .hw-card.dark h1,
+body .hot-weather-page .hw-card.dark h2,
+body .hot-weather-page .hw-card.dark h3,
+body .hot-weather-page .hw-card.dark h4,
+body .hot-weather-page .hw-card.dark p,
+body .hot-weather-page .hw-card.dark li,
+body .winter-weather-page .ww-card.dark h1,
+body .winter-weather-page .ww-card.dark h2,
+body .winter-weather-page .ww-card.dark h3,
+body .winter-weather-page .ww-card.dark h4,
+body .winter-weather-page .ww-card.dark p,
+body .winter-weather-page .ww-card.dark li,
+body .cleaning-guide-page .cg-card.dark h1,
+body .cleaning-guide-page .cg-card.dark h2,
+body .cleaning-guide-page .cg-card.dark h3,
+body .cleaning-guide-page .cg-card.dark h4,
+body .cleaning-guide-page .cg-card.dark p,
+body .cleaning-guide-page .cg-card.dark li {
+  color: #353535 !important;
+}
+
+body .luxury-bedroom-page .lb-card.dark:hover,
+body .premium-living-page .pl-card.dark:hover,
+body .hot-weather-page .hw-card.dark:hover,
+body .winter-weather-page .ww-card.dark:hover,
+body .cleaning-guide-page .cg-card.dark:hover {
+  background: transparent !important;
+}
+
+body .luxury-bedroom-page .lb-tip,
+body .premium-living-page .pl-tip,
+body .hot-weather-page .hw-tip,
+body .winter-weather-page .ww-tip,
+body .cleaning-guide-page .cg-tip {
+  background: transparent !important;
+  border-left: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+/* Stack blog article content blocks vertically instead of side by side. */
+.luxury-bedroom-page .row.g-4 > [class*="col-"],
+.premium-living-page .row.g-4 > [class*="col-"],
+.hot-weather-page .row.g-4 > [class*="col-"],
+.winter-weather-page .row.g-4 > [class*="col-"],
+.cleaning-guide-page .row.g-4 > [class*="col-"],
+.office-curtain-page .row > .col-lg-6,
+.hotel-curtain-page .row > .col-lg-6,
+.resort-curtain-page .row > .col-xl-5,
+.resort-curtain-page .row > .col-xl-7,
+.resort-curtain-page .row > .col-lg-5,
+.resort-curtain-page .row > .col-lg-7 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.luxury-bedroom-page .lb-number-grid,
+.premium-living-page .pl-number-grid,
+.hot-weather-page .hw-number-grid,
+.winter-weather-page .ww-number-grid,
+.cleaning-guide-page .cg-number-grid,
+.resort-curtain-page .rc-value-grid,
+.resort-curtain-page .rc-suite-grid,
+.resort-curtain-page .rc-ladder,
+.office-curtain-page .oc-grid,
+.hotel-curtain-page .hc-grid,
+.hotel-curtain-page .hc-feature-grid {
+  display: block !important;
+}
+
+.luxury-bedroom-page .lb-number-grid > *,
+.premium-living-page .pl-number-grid > *,
+.hot-weather-page .hw-number-grid > *,
+.winter-weather-page .ww-number-grid > *,
+.cleaning-guide-page .cg-number-grid > *,
+.resort-curtain-page .rc-value-grid > *,
+.resort-curtain-page .rc-suite-grid > *,
+.resort-curtain-page .rc-ladder > *,
+.office-curtain-page .oc-grid > *,
+.hotel-curtain-page .hc-grid > *,
+.hotel-curtain-page .hc-feature-grid > * {
+  margin-bottom: 24px !important;
+}
+/* Tighten blog article spacing and make heading levels visually distinct. */
+.luxury-bedroom-page h1.tp-section-title,
+.premium-living-page h1.tp-section-title,
+.hot-weather-page h1.tp-section-title,
+.winter-weather-page h1.tp-section-title,
+.cleaning-guide-page h1.tp-section-title,
+.office-curtain-page h1.tp-section-title,
+.hotel-curtain-page h1.tp-section-title,
+.resort-curtain-page h1.tp-section-title {
+  font-size: 36px !important;
+  line-height: 1.25 !important;
+  margin-bottom: 18px !important;
+}
+
+.luxury-bedroom-page h2.tp-section-title,
+.premium-living-page h2.tp-section-title,
+.hot-weather-page h2.tp-section-title,
+.winter-weather-page h2.tp-section-title,
+.cleaning-guide-page h2.tp-section-title,
+.office-curtain-page h2.tp-section-title,
+.hotel-curtain-page h2.tp-section-title,
+.resort-curtain-page h2.tp-section-title {
+  font-size: 30px !important;
+  line-height: 1.3 !important;
+  margin-bottom: 16px !important;
+}
+
+.luxury-bedroom-page h3.tp-section-title,
+.premium-living-page h3.tp-section-title,
+.hot-weather-page h3.tp-section-title,
+.winter-weather-page h3.tp-section-title,
+.cleaning-guide-page h3.tp-section-title,
+.office-curtain-page h3.tp-section-title,
+.hotel-curtain-page h3.tp-section-title,
+.resort-curtain-page h3.tp-section-title {
+  font-size: 23px !important;
+  line-height: 1.35 !important;
+  margin-bottom: 12px !important;
+}
+
+.luxury-bedroom-page h3.accordion-header,
+.premium-living-page h3.accordion-header,
+.hot-weather-page h3.accordion-header,
+.winter-weather-page h3.accordion-header,
+.cleaning-guide-page h3.accordion-header,
+.office-curtain-page h3.accordion-header,
+.hotel-curtain-page h3.accordion-header,
+.resort-curtain-page h3.accordion-header,
+.luxury-bedroom-page h3.accordion-header .accordion-buttons,
+.premium-living-page h3.accordion-header .accordion-buttons,
+.hot-weather-page h3.accordion-header .accordion-buttons,
+.winter-weather-page h3.accordion-header .accordion-buttons,
+.cleaning-guide-page h3.accordion-header .accordion-buttons,
+.office-curtain-page h3.accordion-header .accordion-buttons,
+.hotel-curtain-page h3.accordion-header .accordion-buttons,
+.resort-curtain-page h3.accordion-header .accordion-buttons {
+  font-size: 19px !important;
+  line-height: 1.35 !important;
+}
+
+.luxury-bedroom-page section,
+.premium-living-page section,
+.hot-weather-page section,
+.winter-weather-page section,
+.cleaning-guide-page section,
+.office-curtain-page section,
+.hotel-curtain-page section,
+.resort-curtain-page section {
+  padding-top: 34px !important;
+  padding-bottom: 34px !important;
+}
+
+.luxury-bedroom-page .lb-hero,
+.premium-living-page .pl-hero,
+.hot-weather-page .hw-hero,
+.winter-weather-page .ww-hero,
+.cleaning-guide-page .cg-hero,
+.office-curtain-page .office-curtain-hero,
+.hotel-curtain-page .hc-hero,
+.resort-curtain-page .rc-hero {
+  padding-top: 48px !important;
+  padding-bottom: 42px !important;
+}
+
+.luxury-bedroom-page .row,
+.premium-living-page .row,
+.hot-weather-page .row,
+.winter-weather-page .row,
+.cleaning-guide-page .row,
+.office-curtain-page .row,
+.hotel-curtain-page .row,
+.resort-curtain-page .row {
+  --bs-gutter-y: 22px !important;
+}
+
+.luxury-bedroom-page .row.mb-30,
+.premium-living-page .row.mb-30,
+.hot-weather-page .row.mb-30,
+.winter-weather-page .row.mb-30,
+.cleaning-guide-page .row.mb-30,
+.office-curtain-page .row.mb-35,
+.office-curtain-page .row.mb-40,
+.hotel-curtain-page .row.mb-35,
+.hotel-curtain-page .row.mb-40,
+.resort-curtain-page .row.mb-45 {
+  margin-bottom: 18px !important;
+}
+
+.luxury-bedroom-page .lb-number-grid > *,
+.premium-living-page .pl-number-grid > *,
+.hot-weather-page .hw-number-grid > *,
+.winter-weather-page .ww-number-grid > *,
+.cleaning-guide-page .cg-number-grid > *,
+.resort-curtain-page .rc-value-grid > *,
+.resort-curtain-page .rc-suite-grid > *,
+.resort-curtain-page .rc-ladder > *,
+.office-curtain-page .oc-grid > *,
+.hotel-curtain-page .hc-grid > *,
+.hotel-curtain-page .hc-feature-grid > * {
+  margin-bottom: 16px !important;
+}
+
+.luxury-bedroom-page p,
+.premium-living-page p,
+.hot-weather-page p,
+.winter-weather-page p,
+.cleaning-guide-page p,
+.office-curtain-page p,
+.hotel-curtain-page p,
+.resort-curtain-page p {
+  margin-bottom: 12px !important;
+}
+
+.luxury-bedroom-page .lb-list,
+.premium-living-page .pl-list,
+.hot-weather-page .hw-list,
+.winter-weather-page .ww-list,
+.cleaning-guide-page .cg-list,
+.office-curtain-page .oc-list,
+.office-curtain-page .oc-copy-list,
+.hotel-curtain-page .hc-list,
+.resort-curtain-page .rc-factor-list,
+.resort-curtain-page .rc-buy-list,
+.resort-curtain-page .rc-choose-points {
+  margin-top: 12px !important;
+}
+
+@media (max-width: 575px) {
+  .luxury-bedroom-page h1.tp-section-title,
+  .premium-living-page h1.tp-section-title,
+  .hot-weather-page h1.tp-section-title,
+  .winter-weather-page h1.tp-section-title,
+  .cleaning-guide-page h1.tp-section-title,
+  .office-curtain-page h1.tp-section-title,
+  .hotel-curtain-page h1.tp-section-title,
+  .resort-curtain-page h1.tp-section-title {
+    font-size: 30px !important;
+  }
+
+  .luxury-bedroom-page h2.tp-section-title,
+  .premium-living-page h2.tp-section-title,
+  .hot-weather-page h2.tp-section-title,
+  .winter-weather-page h2.tp-section-title,
+  .cleaning-guide-page h2.tp-section-title,
+  .office-curtain-page h2.tp-section-title,
+  .hotel-curtain-page h2.tp-section-title,
+  .resort-curtain-page h2.tp-section-title {
+    font-size: 26px !important;
+  }
+
+  .luxury-bedroom-page h3.tp-section-title,
+  .premium-living-page h3.tp-section-title,
+  .hot-weather-page h3.tp-section-title,
+  .winter-weather-page h3.tp-section-title,
+  .cleaning-guide-page h3.tp-section-title,
+  .office-curtain-page h3.tp-section-title,
+  .hotel-curtain-page h3.tp-section-title,
+  .resort-curtain-page h3.tp-section-title {
+    font-size: 21px !important;
+  }
+}
+/* Fix oversized blank gaps and avoid duplicate point icons on stacked blog articles. */
+.luxury-bedroom-page .lb-list li:before,
+.premium-living-page .pl-list li:before,
+.hot-weather-page .hw-list li:before,
+.winter-weather-page .ww-list li:before,
+.cleaning-guide-page .cg-list li:before,
+.office-curtain-page .oc-list li:before,
+.office-curtain-page .oc-copy-list li:before,
+.hotel-curtain-page .hc-list li:before {
+  content: none !important;
+}
+
+.luxury-bedroom-page .lb-list li,
+.premium-living-page .pl-list li,
+.hot-weather-page .hw-list li,
+.winter-weather-page .ww-list li,
+.cleaning-guide-page .cg-list li,
+.office-curtain-page .oc-list li,
+.office-curtain-page .oc-copy-list li,
+.hotel-curtain-page .hc-list li {
+  padding-left: 0 !important;
+}
+
+.luxury-bedroom-page .lb-list li i,
+.premium-living-page .pl-list li i,
+.hot-weather-page .hw-list li i,
+.winter-weather-page .ww-list li i,
+.cleaning-guide-page .cg-list li i,
+.office-curtain-page .oc-list li i,
+.office-curtain-page .oc-copy-list li i,
+.hotel-curtain-page .hc-list li i {
+  display: inline-flex !important;
+  margin-right: 10px !important;
+  color: #c6a363 !important;
+}
+
+.luxury-bedroom-page .lb-number-grid > *,
+.premium-living-page .pl-number-grid > *,
+.hot-weather-page .hw-number-grid > *,
+.winter-weather-page .ww-number-grid > *,
+.cleaning-guide-page .cg-number-grid > *,
+.resort-curtain-page .rc-value-grid > *,
+.resort-curtain-page .rc-suite-grid > *,
+.resort-curtain-page .rc-ladder > *,
+.office-curtain-page .oc-grid > *,
+.hotel-curtain-page .hc-grid > *,
+.hotel-curtain-page .hc-feature-grid > * {
+  margin-bottom: 10px !important;
+}
+
+.luxury-bedroom-page section,
+.premium-living-page section,
+.hot-weather-page section,
+.winter-weather-page section,
+.cleaning-guide-page section,
+.office-curtain-page section,
+.hotel-curtain-page section,
+.resort-curtain-page section {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.luxury-bedroom-page .row,
+.premium-living-page .row,
+.hot-weather-page .row,
+.winter-weather-page .row,
+.cleaning-guide-page .row,
+.office-curtain-page .row,
+.hotel-curtain-page .row,
+.resort-curtain-page .row {
+  --bs-gutter-y: 12px !important;
+}
+
+.luxury-bedroom-page .mb-30,
+.luxury-bedroom-page .mb-35,
+.luxury-bedroom-page .mb-40,
+.luxury-bedroom-page .mb-45,
+.premium-living-page .mb-30,
+.premium-living-page .mb-35,
+.premium-living-page .mb-40,
+.premium-living-page .mb-45,
+.hot-weather-page .mb-30,
+.hot-weather-page .mb-35,
+.hot-weather-page .mb-40,
+.hot-weather-page .mb-45,
+.winter-weather-page .mb-30,
+.winter-weather-page .mb-35,
+.winter-weather-page .mb-40,
+.winter-weather-page .mb-45,
+.cleaning-guide-page .mb-30,
+.cleaning-guide-page .mb-35,
+.cleaning-guide-page .mb-40,
+.cleaning-guide-page .mb-45,
+.office-curtain-page .mb-30,
+.office-curtain-page .mb-35,
+.office-curtain-page .mb-40,
+.office-curtain-page .mb-45,
+.hotel-curtain-page .mb-30,
+.hotel-curtain-page .mb-35,
+.hotel-curtain-page .mb-40,
+.hotel-curtain-page .mb-45,
+.resort-curtain-page .mb-30,
+.resort-curtain-page .mb-35,
+.resort-curtain-page .mb-40,
+.resort-curtain-page .mb-45 {
+  margin-bottom: 12px !important;
+}
+
+.luxury-bedroom-page h1.tp-section-title,
+.luxury-bedroom-page h2.tp-section-title,
+.luxury-bedroom-page h3.tp-section-title,
+.premium-living-page h1.tp-section-title,
+.premium-living-page h2.tp-section-title,
+.premium-living-page h3.tp-section-title,
+.hot-weather-page h1.tp-section-title,
+.hot-weather-page h2.tp-section-title,
+.hot-weather-page h3.tp-section-title,
+.winter-weather-page h1.tp-section-title,
+.winter-weather-page h2.tp-section-title,
+.winter-weather-page h3.tp-section-title,
+.cleaning-guide-page h1.tp-section-title,
+.cleaning-guide-page h2.tp-section-title,
+.cleaning-guide-page h3.tp-section-title,
+.office-curtain-page h1.tp-section-title,
+.office-curtain-page h2.tp-section-title,
+.office-curtain-page h3.tp-section-title,
+.hotel-curtain-page h1.tp-section-title,
+.hotel-curtain-page h2.tp-section-title,
+.hotel-curtain-page h3.tp-section-title,
+.resort-curtain-page h1.tp-section-title,
+.resort-curtain-page h2.tp-section-title,
+.resort-curtain-page h3.tp-section-title {
+  padding-bottom: 0 !important;
+}
+/* Restore one template-style icon only where a list item has no built-in icon. */
+.luxury-bedroom-page .lb-list li:not(:has(i)),
+.premium-living-page .pl-list li:not(:has(i)),
+.hot-weather-page .hw-list li:not(:has(i)),
+.winter-weather-page .ww-list li:not(:has(i)),
+.cleaning-guide-page .cg-list li:not(:has(i)),
+.office-curtain-page .oc-list li:not(:has(i)),
+.office-curtain-page .oc-copy-list li:not(:has(i)),
+.hotel-curtain-page .hc-list li:not(:has(i)) {
+  padding-left: 30px !important;
+}
+
+.luxury-bedroom-page .lb-list li:not(:has(i)):before,
+.premium-living-page .pl-list li:not(:has(i)):before,
+.hot-weather-page .hw-list li:not(:has(i)):before,
+.winter-weather-page .ww-list li:not(:has(i)):before,
+.cleaning-guide-page .cg-list li:not(:has(i)):before,
+.office-curtain-page .oc-list li:not(:has(i)):before,
+.office-curtain-page .oc-copy-list li:not(:has(i)):before,
+.hotel-curtain-page .hc-list li:not(:has(i)):before {
+  color: #c6a363 !important;
+  content: "\f058" !important;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  left: 0 !important;
+  line-height: 1 !important;
+  position: absolute !important;
+  top: 5px !important;
+}
