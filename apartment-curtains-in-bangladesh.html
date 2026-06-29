@@ -59,14 +59,14 @@
     .luxury-bedroom-page .lb-visual-strip p, .luxury-bedroom-page .lb-visual-strip li { color: #fff; }
     .luxury-bedroom-page .lb-link { color: #c6a363; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
     .luxury-bedroom-page .tp-custom-accordion .accordion-buttons { font-size: clamp(19px, 3vw, 20px) !important; line-height: 1.3 !important; }
-    .apartment-curtain-page .available-curtain-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-left: 0; margin-right: 0; }
+    .apartment-curtain-page .available-curtain-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; row-gap: 26px; margin: 30px 0 0; }
     .apartment-curtain-page .available-curtain-grid > [class*="col-"] { width: auto; max-width: none; padding-left: 0; padding-right: 0; }
-    .apartment-curtain-page .type-card { height: 100%; min-height: 210px; padding: 30px 28px; background: #fff; border: 1px solid rgba(198, 163, 99, .28); box-shadow: 0 16px 38px rgba(20, 20, 20, .07); transition: all .3s ease; }
-    .apartment-curtain-page .type-card:hover { border-color: #c6a363; transform: translateY(-4px); box-shadow: 0 22px 46px rgba(20, 20, 20, .12); }
-    .apartment-curtain-page .type-card h5 { margin-bottom: 14px; color: #111; font-size: 22px; line-height: 1.3; font-weight: 700; }
-    .apartment-curtain-page .type-card p { margin-bottom: 0; color: #3f3f3f; font-size: 16px; line-height: 1.65; }
+    .apartment-curtain-page .type-card { height: auto; min-height: 0; padding: 0; background: transparent; border: 0; box-shadow: none; transition: none; }
+    .apartment-curtain-page .type-card:hover { border-color: transparent; transform: none; box-shadow: none; }
+    .apartment-curtain-page .type-card h5 { margin-bottom: 10px; color: #111; font-size: 24px; line-height: 1.25; font-weight: 700; }
+    .apartment-curtain-page .type-card p { margin-bottom: 0; color: #59616a; font-size: 18px; line-height: 1.55; }
     .apartment-curtain-page .text-golden { color: #c6a363; }
-    @media (max-width: 991px) { .luxury-bedroom-page .lb-number-grid { grid-template-columns: 1fr; } .luxury-bedroom-page .lb-hero-media { margin-top: 30px; } .luxury-bedroom-page .lb-hero { padding-top: 70px; padding-bottom: 60px; } }
+    @media (max-width: 991px) { .luxury-bedroom-page .lb-number-grid, .apartment-curtain-page .available-curtain-grid { grid-template-columns: 1fr; } .luxury-bedroom-page .lb-hero-media { margin-top: 30px; } .luxury-bedroom-page .lb-hero { padding-top: 70px; padding-bottom: 60px; } }
     @media (max-width: 767px) { .luxury-bedroom-page .lb-card, .luxury-bedroom-page .lb-visual-strip { padding: 24px 18px; } .luxury-bedroom-page .lb-hero-badge { position: static; max-width: none; } .luxury-bedroom-page .lb-card p, .luxury-bedroom-page .lb-card li, .luxury-bedroom-page .lb-hero p { font-size: 15px; line-height: 1.7; } .luxury-bedroom-page .lb-hero-media { width: 100%; } .luxury-bedroom-page .tp-contact-area { padding-top: 80px; padding-bottom: 80px; } }
     </style>
 </head>
@@ -867,15 +867,15 @@
                         <h1 class="tp-section-title tp-split-text tp-split-in-right pb-10" style="font-size: clamp(30px, 5vw, 36px) !important; line-height: 1.3 !important;"><span style="color:#c6a363;">Apartment curtains</span> in Bangladesh</h1>
                         <p><strong>Apartment living</strong> in Bangladesh is changing fast. From compact flats in <strong>Dhaka</strong> to premium residences in <strong>Chittagong</strong>, <strong>Sylhet</strong>, and other growing cities, people now want homes that feel private, stylish, and comfortable. Without the right curtain, even a well-decorated room can feel incomplete, uncomfortable, or too exposed.</p>
                         <p><strong>Curtivelle</strong> offers <strong>apartment curtain solutions</strong> that balance beauty, privacy, light control, and practical daily use. Whether you need curtains for a bedroom, living room, dining space, balcony door, study corner, or open-plan apartment, our team helps you choose the right fabric, color, design, and fitting style. With customized curtain consultancy and <strong>premium curtain</strong> options, <strong>Curtivelle</strong> makes apartment interiors more elegant, functional, and comfortable for modern Bangladeshi homes.</p>
-                        <div class="text-center mt-25"><a class="tp-btn-black" href="tel:+8801329856367"><span>Talk With A Consultant</span></a></div>
+                        <div class="text-start mt-25"><a class="tp-btn-black" href="tel:+8801329856367"><span>Talk With A Consultant</span></a></div>
                     </div><div class="col-xl-6 col-lg-6"><div class="lb-hero-media"><img src="assets/img/city/living-room-curtain-in-bangladesh.jpg.jpeg" alt="Apartment curtains in Bangladesh" /></div></div></div></div>
                 </section>
 
                 <section class="pt-80 pb-80">
                     <div class="container">
                         <h2 class="tp-section-title text-center mb-30" style="font-size: 36px;">Available <span class="text-golden">apartment curtains</span> at Curtivelle</h2>
-                        <p class="text-center mb-50"><strong>Apartment curtains</strong> should match the room size, lighting condition, wall color, furniture, and lifestyle of the family. <strong>Curtivelle</strong> provides different curtain options so every apartment can get a suitable solution. Here are our collections:</p>
-                        <div class="row g-4 available-curtain-grid">
+                        <p class="text-center mb-0"><strong>Apartment curtains</strong> should match the room size, lighting condition, wall color, furniture, and lifestyle of the family. <strong>Curtivelle</strong> provides different curtain options so every apartment can get a suitable solution. Here are our collections:</p>
+                        <div class="available-curtain-grid">
                             <div class="col-md-4"><div class="type-card"><h5>Blackout curtains</h5><p>For bedrooms and privacy-focused rooms.</p></div></div>
                             <div class="col-md-4"><div class="type-card"><h5>Sheer curtains</h5><p>For soft daylight and elegant layering.</p></div></div>
                             <div class="col-md-4"><div class="type-card"><h5>Semi-blackout curtains</h5><p>For balanced light and comfort.</p></div></div>
@@ -883,7 +883,8 @@
                             <div class="col-md-4"><div class="type-card"><h5>Linen curtains</h5><p>For a natural and modern feel.</p></div></div>
                             <div class="col-md-4"><div class="type-card"><h5>Jacquard curtains</h5><p>For decorative interiors.</p></div></div>
                             <div class="col-md-4"><div class="type-card"><h5>Printed curtains</h5><p>For creative and stylish rooms.</p></div></div>
-                            <div class="col-md-4"><div class="type-card"><h5>Motorized curtains</h5><p>For premium smart apartments.</p></div></div>
+                            <div class="col-md-4"><div class="type-card"><h5>Motorized curtains</h5><p>For premium smart apartments. You can open and close the curtains with a remote control or automation.</p></div></div>
+                            <div class="col-md-4"><div class="type-card"><h5>Custom apartment curtains</h5><p>Custom curtains are made according to your window size, fabric choice, color theme, and interior requirement.</p></div></div>
                         </div>
                         <div class="text-center mt-40"><a class="tp-btn-black" href="tel:+8801329856367"><span>Call For Curtains</span></a></div>
                     </div>
