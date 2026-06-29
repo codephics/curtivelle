@@ -280,7 +280,23 @@
     .hotel-curtain-page .tp-faq-title-box .oc-h2 { text-align: center; }
     @media (max-width: 991px) { .oc-grid-3, .oc-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .oc-hero-media { min-height: 340px; margin-top: 30px; } }
     @media (max-width: 767px) { .oc-grid-3, .oc-grid-4 { grid-template-columns: 1fr; } .hotel-curtain-page .oc-h1 { font-size: 32px !important; } .hotel-curtain-page .oc-h2 { font-size: 28px !important; } .hotel-curtain-page .oc-h3 { font-size: 24px !important; } .oc-card, .oc-price-card { padding: 22px; } }
-    </style>
+
+/* Hotel curtain layout/card/FAQ fixes */
+.hotel-curtain-page .hc-hero-layout{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:30px!important;align-items:center!important}
+.hotel-curtain-page .hc-hero-copy,.hotel-curtain-page .hc-hero-image{min-width:0!important}
+.hotel-curtain-page .hc-hero-media{width:100%!important;min-height:430px!important;background:url('assets/img/product/interior-based-curtain/hospitality-curtain.jpg') center/cover no-repeat!important}
+.hotel-curtain-page .hc-panel,.hotel-curtain-page .hc-feature-card,.hotel-curtain-page .hc-type-card,.hotel-curtain-page .hc-choose-card{background:transparent!important;border:0!important;box-shadow:none!important;transform:none!important}
+.hotel-curtain-page .hc-panel:hover,.hotel-curtain-page .hc-type-card:hover,.hotel-curtain-page .hc-feature-card:hover{transform:none!important;border-color:transparent!important;box-shadow:none!important}
+.hotel-curtain-page .hc-dark,.hotel-curtain-page .hc-choose-band{background:transparent!important;color:#343434!important}
+.hotel-curtain-page .hc-dark h2,.hotel-curtain-page .hc-dark h3,.hotel-curtain-page .hc-dark p,.hotel-curtain-page .hc-dark li,.hotel-curtain-page .hc-choose-card p,.hotel-curtain-page .hc-choose-card li{color:#3f3f3f!important}
+.hotel-curtain-page .hc-matter-copy{background:transparent!important;color:#343434!important;padding:0!important}
+.hotel-curtain-page .hc-matter-copy h2,.hotel-curtain-page .hc-matter-copy p{color:#343434!important}
+.hotel-curtain-page .hc-benefit-tile{background:transparent!important;border:0!important;box-shadow:none!important;min-height:auto!important;padding:0!important}
+.hotel-curtain-page .hc-type-card:before,.hotel-curtain-page .hc-choose-band:before{display:none!important;content:none!important}
+.hotel-curtain-page .tp-faq-area .row>.col-xl-6{flex:0 0 100%!important;max-width:100%!important;width:100%!important;margin-bottom:0!important}
+.hotel-curtain-page .tp-faq-area .accordion-items{margin-bottom:22px!important}
+.hotel-curtain-page .tp-faq-area .accordion-items:last-child{margin-bottom:0!important}
+@media(max-width:991px){.hotel-curtain-page .hc-hero-layout{grid-template-columns:1fr!important}.hotel-curtain-page .hc-hero-media{min-height:330px!important;margin-top:30px}}</style>
 </head>
 <body>
 
@@ -1113,21 +1129,113 @@
  @media(max-width:575px){.hc-type-grid{grid-template-columns:1fr}.hc-matter-copy,.hc-choose-card{padding:28px}.hc-benefit-tile{min-height:auto}}
  </style>
 
- <!-- hero area start -->
+ <style>
+/* Final hotel curtain layout/card/FAQ overrides */
+.hotel-curtain-page .hc-hero-layout{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:30px!important;align-items:center!important}
+.hotel-curtain-page .hc-hero-copy,.hotel-curtain-page .hc-hero-image{min-width:0!important}
+.hotel-curtain-page .hc-hero-media{width:100%!important;min-height:430px!important;background:url('assets/img/product/interior-based-curtain/hospitality-curtain.jpg') center/cover no-repeat!important}
+.hotel-curtain-page .hc-panel,.hotel-curtain-page .hc-feature-card,.hotel-curtain-page .hc-type-card,.hotel-curtain-page .hc-choose-card{background:transparent!important;border:0!important;box-shadow:none!important;transform:none!important}
+.hotel-curtain-page .hc-panel:hover,.hotel-curtain-page .hc-type-card:hover,.hotel-curtain-page .hc-feature-card:hover{transform:none!important;border-color:transparent!important;box-shadow:none!important}
+.hotel-curtain-page .hc-dark,.hotel-curtain-page .hc-choose-band{background:transparent!important;color:#343434!important}
+.hotel-curtain-page .hc-dark h2,.hotel-curtain-page .hc-dark h3,.hotel-curtain-page .hc-dark p,.hotel-curtain-page .hc-dark li,.hotel-curtain-page .hc-choose-card p,.hotel-curtain-page .hc-choose-card li{color:#3f3f3f!important}
+.hotel-curtain-page .hc-matter-copy{background:transparent!important;color:#343434!important;padding:0!important}
+.hotel-curtain-page .hc-matter-copy h2,.hotel-curtain-page .hc-matter-copy p{color:#343434!important}
+.hotel-curtain-page .hc-benefit-tile{background:transparent!important;border:0!important;box-shadow:none!important;min-height:auto!important;padding:0!important}
+.hotel-curtain-page .hc-type-card:before,.hotel-curtain-page .hc-choose-band:before{display:none!important;content:none!important}
+.hotel-curtain-page .tp-faq-area .row>.col-xl-6{flex:0 0 100%!important;max-width:100%!important;width:100%!important;margin-bottom:0!important}
+.hotel-curtain-page .tp-faq-area .accordion-items{margin-bottom:22px!important}
+.hotel-curtain-page .tp-faq-area .accordion-items:last-child{margin-bottom:0!important}
+@media(max-width:991px){.hotel-curtain-page .hc-hero-layout{grid-template-columns:1fr!important}.hotel-curtain-page .hc-hero-media{min-height:330px!important;margin-top:30px}}
+</style>
+
+<style>
+/* Hotel section list placement and alignment fixes */
+.hotel-curtain-page .hc-matter-wrap{display:block!important;text-align:left!important}
+.hotel-curtain-page .hc-matter-copy{max-width:860px!important;text-align:left!important}
+.hotel-curtain-page .hc-benefit-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px 42px!important;margin-top:34px!important;text-align:left!important}
+.hotel-curtain-page .hc-benefit-tile{display:flex!important;align-items:flex-start!important;gap:14px!important;text-align:left!important}
+.hotel-curtain-page .hc-benefit-tile i{width:24px!important;height:24px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;background:transparent!important;color:#c5a367!important;flex:0 0 24px!important;margin-top:4px!important}
+.hotel-curtain-page .hc-choose-card .row{display:block!important;text-align:left!important}
+.hotel-curtain-page .hc-choose-card .col-lg-5,.hotel-curtain-page .hc-choose-card .col-lg-7{width:100%!important;max-width:100%!important;flex:0 0 100%!important;text-align:left!important}
+.hotel-curtain-page .hc-choose-card .hc-star-list{margin-top:30px!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px 42px!important;text-align:left!important}
+@media(max-width:991px){.hotel-curtain-page .hc-benefit-grid,.hotel-curtain-page .hc-choose-card .hc-star-list{grid-template-columns:1fr!important}}
+</style>
+
+<style>
+/* Final hotel alignment and button placement fixes */
+.hotel-curtain-page section,.hotel-curtain-page .container,.hotel-curtain-page .hc-panel,.hotel-curtain-page .hc-compact-section,.hotel-curtain-page .hc-choose-card,.hotel-curtain-page .hc-matter-copy{text-align:left!important}
+.hotel-curtain-page .hc-choose-card .tp-btn-black{display:inline-flex!important;margin-top:34px!important}
+.hotel-curtain-page .hc-choose-card .hc-star-list{margin-top:34px!important;margin-bottom:0!important}
+.hotel-curtain-page .hc-choose-card h3{margin-bottom:18px!important}
+.hotel-curtain-page .hc-choose-card p{max-width:100%!important}
+.hotel-curtain-page .row.justify-content-center .text-center{text-align:left!important;margin-left:0!important;margin-right:auto!important}
+</style>
+
+<style>
+/* Final hotel page alignment normalization */
+.hotel-curtain-page .container{max-width:1320px!important;margin-left:auto!important;margin-right:auto!important;padding-left:24px!important;padding-right:24px!important}
+.hotel-curtain-page section:not(.breadcrumb__area):not(.tp-contact-area){padding-top:56px!important;padding-bottom:48px!important}
+.hotel-curtain-page .row.justify-content-center{justify-content:flex-start!important}
+.hotel-curtain-page .row.justify-content-center>[class*="col-"]{margin-left:0!important;margin-right:0!important;text-align:left!important}
+.hotel-curtain-page .text-center{text-align:left!important}
+.hotel-curtain-page .hc-grid,.hotel-curtain-page .hc-type-grid{gap:24px!important}
+.hotel-curtain-page .hc-panel,.hotel-curtain-page .hc-compact-section,.hotel-curtain-page .hc-matter-copy,.hotel-curtain-page .hc-choose-card{padding-left:0!important;padding-right:0!important;margin-left:0!important;margin-right:0!important;text-align:left!important}
+.hotel-curtain-page .hc-compact-section{border-top:1px solid #eadfcd!important;margin-top:24px!important;padding-top:32px!important}
+.hotel-curtain-page .hc-list,.hotel-curtain-page .hc-check-list{list-style:none!important;margin:18px 0 0!important;padding:0!important;display:grid!important;gap:14px!important}
+.hotel-curtain-page .hc-list li,.hotel-curtain-page .hc-check-list li{position:relative!important;padding-left:44px!important;line-height:1.65!important;color:#3f3f3f!important;text-align:left!important}
+.hotel-curtain-page .hc-list li:before,.hotel-curtain-page .hc-check-list li:before{content:"\f058"!important;position:absolute!important;left:0!important;top:3px!important;width:24px!important;height:24px!important;border:0!important;background:transparent!important;color:#c5a367!important;font-family:"Font Awesome 6 Pro"!important;font-weight:900!important;font-size:22px!important;line-height:1!important}
+.hotel-curtain-page .hc-star-list{list-style:none!important;margin:30px 0 0!important;padding:0!important}
+.hotel-curtain-page .hc-star-list li{position:relative!important;padding-left:44px!important;text-align:left!important;color:#3f3f3f!important}
+.hotel-curtain-page .hc-star-list li:before{left:0!important;top:2px!important;color:#c5a367!important}
+.hotel-curtain-page .hc-section-kicker{justify-content:flex-start!important;text-align:left!important}
+.hotel-curtain-page .hc-choose-card .tp-btn-black{margin-top:34px!important}
+@media(max-width:991px){.hotel-curtain-page .container{padding-left:18px!important;padding-right:18px!important}.hotel-curtain-page section:not(.breadcrumb__area):not(.tp-contact-area){padding-top:44px!important;padding-bottom:38px!important}.hotel-curtain-page .hc-list li,.hotel-curtain-page .hc-check-list li,.hotel-curtain-page .hc-star-list li{padding-left:36px!important}}
+</style>
+
+<style>
+/* Hotel gap and subtitle cleanup */
+.hotel-curtain-page .tp-section-subtitle,
+.hotel-curtain-page .hc-section-kicker{display:none!important}
+.hotel-curtain-page section:not(.breadcrumb__area):not(.tp-contact-area){padding-top:28px!important;padding-bottom:28px!important}
+.hotel-curtain-page .pt-90,.hotel-curtain-page .pt-80{padding-top:28px!important}
+.hotel-curtain-page .pb-90,.hotel-curtain-page .pb-80,.hotel-curtain-page .pb-70{padding-bottom:28px!important}
+.hotel-curtain-page .mb-50,.hotel-curtain-page .mb-40,.hotel-curtain-page .mb-35,.hotel-curtain-page .mb-30{margin-bottom:18px!important}
+.hotel-curtain-page .hc-compact-section{margin-top:14px!important;padding-top:20px!important}
+.hotel-curtain-page .hc-list,.hotel-curtain-page .hc-check-list{margin-top:14px!important;gap:12px!important}
+.hotel-curtain-page .hc-panel{margin-bottom:0!important}
+.hotel-curtain-page .hc-grid{gap:18px!important}
+.hotel-curtain-page .hc-choose-band{padding-top:28px!important;padding-bottom:28px!important}
+.hotel-curtain-page .hc-choose-card{padding-top:0!important;padding-bottom:0!important}
+.hotel-curtain-page .hc-choose-card .hc-star-list{margin-top:18px!important;gap:12px 36px!important}
+.hotel-curtain-page .hc-choose-card .tp-btn-black{margin-top:22px!important}
+.hotel-curtain-page .hc-matter-wrap{margin-bottom:0!important}
+@media(max-width:991px){.hotel-curtain-page section:not(.breadcrumb__area):not(.tp-contact-area),.hotel-curtain-page .pt-90,.hotel-curtain-page .pt-80{padding-top:22px!important}.hotel-curtain-page .pb-90,.hotel-curtain-page .pb-80,.hotel-curtain-page .pb-70{padding-bottom:22px!important}}
+</style>
+
+<style>
+/* Hotel Curtivelle heading visibility fix */
+.hotel-curtain-page .hc-choose-card h3,
+.hotel-curtain-page .hc-choose-card h3.text-white{color:#111!important;text-align:left!important;margin-left:0!important}
+.hotel-curtain-page .hc-choose-card h3 .hc-gold{color:#c5a367!important}
+</style>
+<!-- hero area start -->
  <section class="hc-hero pt-80 pb-80">
- <div class="container"><div class="row align-items-center">
- <div class="col-xl-6 col-lg-6">
- <span class="tp-section-subtitle tp-split-text tp-split-in-right"><span class="hc-gold">Hospitality curtain solutions</span></span>
- <h1 class="tp-section-title hc-h1 tp-split-text tp-split-in-right">Luxury <span class="hc-gold">hotel curtains</span> in Bangladesh</h1>
- <p>Luxury <strong>hotel curtains</strong> in Bangladesh are more than simple window coverings. They create the first impression of a hotel room, control natural light, improve privacy, and add a premium feeling to the entire interior.</p>
- <p>For <strong>hotels, resorts, serviced apartments, guest houses, restaurants,</strong> and <strong>hospitality spaces</strong>, curtains play a major role in guest comfort and brand image. A well-designed curtain setup can make a room feel elegant, relaxing, and professionally finished.</p>
- <p><strong>Curtivelle</strong> offers <strong>premium curtain solutions</strong> in Bangladesh with refined designs, quality fabrics, and expert installation for modern hospitality interiors.</p>
- <a class="tp-btn-black" href="tel:+8801329856367"><span>Book for Consultation</span></a>
- </div>
- <div class="col-xl-6 col-lg-6"><div class="hc-hero-media"></div></div>
- </div></div>
- </section>
- <!-- hero area end -->
+<div class="container">
+<div class="hc-hero-layout">
+<div class="hc-hero-copy">
+<span class="tp-section-subtitle tp-split-text tp-split-in-right"><span class="hc-gold">Hospitality window solutions</span></span>
+<h1 class="tp-section-title hc-h1 tp-split-text tp-split-in-right">Luxury <span class="hc-gold">hotel curtains</span> in Bangladesh</h1>
+<p>Luxury <strong>hotel curtains</strong> in Bangladesh are more than simple window coverings. They create the first impression of a hotel room, control natural light, improve privacy, and add a premium feeling to the entire interior.</p>
+<p>For <strong>hotels, resorts, serviced apartments, guest houses, restaurants,</strong> and <strong>hospitality spaces</strong>, curtains play a major role in guest comfort and brand image. A well-designed curtain setup can make a room feel elegant, relaxing, and professionally finished.</p>
+<a class="tp-btn-black" href="tel:+8801329856367"><span>Book Hotel Curtains</span></a>
+</div>
+<div class="hc-hero-image">
+<div class="hc-hero-media"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- hero area end -->
 
  <section class="pt-90 pb-80">
  <div class="container">
@@ -1138,13 +1246,13 @@
  <p><strong>Hotel curtains</strong> directly affect how guests feel inside a room. From morning sunlight to nighttime privacy, the right curtains help create a peaceful and premium stay experience. Curtains also support the hotel’s interior theme, room comfort, and long-term maintenance needs.</p>
  </div>
  <div class="hc-benefit-grid">
- <div class="hc-benefit-tile"><i class="fa-solid fa-crown"></i><span>Creates a luxury first impression for guests</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-shield-halved"></i><span>Improves privacy in rooms, suites, and lounges</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-sun"></i><span>Controls sunlight and heat during the day</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-gem"></i><span>Makes hotel interiors look complete and elegant</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-moon"></i><span>Supports better sleep quality with blackout options</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-layer-group"></i><span>Adds softness, warmth, and depth to the room</span></div>
- <div class="hc-benefit-tile"><i class="fa-solid fa-award"></i><span>Helps match the hotel’s premium brand identity</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Creates a luxury first impression for guests</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Improves privacy in rooms, suites, and lounges</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Controls sunlight and heat during the day</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Makes hotel interiors look complete and elegant</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Supports better sleep quality with blackout options</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Adds softness, warmth, and depth to the room</span></div>
+ <div class="hc-benefit-tile"><i class="fa-solid fa-check"></i><span>Helps match the hotel’s premium brand identity</span></div>
  </div>
  </div>
  </div>
@@ -1196,18 +1304,18 @@
  <span class="hc-section-kicker">Why Curtivelle</span>
  <h3 class="tp-section-title hc-h3 text-white">Choose Curtivelle for <span class="hc-gold">premium curtains</span></h3>
  <p>Curtivelle offers premium curtain solutions for homes, hotels, offices, and commercial interiors in Bangladesh. With elegant designs, quality fabrics, and expert setup, Curtivelle helps every space feel more refined and comfortable. For luxury hotel curtains in Bangladesh, Curtivelle focuses on beauty, function, and a professional finish.</p>
- <a class="tp-btn-black mt-20" href="tel:+8801329856367"><span>Call for Curtains</span></a>
  </div>
- <div class="col-lg-7">
- <ul class="hc-star-list">
+<div class="col-lg-7">
+<ul class="hc-star-list">
  <li>Premium fabric selection for luxury hotel interiors</li>
  <li>Custom curtain design for rooms, lobbies, and halls</li>
  <li>Expert measurement, stitching, and installation support</li>
  <li>Elegant blackout, sheer, velvet, and layered curtain options</li>
  <li>Modern designs suitable for hotels, resorts, and serviced apartments</li>
- </ul>
- </div>
- </div></div></div></section>
+</ul>
+<a class="tp-btn-black mt-30" href="tel:+8801329856367"><span>Call for Curtains</span></a>
+</div>
+</div></div></div></section>
 
  <section class="tp-faq-area p-relative fix pt-80 pb-90"><div class="container"><div class="row">
  <div class="col-xl-12"><div class="tp-faq-title-box text-center pb-50"><h2 class="tp-section-title hc-h2">FAQ about <span class="hc-gold">luxury hotel curtains</span></h2></div></div>
