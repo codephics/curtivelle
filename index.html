@@ -140,6 +140,7 @@
  .curtivelle-best-shop-section .tp-hover-distort-wrapper {
  width: 100%;
  overflow: hidden;
+ position: relative;
  }
  .curtivelle-best-shop-section .tp-exp-fea-thumb {
  margin-right: 48px;
@@ -168,6 +169,76 @@
  }
  .curtivelle-best-shop-section .tp-hover-distort-img.front {
  height: 100%;
+ }
+ }
+ .curtivelle-home-video-btn {
+ align-items: center;
+ background-color: #b66a00;
+ border-radius: 20%;
+ display: flex;
+ height: 130px;
+ justify-content: center;
+ position: absolute;
+ right: 24px;
+ top: 24px;
+ transition: all 0.5s ease;
+ width: 130px;
+ z-index: 5;
+ }
+ .curtivelle-home-video-btn svg {
+ height: 120px;
+ width: 120px;
+ position: relative;
+ z-index: 2;
+ }
+ .curtivelle-home-video-btn .triangle {
+ stroke-dasharray: 240;
+ stroke-dashoffset: 480;
+ stroke: #ffffff;
+ transform: translateY(0);
+ transition: 0.7s ease-in-out;
+ }
+ .curtivelle-home-video-btn .circle {
+ stroke: #ffffff;
+ stroke-dasharray: 650;
+ stroke-dashoffset: 650;
+ opacity: 0.3;
+ transition: 0.5s ease-in-out;
+ }
+ .curtivelle-home-video-btn:hover {
+ background-color: #c8a96a;
+ transform: translateY(-3px);
+ }
+ .curtivelle-home-video-btn:hover .triangle {
+ stroke-dashoffset: 0;
+ }
+ .curtivelle-home-video-btn:hover .circle {
+ stroke-dashoffset: 0;
+ opacity: 1;
+ }
+ .curtivelle-home-video-btn .video-btn-ripple::before,
+ .curtivelle-home-video-btn .video-btn-ripple::after {
+ animation: curtivelleVideoRipple 3s ease 0s infinite normal none running;
+ border-radius: 20%;
+ box-shadow: #b66a00 0 0 0 0;
+ content: "";
+ height: 100%;
+ left: 50%;
+ position: absolute;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ z-index: 1;
+ }
+ .curtivelle-home-video-btn .video-btn-ripple::after {
+ animation-delay: 1.5s;
+ }
+ @keyframes curtivelleVideoRipple {
+ 70% {
+ box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+ }
+ 100% {
+ box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
  }
  }
  @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -218,6 +289,15 @@
  .curtivelle-best-shop-section .tp-exp-fea-right {
  margin-bottom: 0 !important;
  }
+ .curtivelle-home-video-btn {
+ height: 100px;
+ right: 18px;
+ width: 100px;
+ }
+ .curtivelle-home-video-btn svg {
+ height: 92px;
+ width: 92px;
+ }
  }
  @media (max-width: 575px) {
  .curtivelle-best-shop-section {
@@ -234,6 +314,16 @@
  .curtivelle-best-shop-section .tp-exp-fea-text p {
  font-size: 15px;
  line-height: 1.7;
+ }
+ .curtivelle-home-video-btn {
+ height: 80px;
+ right: 14px;
+ top: 14px;
+ width: 80px;
+ }
+ .curtivelle-home-video-btn svg {
+ height: 72px;
+ width: 72px;
  }
  }
  .curtains-golden-text {
@@ -1667,6 +1757,17 @@
  alt="Luxury curtain collection display at Curtivelle curtain showroom in Dhaka"
  />
  </div>
+ <a
+ class="curtivelle-home-video-btn popup-video"
+ href="https://drive.google.com/file/d/1JuQQg-0Af32kPyf4Aajn-GWj686J4539/preview"
+ aria-label="Play Curtivelle video"
+ >
+ <svg x="0px" y="0px" width="120px" height="120px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve" aria-hidden="true" focusable="false">
+ <polygon class="triangle" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="73.5,62.5 148.5,105.8 73.5,149.1"></polygon>
+ <circle class="circle" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"></circle>
+ </svg>
+ <span class="video-btn-ripple"></span>
+ </a>
  </div>
  </div>
  </div>
