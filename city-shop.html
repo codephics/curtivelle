@@ -1329,14 +1329,6 @@
  return false;
  }
  </script>
-<script>
-(function () {
-  var root = window.location.hostname === 'localhost' ? '/curtivelle/' : '/';
-  document.querySelectorAll('a.city-link[href^="curtain-shop-in-"]').forEach(function (link) {
-    link.setAttribute('href', root + link.getAttribute('href').replace(/^\/+/, ''));
-  });
-})();
-</script>
 </body>
 
 </html>
