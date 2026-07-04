@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# Force city slugs to lowercase in the browser URL.
+RewriteRule ^curtain-shop-in-Chittagong/?$ https://curtivelle.com/curtain-shop-in-chittagong [R=301,L]
+RewriteRule ^curtain-shop-in-Sylhet/?$ https://curtivelle.com/curtain-shop-in-sylhet [R=301,L]
+
 
 # ১. কেউ যদি index, index.html বা index.php লিখে ঢোকার চেষ্টা করে, তাকে মেইন ডোমেইনে পাঠাও
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(html|php|htm)\ HTTP/ [NC,OR]
