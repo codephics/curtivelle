@@ -9,6 +9,10 @@ RewriteRule ^index(\.html|\.php|\.htm)?$ https://curtivelle.com/ [R=301,L]
 # ২. ডিরেক্টরি ইনডেক্স সেট করা যাতে সার্ভার নিজে থেকে /index না খোঁজে
 DirectoryIndex index.html
 
+# Remove trailing slash from clean page URLs so relative assets load correctly.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ $1 [R=301,L]
+
 # ৩. যেকোনো পেজের শেষে .html লিখে সার্চ করলে তাকে ক্লিন ইউআরএলে ফোর্স রিডাইরেক্ট করবে
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
