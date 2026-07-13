@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Correct the legacy misspelled Uttara city-page slug
+RewriteCond %{THE_REQUEST} \s/+(.*/)?curtain-shop-in-uttura(?:[?\s]) [NC]
+RewriteRule ^curtain-shop-in-uttura/?$ /%1curtain-shop-in-uttara [R=301,L,NE]
 
 # ১. কেউ যদি index, index.html বা index.php লিখে ঢোকার চেষ্টা করে, তাকে মেইন ডোমেইনে পাঠাও
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(html|php|htm)\ HTTP/ [NC,OR]
