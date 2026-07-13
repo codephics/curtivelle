@@ -1,5 +1,20 @@
 RewriteEngine On
 
+# Service area URLs: serve the landing page and nested city pages.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?city-shop(?:\.html)?[?\s] [NC]
+RewriteRule ^city-shop(?:\.html)?/?$ /%1service-area [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?service-area/+[?\s] [NC]
+RewriteRule ^service-area/$ /%1service-area [R=301,L,NE]
+RewriteRule ^service-area$ service-area.html [END]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)(?:\.html)?[?\s] [NC]
+RewriteRule ^(curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)(?:\.html)?/?$ /%1service-area/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?service-area/(?:curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)\.html[?\s] [NC]
+RewriteRule ^service-area/(curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)\.html$ /%1service-area/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?service-area/(?:curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)/+[?\s] [NC]
+RewriteRule ^service-area/(curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)/$ /%1service-area/$1 [R=301,L,NE]
+RewriteRule ^service-area/(curtain-shop-in-banani|curtain-shop-in-baridhara|curtain-shop-in-bashundhara|curtain-shop-in-bonosree|curtain-shop-in-chittagong|curtain-shop-in-dhanmondi|curtain-shop-in-elephant-road|curtain-shop-in-gulshan-2|curtain-shop-in-mohakhali|curtain-shop-in-narayanganj|curtain-shop-in-nikunja|curtain-shop-in-old-dhaka|curtain-shop-in-rajshahi|curtain-shop-in-sylhet|curtain-shop-in-uttara|curtain-shop-in-wari)$ service-area/$1.html [END]
+
+
 # Serve the main blog listing at /blog even though /blog is also a real folder.
 RewriteCond %{THE_REQUEST} \s/+(.*/)?blog/+[?\s] [NC]
 RewriteRule ^blog/$ /%1blog [R=301,L,NE]
