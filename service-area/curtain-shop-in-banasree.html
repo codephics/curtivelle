@@ -71,12 +71,19 @@
  color: #c8a96a;
  }
  .location-hero-title {
- font-size: clamp(30px, 2.4vw, 46px) !important;
+ font-size: clamp(36px, 3vw, 58px) !important;
  line-height: 1.2 !important;
- }
- .location-hero-title .location-title-line {
+ } .location-hero-title .location-title-line {
  display: block;
  white-space: nowrap;
+ }
+ .location-hero-title .location-title-part {
+ display: inline-block;
+ }
+ @media (max-width: 575px) {
+ .location-hero-title {
+ font-size: 30px !important;
+ }
  }
  .custom-link{
     color: blue !important;
@@ -914,8 +921,8 @@
                                     <div class="tp-exp-fea-right">
                                         <div class="tp-exp-fea-text pb-5">
                                             <h1 class="tp-section-title pb-10 location-hero-title">
-                                                <span class="location-title-line tp-split-text tp-split-in-right"><span class="curtains-golden-text">Luxury curtain</span> shop</span>
-                                                <span class="location-title-line tp-split-text tp-split-in-right">in Banasree, Dhaka</span>
+                                                <span class="location-title-line"><span class="location-title-part curtains-golden-text tp-split-text tp-split-in-right">Luxury curtain</span> <span class="location-title-part tp-split-text tp-split-in-right">shop</span></span>
+                                                <span class="location-title-line"><span class="location-title-part tp-split-text tp-split-in-right">in Banasree, Dhaka</span></span>
                                             </h1>
                                             <p>
                                                 <b>Banasree</b> is one of the growing residential areas in Dhaka, where modern apartments, family homes, and commercial spaces are increasing every year. For homeowners in Banasree, choosing the right curtain is not only about covering windows; it is about creating privacy, controlling sunlight, improving comfort, and making the interior look elegant.
