@@ -11735,6 +11735,29 @@ body .ui-tooltip {
   margin-bottom: 20px;
 }
 
+.product-price-hero-title {
+  font-size: 44px !important;
+  line-height: 1.18 !important;
+}
+.product-price-hero-title .product-name,
+.product-price-hero-title .price-location {
+  display: block;
+  white-space: nowrap;
+}
+.product-price-hero-title .product-name {
+  margin-bottom: 6px;
+}
+@media (max-width: 1199px) {
+  .product-price-hero-title {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 767px) {
+  .product-price-hero-title {
+    font-size: 27px !important;
+  }
+}
+
 .tp-progress {
   height: 72px;
   width: 72px;
