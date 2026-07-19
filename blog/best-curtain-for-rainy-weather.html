@@ -71,38 +71,33 @@
     @media (max-width: 991px) { .premium-living-page .pl-tip-grid, .premium-living-page .pl-color-grid { grid-template-columns: 1fr; } .premium-living-page .pl-hero-media { margin-top: 30px; } .premium-living-page .pl-hero { padding-top: 70px; padding-bottom: 60px; } }
     @media (max-width: 767px) { .premium-living-page .pl-card, .premium-living-page .pl-visual-strip { padding: 24px 18px; } .premium-living-page .pl-hero-badge { position: static; max-width: none; } .premium-living-page .pl-card p, .premium-living-page .pl-card li, .premium-living-page .pl-hero p { font-size: 15px; line-height: 1.7; } .premium-living-page .pl-hero-media { width: 100%; } .premium-living-page .tp-contact-area { padding-top: 80px; padding-bottom: 80px; } }
 
-    .rainy-weather-page { background: #f6fbf8; font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif; color: #25332d; }
+    .rainy-weather-page { background: #fff; font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif; color: #2b2722; }
     .rainy-weather-page h1, .rainy-weather-page h2, .rainy-weather-page h3, .rainy-weather-page h4, .rainy-weather-page h5, .rainy-weather-page h6, .rainy-weather-page .breadcrumb__title { font-family: "Hind Siliguri", "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif !important; letter-spacing: 0 !important; text-transform: none !important; }
-    .rainy-weather-page .rw-hero { position: relative; overflow: hidden; background: #153b37; color: #fff; }
-    .rainy-weather-page .rw-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(21, 59, 55, .95), rgba(21, 59, 55, .82) 48%, rgba(21, 59, 55, .22)), url('assets/img/homepage/seasonal-curtains-2.jpg'); background-size: cover; background-position: center; }
-    .rainy-weather-page .rw-hero .container { position: relative; z-index: 1; }
-    .rainy-weather-page .rw-kicker { display: inline-flex; align-items: center; gap: 10px; color: #f0b15d; font-weight: 700; margin-bottom: 18px; }
-    .rainy-weather-page .rw-kicker::before { content: ""; width: 42px; height: 2px; background: #f0b15d; }
-    .rainy-weather-page .rw-hero h1 { font-size: 36px !important; line-height: 1.3 !important; color: #fff; max-width: 760px; }
-    .rainy-weather-page .rw-hero p { color: #eaf7f1; font-size: 17px; line-height: 1.85; max-width: 850px; }
-    .rainy-weather-page .rw-card { height: 100%; padding: 34px; background: #fff; border: 1px solid rgba(47, 116, 102, .16); box-shadow: 0 18px 45px rgba(21, 59, 55, .07); }
-    .rainy-weather-page .rw-card.mist { background: #edf8f1; }
-    .rainy-weather-page .rw-card.gold { background: #fff8ea; }
-    .rainy-weather-page .rw-card.teal { background: #153b37; border-color: rgba(240, 177, 93, .42); color: #fff; }
-    .rainy-weather-page .rw-card.layer-bg { background: #29453b; border-color: rgba(221, 194, 132, .45); color: #fff; }
-    .rainy-weather-page .rw-card.solution-bg { background: #5a3f2e; border-color: rgba(221, 194, 132, .52); color: #fff; }
-    .rainy-weather-page .rw-card.teal h2, .rainy-weather-page .rw-card.teal h3, .rainy-weather-page .rw-card.teal p, .rainy-weather-page .rw-card.teal li { color: #fff !important; }
-    .rainy-weather-page .rw-card.layer-bg h2, .rainy-weather-page .rw-card.layer-bg h3, .rainy-weather-page .rw-card.layer-bg p, .rainy-weather-page .rw-card.layer-bg li, .rainy-weather-page .rw-card.solution-bg h2, .rainy-weather-page .rw-card.solution-bg h3, .rainy-weather-page .rw-card.solution-bg p, .rainy-weather-page .rw-card.solution-bg li { color: #fff !important; }
+    .rainy-weather-page .rw-hero { position: relative; overflow: hidden; background: #fff; color: #2b2722; margin-top: 30px; }
+    .rainy-weather-page .rw-hero-media { position: relative; max-width: 650px; aspect-ratio: 4 / 3; margin: 0 auto; overflow: hidden; border: 1px solid rgba(197, 163, 103, .42); background: #fff; box-shadow: 0 24px 55px rgba(20, 20, 20, .08), inset 0 0 0 12px #f8f3ea; }
+    .rainy-weather-page .rw-hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .rainy-weather-page .rw-hero-copy-panel { min-height: 430px; padding: 58px 42px; display: flex; flex-direction: column; justify-content: center; }
+    .rainy-weather-page .rw-kicker { display: inline-flex; align-items: center; gap: 10px; color: #2b211c; font-weight: 700; margin-bottom: 18px; }
+    .rainy-weather-page .rw-kicker::before { content: ""; width: 42px; height: 2px; background: #2b211c; }
+    .rainy-weather-page .rw-hero h1 { font-size: 42px !important; line-height: 1.25 !important; color: #2b2722; }
+    .rainy-weather-page .rw-hero p { color: #413a34; font-size: 17px; line-height: 1.85; }
+    .rainy-weather-page .rw-content-stack > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
+    .rainy-weather-page .rw-content-stack { row-gap: 45px; }
+    .rainy-weather-page .rw-card { height: 100%; padding: 0; background: transparent !important; border: 0 !important; box-shadow: none !important; color: #2b2722 !important; }
     .rainy-weather-page .rw-card h2, .rainy-weather-page .rw-faq-title { font-size: 32px !important; line-height: 1.32 !important; }
-    .rainy-weather-page .rw-card h3 { font-size: 28px !important; line-height: 1.35 !important; }
+    .rainy-weather-page .rw-card h3 { font-size: 24px !important; line-height: 1.35 !important; }
     .rainy-weather-page .rw-faq h2, .rainy-weather-page .rw-faq h3, .rainy-weather-page .rw-faq .accordion-buttons { font-size: 20px !important; line-height: 1.35 !important; }
-    .rainy-weather-page .rw-card p, .rainy-weather-page .rw-card li, .rainy-weather-page .rw-faq .accordion-body { color: #3f4743; font-size: 16px; line-height: 1.85; }
+    .rainy-weather-page .rw-card p, .rainy-weather-page .rw-card li, .rainy-weather-page .rw-faq .accordion-body { color: #413a34 !important; font-size: 16px; line-height: 1.85; }
     .rainy-weather-page .rw-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
     .rainy-weather-page .rw-list li { position: relative; padding-left: 25px; }
-    .rainy-weather-page .rw-list li::before { content: ""; position: absolute; left: 0; top: 12px; width: 8px; height: 8px; background: #f08a24; }
-    .rainy-weather-page .rw-link { color: #d47a16; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-    .rainy-weather-page .rw-card.teal .rw-link, .rainy-weather-page .rw-card.layer-bg .rw-link, .rainy-weather-page .rw-card.solution-bg .rw-link { color: #ffd08a; }
+    .rainy-weather-page .rw-list li::before { content: "\f058"; position: absolute; left: 0; top: 5px; color: #c5a367; font-family: "Font Awesome 6 Pro"; font-size: 16px; font-weight: 900; line-height: 1; }
+    .rainy-weather-page .rw-link, .rainy-weather-page .rw-card.teal .rw-link, .rainy-weather-page .rw-card.layer-bg .rw-link, .rainy-weather-page .rw-card.solution-bg .rw-link { color: #b47a1f; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
     .rainy-weather-page .rw-feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-    .rainy-weather-page .rw-feature { min-height: 118px; padding: 18px; background: rgba(255, 255, 255, .74); border: 1px solid rgba(47, 116, 102, .14); }
-    .rainy-weather-page .rw-feature strong { display: block; color: #153b37; margin-bottom: 8px; }
-    .rainy-weather-page .rw-strip { background: linear-gradient(135deg, #e7f4ed 0%, #fff 54%, #fff1df 100%); }
-    @media (max-width: 991px) { .rainy-weather-page .rw-feature-grid { grid-template-columns: 1fr; } .rainy-weather-page .rw-hero::before { background: linear-gradient(rgba(21, 59, 55, .92), rgba(21, 59, 55, .84)), url('assets/img/homepage/seasonal-curtains-2.jpg'); background-size: cover; background-position: center; } }
-    @media (max-width: 767px) { .rainy-weather-page .rw-card { padding: 24px 18px; } .rainy-weather-page .rw-hero p, .rainy-weather-page .rw-card p, .rainy-weather-page .rw-card li, .rainy-weather-page .rw-faq .accordion-body { font-size: 15px; line-height: 1.75; } }
+    .rainy-weather-page .rw-feature { min-height: 0; padding: 0; background: transparent; border: 0; }
+    .rainy-weather-page .rw-feature strong { display: block; color: #2b2722; margin-bottom: 8px; }
+    .rainy-weather-page .rw-strip { background: transparent !important; }
+    @media (max-width: 991px) { .rainy-weather-page .rw-feature-grid { grid-template-columns: 1fr; } .rainy-weather-page .rw-hero-media { margin-bottom: 30px; } }
+    @media (max-width: 767px) { .rainy-weather-page .rw-hero { margin-top: 22px; } .rainy-weather-page .rw-hero-copy-panel { min-height: 0; padding: 30px 0 0; } .rainy-weather-page .rw-hero h1 { font-size: 42px !important; } .rainy-weather-page .rw-card h2, .rainy-weather-page .rw-faq-title { font-size: 32px !important; } .rainy-weather-page .rw-card h3 { font-size: 24px !important; } .rainy-weather-page .rw-hero p, .rainy-weather-page .rw-card p, .rainy-weather-page .rw-card li, .rainy-weather-page .rw-faq .accordion-body { font-size: 15px; line-height: 1.75; } }
 </style>
 </head>
 <body>
@@ -891,22 +886,29 @@
         </div>
     </div>
 
-    <section class="rw-hero pt-100 pb-95">
-        <div class="container">
-            <span class="rw-kicker">Rainy season curtain guide</span>
-            <h1 class="tp-section-title pb-10">বর্ষায় কোন পর্দা ব্যবহার করবেন?</h1>
-            <p><strong>বর্ষাকালে</strong> ঘরের পর্দা নির্বাচন করা খুব গুরুত্বপূর্ণ, কারণ এই সময় বাতাসে আর্দ্রতা বেশি থাকে, জানালা দিয়ে বৃষ্টির পানি ঢোকার ঝুঁকি থাকে এবং কাপড় সহজে স্যাঁতসেঁতে হয়ে যেতে পারে। তাই বর্ষার জন্য এমন পর্দা দরকার যা ভিজে গেলেও দ্রুত শুকায়, সহজে পরিষ্কার হয়, কম ধুলো ধরে এবং ঘরের ভেতর fresh ও comfortable পরিবেশ রাখে।</p>
-            <p>অনেকেই শুধু ডিজাইন দেখে পর্দা কেনেন, কিন্তু বর্ষায় fabric, color, ventilation, cleaning এবং maintenance সবকিছু বিবেচনা করা দরকার। ভুল পর্দা ব্যবহার করলে ঘরে ভেজা ভাব, দুর্গন্ধ, ফাঙ্গাস বা কাপড়ে দাগ পড়ার সমস্যা হতে পারে। <strong>Curtivelle</strong>-এ আপনি বর্ষার জন্য practical এবং stylish curtain solution বেছে নিতে পারেন।</p>
-            <a class="tp-btn-black mt-20" href="tel:+8801329856367"><span>পরামর্শের জন্য যোগাযোগ করুন</span></a>
-        </div>
+    <section class="rw-hero pt-90 pb-80">
+        <div class="container"><div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="rw-hero-media"><img src="assets/img/homepage/seasonal-curtains-2.jpg" alt="বর্ষার জন্য হালকা ও আরামদায়ক পর্দা" /></div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="rw-hero-copy-panel">
+                    <span class="rw-kicker">Rainy season curtain guide</span>
+                    <h1 class="tp-section-title pb-10">বর্ষায় কোন পর্দা ব্যবহার করবেন?</h1>
+                    <p><strong>বর্ষাকালে</strong> ঘরের পর্দা নির্বাচন করা খুব গুরুত্বপূর্ণ, কারণ এই সময় বাতাসে আর্দ্রতা বেশি থাকে, জানালা দিয়ে বৃষ্টির পানি ঢোকার ঝুঁকি থাকে এবং কাপড় সহজে স্যাঁতসেঁতে হয়ে যেতে পারে। তাই বর্ষার জন্য এমন পর্দা দরকার যা ভিজে গেলেও দ্রুত শুকায়, সহজে পরিষ্কার হয়, কম ধুলো ধরে এবং ঘরের ভেতর fresh ও comfortable পরিবেশ রাখে।</p>
+                    <p>অনেকেই শুধু ডিজাইন দেখে পর্দা কেনেন, কিন্তু বর্ষায় fabric, color, ventilation, cleaning এবং maintenance সবকিছু বিবেচনা করা দরকার। ভুল পর্দা ব্যবহার করলে ঘরে ভেজা ভাব, দুর্গন্ধ, ফাঙ্গাস বা কাপড়ে দাগ পড়ার সমস্যা হতে পারে। <strong>Curtivelle</strong>-এ আপনি বর্ষার জন্য practical এবং stylish curtain solution বেছে নিতে পারেন।</p>
+                    <a class="tp-btn-black mt-20" href="tel:+8801329856367"><span>পরামর্শের জন্য যোগাযোগ করুন</span></a>
+                </div>
+            </div>
+        </div></div>
     </section>
 
-    <section class="pt-70 pb-40"><div class="container"><div class="row g-4">
+    <section class="pt-70 pb-40"><div class="container"><div class="row g-4 rw-content-stack">
         <div class="col-lg-6"><div class="rw-card mist"><h2 class="tp-section-title">বর্ষায় পর্দা নির্বাচন কেন গুরুত্বপূর্ণ?</h2><p>বর্ষাকালে ঘরের ভেতরে আর্দ্রতা বেড়ে যায় এবং জানালার পাশে থাকা পর্দা সহজেই ভিজে বা স্যাঁতসেঁতে হয়ে যেতে পারে। তাই এই সময় ভারী, বেশি ধুলো জমা কাপড়ের বদলে এমন পর্দা দরকার যা light, breathable এবং easy maintenance হয়।</p><ul class="rw-list"><li>বর্ষায় দ্রুত শুকায় এমন fabric ব্যবহার করা ভালো।</li><li>অতিরিক্ত ভারী পর্দা স্যাঁতসেঁতে হয়ে দুর্গন্ধ তৈরি করতে পারে।</li><li>Light curtain ঘরে বাতাস চলাচল সহজ করে।</li><li>Easy washable curtain বর্ষায় বেশি practical।</li><li>সঠিক curtain color ঘরের gloomy feel কমিয়ে fresh look দেয়।</li></ul></div></div>
         <div class="col-lg-6"><div class="rw-card gold"><h2 class="tp-section-title">বর্ষার জন্য কোন কাপড়ের পর্দা ভালো?</h2><p>বর্ষাকালে পর্দার fabric সবচেয়ে গুরুত্বপূর্ণ বিষয়। এই সময় এমন কাপড় দরকার যা বেশি পানি শোষণ করে না, সহজে পরিষ্কার করা যায় এবং ঘরে ভারী ভাব তৈরি করে না। Cotton blend, polyester, linen blend এবং sheer fabric বর্ষার জন্য ভালো পছন্দ হতে পারে।</p><div class="rw-feature-grid mt-25"><div class="rw-feature"><strong>Polyester</strong>তুলনামূলক দ্রুত শুকায় এবং maintain করা সহজ।</div><div class="rw-feature"><strong>Cotton Blend</strong>Natural look দেয় এবং maintenance সহজ।</div><div class="rw-feature"><strong>Linen Blend</strong>ঘরে airy ও fresh feel তৈরি করে।</div></div></div></div>
     </div></div></section>
 
-    <section class="pt-40 pb-40"><div class="container"><div class="row g-4">
+    <section class="pt-40 pb-40"><div class="container"><div class="row g-4 rw-content-stack">
         <div class="col-lg-6"><div class="rw-card"><h2 class="tp-section-title">বর্ষায় Water-resistant Curtain</a> ব্যবহার করবেন কেন?</h2><p>বর্ষাকালে জানালা, বারান্দা বা balcony door-এর পাশে থাকা পর্দায় বৃষ্টির পানি লাগার ঝুঁকি বেশি থাকে। <a class="rw-link" href="https://curtivelle.com/water-resistant-curtain">Water-resistant curtain </a>পানি সহজে শোষণ করে না, তাই পর্দা দ্রুত নষ্ট হয় না এবং ঘরে বেশি স্যাঁতসেঁতে লাগে না।</p><ul class="rw-list"><li>বৃষ্টির পানি লাগলেও কাপড় সহজে ভিজে ভারী হয়ে যায় না।</li><li>স্যাঁতসেঁতে গন্ধ ও damp feeling কমাতে সাহায্য করে।</li><li>Balcony, window side ও semi-open area-এর জন্য ভালো।</li><li>পরিষ্কার করা সহজ এবং maintenance কম লাগে।</li><li>বর্ষায় ঘর fresh, neat ও comfortable রাখতে সাহায্য করে।</li></ul></div></div>
         <div class="col-lg-6"><div class="rw-card teal"><h3 class="tp-section-title">বর্ষায় Blackout Curtain ব্যবহার করা উচিত কি?</h3><p>Blackout curtain সাধারণত আলো কমানোর জন্য ব্যবহার করা হয়, তবে বর্ষায় এটি bedroom বা media room-এর জন্য ভালো হতে পারে। খুব ভারী blackout curtain যদি সঠিক ventilation ছাড়া ব্যবহার করা হয়, তাহলে স্যাঁতসেঁতে ভাব তৈরি হতে পারে। তাই বর্ষায় blackout curtain ব্যবহার করলে fabric quality ও room airflow খেয়াল রাখা জরুরি।</p><ul class="rw-list"><li>Bedroom-এর privacy ও restful sleep-এর জন্য ভালো।</li><li>বৃষ্টির দিনে বাইরের অতিরিক্ত আলো বা glare কমায়।</li><li>Water-resistant quality হলে বেশি ভালো।</li><li>Sheer layer-এর সাথে ব্যবহার করলে practical হয়।</li><li>নিয়মিত খোলা রেখে বাতাস চলাচল করানো দরকার।</li></ul></div></div>
         <div class="col-lg-6"><div class="rw-card mist"><h3 class="tp-section-title">লিভিং রুমে বর্ষার জন্য কোন পর্দা ভালো?</h3><p>বর্ষাকালে <a class="rw-link" href="https://curtivelle.com/blog/premium-living-room-curtain">লিভিং রুমে</a> এমন পর্দা দরকার যা ঘরকে fresh, open এবং elegant দেখায়। খুব ভারী বা dark curtain ব্যবহার করলে ঘর ছোট ও gloomy লাগতে পারে। তাই light textured, neutral shade বা layered sheer curtain লিভিং রুমের জন্য ভালো সমাধান।</p><ul class="rw-list"><li>Light linen blend curtain living room-এর জন্য সুন্দর।</li><li>Sheer with light fabric layer premium look দেয়।</li><li>Beige, cream, off-white বা light grey shade ভালো মানায়।</li><li>বড় জানালায় floor-length light curtain elegant দেখায়।</li><li>Patterned curtain ব্যবহার করলে soft design বেছে নেওয়া ভালো।</li></ul></div></div>
