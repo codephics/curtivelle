@@ -1644,3 +1644,46 @@
 	
 
 })(jQuery);
+
+(function () {
+    const curtivelleContactForm = document.getElementById("curtivelleContactForm");
+    const existingContactStatus = document.getElementById("curtivelleContactStatus");
+
+    if (!curtivelleContactForm || existingContactStatus) {
+        return;
+    }
+
+    const curtivellePreFooterEndpoint =
+        "https://script.google.com/macros/s/AKfycbzfGizqG6V-jLwIVqdAbY-2vOKSVM3GWTU56XRRGZ4SwycDSGIicxrH7vozpLHo2MYPhQ/exec";
+
+    curtivelleContactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        let curtivelleContactStatus = document.getElementById("curtivelleContactStatus");
+
+        if (!curtivelleContactStatus) {
+            curtivelleContactStatus = document.createElement("p");
+            curtivelleContactStatus.id = "curtivelleContactStatus";
+            curtivelleContactStatus.setAttribute("role", "status");
+            curtivelleContactStatus.setAttribute("aria-live", "polite");
+            curtivelleContactForm.appendChild(curtivelleContactStatus);
+        }
+
+        curtivelleContactStatus.textContent = "";
+
+        try {
+            await fetch(curtivellePreFooterEndpoint, {
+                method: "POST",
+                mode: "no-cors",
+                body: new FormData(curtivelleContactForm),
+            });
+
+            curtivelleContactStatus.textContent =
+                "Thank you! Your message has been submitted successfully.";
+            curtivelleContactForm.reset();
+        } catch (error) {
+            curtivelleContactStatus.textContent =
+                "Something went wrong. Please try again.";
+        }
+    });
+})();

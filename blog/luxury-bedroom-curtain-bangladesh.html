@@ -902,7 +902,7 @@
                 <div class="tp-contact-area p-relative black-bg fix pt-115 pb-120 z-index">
                     <div class="tp-contact-shape-1"><img src="assets/img/contact/shape-1-1.png" alt="Decorative architectural blueprint pattern for Curtivelle contact section" /></div>
                     <div class="container"><div class="row"><div class="col-xl-6 col-lg-6"><div class="tp-contact-left"><div class="tp-contact-title-box mb-20"><span class="tp-section-subtitle tp-split-text tp-split-in-right">Message</span><h3 class="tp-section-title text-white tp-split-text tp-split-in-right">Have a Question? <br />Let's Talk About Your Space</h3></div><div class="tp-contact-text"><p>Whether you're planning a luxury curtain setup or need expert guidance for your interiors, our team is here to help. Share your details and we'll connect with you shortly to discuss your requirements.</p></div></div></div>
-                    <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s"><div class="tp-contact-right"><form id="tpWhatsappForm" onsubmit="return sendToWhatsApp(event);"><div class="row"><div class="col-lg-6 col-md-6 mb-20"><div class="tp-contact-input-box"><input id="wa_email" name="email" placeholder="Your Email" type="email" /></div></div><div class="col-lg-6 col-md-6 mb-20"><div class="tp-contact-input-box"><input id="wa_phone" name="phone" placeholder="Your Phone" type="text" /></div></div><div class="col-lg-12 mb-20"><div class="tp-contact-input-box"><input id="wa_address" name="address" placeholder="Your Address" type="text" /></div></div><div class="col-lg-12 mb-20"><div class="tp-contact-textarea-box"><textarea id="wa_message" name="message" placeholder="Write Message.."></textarea></div></div><div class="col-lg-12"><button type="submit" class="tp-btn-border height w-100"><span>Send Message</span></button></div></div></form></div></div></div></div>
+                    <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s"><div class="tp-contact-right"><form id="curtivelleContactForm"><div class="row"><div class="col-lg-6 col-md-6 mb-20"><div class="tp-contact-input-box"><input id="wa_email" name="email" placeholder="Your Email" type="email" /></div></div><div class="col-lg-6 col-md-6 mb-20"><div class="tp-contact-input-box"><input id="wa_phone" name="phone" placeholder="Your Phone" type="text" /></div></div><div class="col-lg-12 mb-20"><div class="tp-contact-input-box"><input id="wa_address" name="address" placeholder="Your Address" type="text" /></div></div><div class="col-lg-12 mb-20"><div class="tp-contact-textarea-box"><textarea id="wa_message" name="message" placeholder="Write Message.."></textarea></div></div><div class="col-lg-12"><button type="submit" class="tp-btn-border height w-100"><span>Send Message</span></button></div></div></form></div></div></div></div>
                 </div>
                 <!-- contact area end -->
 </main>
@@ -1145,34 +1145,6 @@
  <script src="assets/js/swiper-bundle.js"></script>
  <script src="assets/js/main.js"></script>
 
- <script>
- function sendToWhatsApp(e) {
- e.preventDefault();
- // CHANGE THIS to your WhatsApp number (country code + number, no + sign)
- var phoneNumber = "+8801329856367";
- var email = document.getElementById("wa_email").value.trim();
- var phone = document.getElementById("wa_phone").value.trim();
- var address = document.getElementById("wa_address").value.trim();
- var message = document.getElementById("wa_message").value.trim();
- var text =
- "Curtivelle Contact Form%0A%0A" +
- "Email: " +
- encodeURIComponent(email) +
- "%0A" +
- "Phone: " +
- encodeURIComponent(phone) +
- "%0A" +
- "Address: " +
- encodeURIComponent(address) +
- "%0A%0A" +
- "Message:%0A" +
- encodeURIComponent(message);
- // wa.me works on mobile + desktop (opens WhatsApp Web)
- var url = "https://wa.me/" + phoneNumber + "?text=" + text;
- window.open(url, "_blank");
- return false;
- }
- </script>
 </body>
 
 </html>

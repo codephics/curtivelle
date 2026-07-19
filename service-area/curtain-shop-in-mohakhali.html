@@ -1446,7 +1446,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </div>
  <div class="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
  <div class="tp-contact-right">
- <form id="tpWhatsappForm" onsubmit="return sendToWhatsApp(event);">
+ <form id="curtivelleContactForm">
  <div class="row">
  <div class="col-lg-6 col-md-6 mb-20">
  <div class="tp-contact-input-box">
@@ -1783,34 +1783,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  });
  </script>
 
- <script>
- function sendToWhatsApp(e) {
- e.preventDefault();
- // CHANGE THIS to your WhatsApp number (country code + number, no + sign)
- var phoneNumber = "+8801329856367";
- var email = document.getElementById("wa_email").value.trim();
- var phone = document.getElementById("wa_phone").value.trim();
- var address = document.getElementById("wa_address").value.trim();
- var message = document.getElementById("wa_message").value.trim();
- var text =
- "Curtivelle Mohakhali Contact Form%0A%0A" +
- "Email: " +
- encodeURIComponent(email) +
- "%0A" +
- "Phone: " +
- encodeURIComponent(phone) +
- "%0A" +
- "Address: " +
- encodeURIComponent(address) +
- "%0A%0A" +
- "Message:%0A" +
- encodeURIComponent(message);
- // wa.me works on mobile + desktop (opens WhatsApp Web)
- var url = "https://wa.me/" + phoneNumber + "?text=" + text;
- window.open(url, "_blank");
- return false;
- }
- </script>
 </body>
 
 </html>
