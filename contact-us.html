@@ -1263,7 +1263,7 @@
 </div>
 </div>
 <h4 class="tp-section-title pb-60">Enter Your Personal Details</h4>
-<form id="contact-form" onsubmit="return sendToWhatsAppContact(event);">
+<form id="curtivelleContactForm">
  <div class="row">
  <div class="col-xl-6 col-lg-6 mb-30">
  <div class="tp-form-input-box">
@@ -1324,7 +1324,7 @@
  <span>Send a message</span>
  </button>
 
- <p></p>
+ <p id="curtivelleContactStatus" role="status" aria-live="polite"></p>
  </form>
  </div>
  </div>
@@ -1800,39 +1800,30 @@
  <script src="assets/js/main.js"></script>
 
  <script>
- function sendToWhatsAppContact(e) {
- e.preventDefault();
+ const curtivelleContactForm = document.getElementById("curtivelleContactForm");
+ const curtivelleContactStatus = document.getElementById("curtivelleContactStatus");
+ const curtivelleContactEndpoint =
+ "https://script.google.com/macros/s/AKfycbzfGizqG6V-jLwIVqdAbY-2vOKSVM3GWTU56XRRGZ4SwycDSGIicxrH7vozpLHo2MYPhQ/exec";
 
- var phoneNumber = "+8801329856367"; // CHANGE THIS
+ curtivelleContactForm.addEventListener("submit", async function (event) {
+ event.preventDefault();
+ curtivelleContactStatus.textContent = "";
 
- var name = document.getElementById("wa_name").value.trim();
- var email = document.getElementById("wa_email").value.trim();
- var phone = document.getElementById("wa_phone").value.trim();
- var address = document.getElementById("wa_address").value.trim();
- var message = document.getElementById("wa_message").value.trim();
+ try {
+ await fetch(curtivelleContactEndpoint, {
+ method: "POST",
+ mode: "no-cors",
+ body: new FormData(curtivelleContactForm),
+ });
 
- var text =
- "Curtivelle Contact Request%0A%0A" +
- "Name: " +
- encodeURIComponent(name) +
- "%0A" +
- "Email: " +
- encodeURIComponent(email) +
- "%0A" +
- "Phone: " +
- encodeURIComponent(phone) +
- "%0A" +
- "Address: " +
- encodeURIComponent(address) +
- "%0A%0A" +
- "Message:%0A" +
- encodeURIComponent(message);
-
- var url = "https://wa.me/" + phoneNumber + "?text=" + text;
-
- window.open(url, "_blank");
- return false;
+ curtivelleContactStatus.textContent =
+ "Thank you! Your message has been submitted successfully.";
+ curtivelleContactForm.reset();
+ } catch (error) {
+ curtivelleContactStatus.textContent =
+ "Something went wrong. Please try again.";
  }
+ });
  </script>
  </body>
 </html>
