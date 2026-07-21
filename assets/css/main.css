@@ -5655,7 +5655,7 @@ body .ui-tooltip {
   position: relative;
 }
 .tp-header-2-menu > nav > ul > li > a {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.2px;
   display: inline-block;
@@ -5705,7 +5705,7 @@ body .ui-tooltip {
 }
 .tp-header-2-menu > nav > ul > li > .submenu > li > a {
   display: block;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.2px;
   padding: 12px 0;
