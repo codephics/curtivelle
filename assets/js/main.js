@@ -1478,21 +1478,17 @@
 	////////////////////////////////////////////////////
 	// 02. sticky header
 	function tp_pinned_header(){
-		var lastScrollTop = 0;
+		var stickyThreshold = 400;
 
-		windowOn.on('scroll',function() {
-				var currentScrollTop = $(this).scrollTop();
+		function updatePinnedHeader() {
+			$('.tp-int-menu').toggleClass(
+				'tp-header-pinned',
+				windowOn.scrollTop() > stickyThreshold
+			);
+		}
 
-				if(currentScrollTop > lastScrollTop) {
-						$('.tp-int-menu').removeClass('tp-header-pinned');
-				}else if($(this).scrollTop() <= 500){
-					$('.tp-int-menu').removeClass('tp-header-pinned');
-				}else {
-						// Scrolling up, remove the class
-						$('.tp-int-menu').addClass('tp-header-pinned');
-				}
-				lastScrollTop = currentScrollTop;
-		});
+		windowOn.on('scroll', updatePinnedHeader);
+		updatePinnedHeader();
 	}
 	tp_pinned_header();
 
