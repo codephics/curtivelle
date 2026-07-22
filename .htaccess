@@ -11,7 +11,7 @@ RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/(?:summer-curtain|winter-c
 RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)\.html/?$ /%1seasonal-curtain/$1 [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/(?:summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)/+[?\s] [NC]
 RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)/$ /%1seasonal-curtain/$1 [R=301,L,NE]
-RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)$ $1.html [END]
+RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)$ seasonal-curtain/$1.html [END]
 
 
 # Service area URLs: serve the landing page and nested city pages.
