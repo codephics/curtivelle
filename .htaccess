@@ -1,4 +1,13 @@
 RewriteEngine On
+# Seasonal curtain child URLs: redirect legacy root slugs and serve clean nested URLs.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)(?:\.html)?/?[?\s] [NC]
+RewriteRule ^(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)(?:\.html)?/?$ /%1seasonal-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/(?:summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)\.html/?[?\s] [NC]
+RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)\.html/?$ /%1seasonal-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/(?:summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)/+[?\s] [NC]
+RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)/$ /%1seasonal-curtain/$1 [R=301,L,NE]
+RewriteRule ^seasonal-curtain/(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)$ $1.html [END]
+
 
 # Service area URLs: serve the landing page and nested city pages.
 RewriteCond %{THE_REQUEST} \s/+(.*/)?city-shop(?:\.html)?[?\s] [NC]
