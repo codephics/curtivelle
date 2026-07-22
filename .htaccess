@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# Serve the seasonal curtain landing page at /seasonal-curtain, like the blog landing page.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/+[?\s] [NC]
+RewriteRule ^seasonal-curtain/$ /%1seasonal-curtain [R=301,L,NE]
+RewriteRule ^seasonal-curtain$ seasonal-curtain.html [END]
 # Seasonal curtain child URLs: redirect legacy root slugs and serve clean nested URLs.
 RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)(?:\.html)?/?[?\s] [NC]
 RewriteRule ^(summer-curtain|winter-curtain|spring-curtain|rainy-curtain-price-bd|autumn-curtain-price-bd|late-autumn-curtain-price-in-bangladesh)(?:\.html)?/?$ /%1seasonal-curtain/$1 [R=301,L,NE]
