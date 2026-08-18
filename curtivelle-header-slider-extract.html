@@ -1,0 +1,423 @@
+<html>
+  <head>
+  <!-- Bootstrap + Curtivelle required CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Optional homepage override found inline in Curtivelle index.html -->
+  <style>
+  .tp-header-2-menu > nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+  }
+  .tp-header-2-menu > nav > ul > li {
+    flex-shrink: 0;
+  }
+  .home-slider-custom .tp-slider-3-social {
+    z-index: 9;
+  }
+  .home-slider-custom .tp-slider-3-title,
+  .home-slider-custom .tp-slider-3-title .second-line {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+  .home-slider-custom .tp-slider-3-title {
+    font-size: clamp(42px, 6vw, 92px);
+  }
+  .home-slider-custom .home-slider-full-image {
+    background-size: cover;
+    background-position: center;
+  }
+  .home-slider-custom .home-slider-full-image.tp-slider-3-overlay::after {
+    background: rgba(0,0,0,.48);
+  }
+  .home-slider-custom .tp-slider-3-wrapper .swiper-slide-active .home-slider-full-image {
+    transform: scale(1.04);
+  }
+  @media (max-width: 991px) {
+    .home-slider-custom .tp-slider-3-title,
+    .home-slider-custom .tp-slider-3-title .second-line {
+      font-size: 58px;
+    }
+  }
+  @media (max-width: 575px) {
+    .home-slider-custom .tp-slider-3-title,
+    .home-slider-custom .tp-slider-3-title .second-line {
+      font-size: 42px;
+    }
+    .home-slider-custom .tp-slider-3-title {
+      max-width: 320px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<div class="body-overlay"></div>
+
+<div class="tpoffcanvas-area">
+  <div class="tpoffcanvas">
+    <div class="tpoffcanvas__close-btn">
+      <button class="close-btn"><i class="fal fa-times"></i></button>
+    </div>
+
+    <div class="tpoffcanvas__logo">
+      <a href="./">
+        <img src="assets/img/logo/logo-01.svg" alt="Curtivelle" style="max-width:160px;">
+      </a>
+    </div>
+
+    <div class="tp-main-menu-mobile d-xl-none"></div>
+
+    <div class="tpoffcanvas__contact-info">
+      <div class="tpoffcanvas__contact-title">
+        <h5>Contact us</h5>
+      </div>
+      <ul>
+        <li><i class="fal fa-phone-alt"></i> <a href="tel:+8801329856367">+880 1329 856367</a></li>
+        <li><i class="fal fa-envelope"></i> <a href="mailto:curtivelle@gmail.com">curtivelle@gmail.com</a></li>
+        <li><i class="fal fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+      </ul>
+    </div>
+
+    <div class="tpoffcanvas__social">
+      <div class="social-icon">
+        <a href="https://www.facebook.com/curtivelle"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@curtivelle"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@curtivelle"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+  <!-- transparent header -->
+  <div class="tp-header-tranparent">
+    <div class="tp-header-area tp-header-2-pt">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-4 col-6">
+            <div class="tp-header-logo">
+              <a href="./">
+                <img src="assets/img/logo/logo-01.svg" alt="Curtivelle" style="max-width:160px;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-9 d-none d-xl-block">
+            <div class="tp-header-2-menu">
+              <nav class="tp-main-menu-content">
+                <ul>
+                  <li><a href="./">Home</a></li>
+
+                  <li class="has-dropdown">
+                    <a href="style-based-curtain">Style Based Curtain</a>
+                    <ul class="submenu tp-submenu">
+                      <li><a href="floral-curtain">Floral Curtain</a></li>
+                      <li><a href="party-mode-curtain">Party Mode</a></li>
+                      <li><a href="glossy-curtain">Glossy Curtain</a></li>
+                      <li><a href="chenille-curtain">Chenille Curtain</a></li>
+                      <li><a href="blackout-curtain">Blackout Curtain</a></li>
+                      <li><a href="dobby-curtain">Dobby Curtain</a></li>
+                      <li><a href="water-resistant-curtain">Water-Resistant Curtain</a></li>
+                      <li><a href="acoustic-curtain-price-bd">Acoustic Curtain</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown">
+                    <a href="interior-based-curtain">Interior Based Curtain</a>
+                    <ul class="submenu tp-submenu">
+                      <li><a href="residential-curtain">Residential Curtain</a></li>
+                      <li><a href="commercial-curtain">Commercial Curtain</a></li>
+                      <li><a href="hospitality-curtain">Hospitality Curtain</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown">
+                    <a href="seasonal-curtain">Seasonal Curtain</a>
+                    <ul class="submenu tp-submenu">
+                      <li><a href="summer-curtain">Summer curtain</a></li>
+                      <li><a href="winter-curtain">Winter Curtain</a></li>
+                      <li><a href="spring-curtain">Spring Curtain</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown">
+                    <a href="about-us">About Us</a>
+                    <ul class="submenu tp-submenu">
+                      <li><a href="our-profile">Our Profile</a></li>
+                      <li><a href="mission-vision">Mission & Vision</a></li>
+                      <li><a href="gallery">Gallery</a></li>
+                      <li><a href="reviews">Reviews</a></li>
+                      <li><a href="blog">Blog</a></li>
+                      <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-xl-1 col-lg-8 col-6">
+            <div class="tp-header-2-right text-end">
+              <ul>
+                <li>
+                  <div class="tp-header-2-bar">
+                    <button class="tp-menu-bar" aria-label="Open menu">
+                      <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.25 2C6.25 1.30967 6.80967 0.75 7.5 0.75H23.75C24.4403 0.75 25 1.30967 25 2C25 2.69033 24.4403 3.25 23.75 3.25H7.5C6.80967 3.25 6.25 2.69028 6.25 2ZM23.75 8.25H1.25C0.559668 8.25 0 8.80972 0 9.5C0 10.1903 0.559668 10.75 1.25 10.75H23.75C24.4403 10.75 25 10.1903 25 9.5C25 8.80972 24.4403 8.25 23.75 8.25ZM23.75 15.75H12.5C11.8097 15.75 11.25 16.3097 11.25 17C11.25 17.6903 11.8097 18.25 12.5 18.25H23.75C24.4403 18.25 25 17.6903 25 17C25 16.3097 24.4403 15.75 23.75 15.75Z" fill="currentcolor"/>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="tp-slider-3-area home-slider-custom">
+  <div class="tp-slider-3-wrapper p-relative">
+    <div class="tp-slider-dots"></div>
+
+    <div class="swiper-container tp-slider-3-active">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="tp-slider-3-height p-relative fix grey-bg">
+            <div class="tp-slider-3-bg tp-slider-3-overlay" data-background="assets/img/slider/slider-1-1.jpg"></div>
+            <div class="tp-slider-3-social d-none d-xxl-block">
+              <a href="https://www.facebook.com/curtivelle"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@curtivelle"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@curtivelle"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="container">
+              <div class="tp-slider-3-wrap p-relative">
+                <div class="row align-items-center">
+                  <div class="col-xl-12">
+                    <div class="tp-slider-3-title-box">
+                      <div class="tp-slider-3-title mb-25">Where Light <span class="second-line">Meets Luxury</span></div>
+                    </div>
+                    <div class="tp-slider-3-content">
+                      <p class="mb-40"><b>Timeless curtains crafted to elevate your space with elegance, comfort, and refined design.</b></p>
+                      <a class="tp-btn-black hover-2 theme-bg" href="tel:+8801329856367"><span>Call for Curtain ?</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tp-slider-3-height p-relative fix grey-bg">
+            <div class="tp-slider-3-bg tp-slider-3-overlay" data-background="assets/img/slider/slider-1-2.jpg"></div>
+            <div class="tp-slider-3-social d-none d-xxl-block">
+              <a href="https://www.facebook.com/curtivelle"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@curtivelle"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@curtivelle"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="container">
+              <div class="tp-slider-3-wrap p-relative">
+                <div class="row align-items-center">
+                  <div class="col-xl-12">
+                    <div class="tp-slider-3-title-box">
+                      <span class="tp-slider-3-title mb-25">Drape Your Space <span class="second-line">in Elegance</span></span>
+                    </div>
+                    <div class="tp-slider-3-content">
+                      <p class="mb-40"><b>Premium curtains designed for modern interiors-soft textures, perfect fall, lasting beauty.</b></p>
+                      <a class="tp-btn-black hover-2 theme-bg" href="tel:+8801329856367"><span>Book for Consultation ?</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tp-slider-3-height p-relative fix grey-bg">
+            <div class="tp-slider-3-bg tp-slider-3-overlay home-slider-full-image" data-background="assets/img/slider/slider-3.png"></div>
+            <div class="tp-slider-3-social d-none d-xxl-block">
+              <a href="https://www.facebook.com/curtivelle"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@curtivelle"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@curtivelle"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="container">
+              <div class="tp-slider-3-wrap p-relative">
+                <div class="row align-items-center">
+                  <div class="col-xl-12">
+                    <div class="tp-slider-3-title-box">
+                      <div class="tp-slider-3-title mb-25">Style-based curtains <span class="second-line">in Bangladesh</span></div>
+                    </div>
+                    <div class="tp-slider-3-content">
+                      <p class="mb-40"><b>Premium curtain shop in Bangladesh to upgrade your space with the best stylish collections. Each of our curtain folds reveals a tale of luxury.</b></p>
+                      <a class="tp-btn-black hover-2 theme-bg" href="tel:+8801329856367"><span>Call Our Consultant</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tp-slider-3-height p-relative fix grey-bg">
+            <div class="tp-slider-3-bg tp-slider-3-overlay home-slider-full-image" data-background="assets/img/slider/slider-4.png"></div>
+            <div class="tp-slider-3-social d-none d-xxl-block">
+              <a href="https://www.facebook.com/curtivelle"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@curtivelle"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@curtivelle"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="container">
+              <div class="tp-slider-3-wrap p-relative">
+                <div class="row align-items-center">
+                  <div class="col-xl-12">
+                    <div class="tp-slider-3-title-box">
+                      <div class="tp-slider-3-title mb-25">Interior-based curtains <span class="second-line">in Bangladesh</span></div>
+                    </div>
+                    <div class="tp-slider-3-content">
+                      <p class="mb-40"><b>The best curtain store in Bangladesh will update your living area. Our premium curtain collections will add luxury to your living space.</b></p>
+                      <a class="tp-btn-black hover-2 theme-bg" href="tel:+8801329856367"><span>Call Our Consultant</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tp-slider-3-height p-relative fix grey-bg">
+            <div class="tp-slider-3-bg tp-slider-3-overlay home-slider-full-image" data-background="assets/img/slider/slider-5.png"></div>
+            <div class="tp-slider-3-social d-none d-xxl-block">
+              <a href="https://www.facebook.com/curtivelle"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@curtivelle"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@curtivelle"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="container">
+              <div class="tp-slider-3-wrap p-relative">
+                <div class="row align-items-center">
+                  <div class="col-xl-12">
+                    <div class="tp-slider-3-title-box">
+                      <div class="tp-slider-3-title mb-25">Seasonal curtains <span class="second-line">in Bangladesh</span></div>
+                    </div>
+                    <div class="tp-slider-3-content">
+                      <p class="mb-40"><b>Choose the ideal seasonal curtains for your house from our best curtain collections. Customise your windows for each season.</b></p>
+                      <a class="tp-btn-black hover-2 theme-bg" href="tel:+8801329856367"><span>Call Our Consultant</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/bootstrap-bundle.js"></script>
+<script src="assets/js/swiper-bundle.js"></script>
+
+<!-- Use either assets/js/main.js from Curtivelle OR the minimal JS below. -->
+
+<script>
+(function($){
+  "use strict";
+
+  $("[data-background]").each(function(){
+    $(this).css("background-image", "url('" + $(this).attr("data-background") + "')");
+  });
+
+  $(".tp-main-menu-content ul li a").wrapInner("<span></span>");
+
+  if ($(".tp-main-menu-content").length && $(".tp-main-menu-mobile").length) {
+    var navContent = document.querySelector(".tp-main-menu-content").outerHTML;
+    document.querySelector(".tp-main-menu-mobile").innerHTML = navContent;
+
+    var arrow = $(".tp-main-menu-mobile .has-dropdown > a, .tp-main-menu-mobile .has-dropdown-2 > a");
+    arrow.each(function(){
+      var self = $(this);
+      var arrowBtn = document.createElement("button");
+      arrowBtn.classList.add("dropdown-toggle-btn");
+      arrowBtn.setAttribute("type", "button");
+      arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
+      self.append(arrowBtn);
+
+      self.find(".dropdown-toggle-btn").on("click", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        var toggleBtn = $(this);
+        var parentLi = toggleBtn.closest("li");
+        var submenu = parentLi.children(".tp-submenu");
+
+        if (submenu.is(":visible")) {
+          submenu.slideUp();
+          parentLi.removeClass("dropdown-opened");
+          toggleBtn.removeClass("dropdown-opened");
+          toggleBtn.parent().removeClass("expanded");
+        } else {
+          parentLi.siblings().find(".tp-submenu").slideUp();
+          parentLi.siblings().removeClass("dropdown-opened");
+          parentLi.siblings().find(".dropdown-toggle-btn").removeClass("dropdown-opened");
+          parentLi.siblings().children("a").removeClass("expanded");
+
+          submenu.slideDown();
+          parentLi.addClass("dropdown-opened");
+          toggleBtn.addClass("dropdown-opened");
+          toggleBtn.parent().addClass("expanded");
+        }
+      });
+    });
+  }
+
+  $(".tp-menu-bar").on("click", function(){
+    $(".tpoffcanvas").addClass("opened");
+    $(".body-overlay").addClass("apply");
+  });
+
+  $(".close-btn, .body-overlay").on("click", function(){
+    $(".tpoffcanvas").removeClass("opened");
+    $(".body-overlay").removeClass("apply");
+  });
+
+  new Swiper(".tp-slider-3-active", {
+    speed: 1000,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: true,
+    spaceBetween: 0,
+    effect: "fade",
+    pagination: {
+      el: ".tp-slider-dots",
+      clickable: true
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 1 },
+      768: { slidesPerView: 1 },
+      992: { slidesPerView: 1 },
+      1200: { slidesPerView: 1 },
+      1400: { slidesPerView: 1 },
+      1600: { slidesPerView: 1 }
+    },
+    a11y: false
+  });
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <title>Curtivelle | Quotation CRM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Curtivelle CRM home">
+        <span class="brand-mark">C</span>
+        <span><strong>Curtivelle</strong><small>Quotation CRM</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#dashboard" data-route="dashboard">ড্যাশবোর্ড</a>
+        <a href="#quotation/new" data-route="quotation">নতুন কোটেশন</a>
+        <a href="#customers" data-route="customers">কাস্টমার</a>
+        <a href="#quotations" data-route="quotations">কোটেশন</a>
+        <a href="#invoices" data-route="invoices">ইনভয়েস</a>
+        <a href="#trash" data-route="trash">রিসাইকেল বিন</a>
+        <a href="#settings" data-route="settings">সেটিংস</a>
+      </nav>
+      <div class="sidebar-foot">
+        <span id="connectionDot" class="status-dot"></span>
+        <span id="connectionText">Local mode</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Menu">☰</button>
+        <div>
+          <h1 id="pageTitle">ড্যাশবোর্ড</h1>
+          <p id="pageSubtitle">Curtivelle business overview</p>
+        </div>
+        <button class="btn btn-primary" id="quickQuotation" type="button">+ নতুন কোটেশন</button>
+      </header>
+      <section id="app" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  <div id="modalRoot"></div>
+
+  <template id="lineItemTemplate">
+    <div class="line-item">
+      <input data-field="modelCode" placeholder="মডেল কোড">
+      <input data-field="height" type="number" min="0" step="0.01" placeholder="হাইট">
+      <input data-field="width" type="number" min="0" step="0.01" placeholder="উইডথ">
+      <input data-field="pleatCount" type="number" min="0" step="1" placeholder="কুচি">
+      <input data-field="fabric" placeholder="ফেব্রিক">
+      <input data-field="design" placeholder="ডিজাইন">
+      <input data-field="pieces" type="number" min="0" step="1" value="1" placeholder="পিস">
+      <input data-field="unitPrice" type="number" min="0" step="0.01" placeholder="ইউনিট মূল্য">
+      <output data-field="total">৳0</output>
+      <button type="button" class="icon-btn danger remove-row" aria-label="Remove">×</button>
+    </div>
+  </template>
+
+  <template id="extraItemTemplate">
+    <div class="extra-item">
+      <input data-field="description" placeholder="বিবরণ">
+      <input data-field="quantity" type="number" min="0" step="0.01" value="1" placeholder="পরিমাণ">
+      <input data-field="unit" placeholder="ইউনিট">
+      <input data-field="unitPrice" type="number" min="0" step="0.01" placeholder="ইউনিট মূল্য">
+      <output data-field="total">৳0</output>
+      <button type="button" class="icon-btn danger remove-row" aria-label="Remove">×</button>
+    </div>
+  </template>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
