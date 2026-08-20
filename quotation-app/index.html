@@ -50,14 +50,16 @@
 
   <template id="lineItemTemplate">
     <div class="line-item">
-      <input data-field="modelCode" placeholder="মডেল কোড">
+      <input data-field="modelCode" list="productOptions" placeholder="প্রোডাক্ট কোড">
       <input data-field="height" type="number" min="0" step="0.01" placeholder="হাইট">
       <input data-field="width" type="number" min="0" step="0.01" placeholder="উইডথ">
       <input data-field="pleatCount" type="number" min="0" step="1" placeholder="কুচি">
-      <input data-field="fabric" placeholder="ফেব্রিক">
-      <input data-field="design" placeholder="ডিজাইন">
+      <input data-field="yards" type="number" min="0" step="0.01" placeholder="ইয়ার্ড">
+      <input data-field="yardPrice" type="number" min="0" step="0.01" placeholder="প্রতি ইয়ার্ড">
+      <input data-field="design" list="designOptions" placeholder="ডিজাইন (ঐচ্ছিক)">
+      <input data-field="designRate" type="number" min="0" step="0.01" placeholder="ডিজাইন রেট">
       <input data-field="pieces" type="number" min="0" step="1" value="1" placeholder="পিস">
-      <input data-field="unitPrice" type="number" min="0" step="0.01" placeholder="ইউনিট মূল্য">
+      <input data-field="source" placeholder="সোর্স">
       <output data-field="total">৳0</output>
       <button type="button" class="icon-btn danger remove-row" aria-label="Remove">×</button>
     </div>
@@ -74,6 +76,20 @@
     </div>
   </template>
 
+  <datalist id="productOptions"></datalist>
+  <datalist id="roomOptions">
+    <option value="Master Bedroom"></option><option value="Living Room"></option>
+    <option value="Dining Room"></option><option value="Kids Room"></option>
+    <option value="Guest Bedroom"></option><option value="Study Room"></option>
+    <option value="Family Living"></option><option value="Kitchen"></option>
+    <option value="Office"></option><option value="Prayer Room"></option>
+  </datalist>
+  <datalist id="designOptions">
+    <option value="1 Pinch"></option><option value="2 Pinch"></option><option value="3 Pinch"></option>
+    <option value="Eyelet"></option><option value="Wave"></option><option value="Pencil Pleat"></option>
+  </datalist>
+
+  <script src="assets/product-catalog.js"></script>
   <script src="assets/app.js" defer></script>
 </body>
 </html>

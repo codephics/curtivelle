@@ -99,7 +99,7 @@ textarea { resize: vertical; min-height: 80px; }
 .item-section-head { display: flex; align-items: center; margin-bottom: 8px; }
 .item-section-head h3 { margin: 0; flex: 1; font-size: 14px; }
 .line-item, .extra-item { display: grid; gap: 7px; align-items: center; margin-bottom: 7px; }
-.line-item { grid-template-columns: 1.05fr repeat(3,.65fr) 1fr 1fr .55fr .85fr .8fr 36px; }
+.line-item { grid-template-columns: 1.05fr repeat(3,.58fr) .58fr .78fr .9fr .72fr .5fr .85fr .78fr 36px; }
 .extra-item { grid-template-columns: 2fr .7fr .7fr .9fr .9fr 36px; }
 .line-item input, .extra-item input { min-width: 0; padding: 8px; font-size: 12px; }
 .line-item output, .extra-item output { text-align: right; font-size: 12px; font-weight: 600; }
@@ -146,4 +146,84 @@ textarea { resize: vertical; min-height: 80px; }
   .content { padding: 0; }
   .card, .room-card { box-shadow: none; break-inside: avoid; }
   body { background: #fff; }
+}
+
+
+
+/* Branded document preview and compact A4 output */
+.print-modal { width: min(1080px, 100%); }
+.print-actions { margin-top: 18px; justify-content: flex-end; }
+.print-document { padding: 10px; background: #fff; color: #18231f; font-family: Inter, "Noto Sans Bengali", sans-serif; font-size: 11px; }
+.print-brand { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 18px; padding-bottom: 14px; border-bottom: 2px solid var(--green); }
+.print-brand img { display: block; max-width: 140px; max-height: 58px; }
+.print-brand h1 { margin: 0; color: var(--green); font: 700 22px Georgia, serif; }
+.print-brand p { margin: 4px 0 0; color: var(--muted); }
+.print-brand > strong { color: var(--green); font-size: 20px; letter-spacing: .12em; }
+.print-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0; }
+.print-meta div { padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; }
+.print-meta span, .print-meta strong { display: block; }
+.print-meta span { color: var(--muted); font-size: 9px; text-transform: uppercase; }
+.print-meta strong { margin-top: 3px; min-height: 14px; }
+.print-customer, .print-offer, .print-note, .print-terms { margin: 12px 0; }
+.print-customer h2, .print-room h2, .print-terms h2 { margin: 0 0 5px; color: var(--green); font-size: 13px; }
+.print-customer p, .print-offer p, .print-note p, .print-terms p { margin: 3px 0; white-space: pre-line; }
+.print-offer { padding: 9px 11px; border-left: 3px solid var(--gold); background: #fffaf0; }
+.print-room { margin: 14px 0; break-inside: avoid; }
+.print-room table { font-size: 9px; table-layout: fixed; }
+.print-room th, .print-room td { padding: 5px 4px; white-space: normal; overflow-wrap: anywhere; }
+.print-room thead th { background: var(--green); color: #fff; }
+.print-room .print-section th { background: #edf3f0; color: var(--green); text-align: left; }
+.print-room tfoot th { text-align: right; background: #f7f8f7; }
+.print-totals { width: min(360px, 100%); margin: 16px 0 16px auto; border-top: 1px solid var(--line); }
+.print-totals div { display: flex; justify-content: space-between; gap: 20px; padding: 5px 0; }
+.print-totals .grand { padding: 8px 0; border-top: 2px solid var(--green); border-bottom: 2px solid var(--green); color: var(--green); font-size: 14px; }
+.print-terms ol { margin: 6px 0 0 18px; padding: 0; }
+.print-terms li { margin: 3px 0; }
+.print-footer { display: flex; justify-content: space-between; margin-top: 18px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--muted); }
+
+@media print {
+  @page { size: A4 portrait; margin: 9mm; }
+  .app-shell, .toast, .modal > .card-head, .print-actions { display: none !important; }
+  #modalRoot, .modal-backdrop, .print-modal { position: static !important; display: block !important; width: auto !important; max-width: none !important; max-height: none !important; overflow: visible !important; margin: 0 !important; padding: 0 !important; background: #fff !important; box-shadow: none !important; }
+  .print-document { padding: 0; font-size: 9.5px; }
+  .print-brand { grid-template-columns: 125px 1fr auto; padding-bottom: 8px; }
+  .print-brand img { max-width: 120px; max-height: 48px; }
+  .print-brand h1 { font-size: 18px; }
+  .print-brand > strong { font-size: 16px; }
+  .print-meta { margin: 8px 0; }
+  .print-room { margin: 9px 0; }
+  .print-room th, .print-room td { padding: 3px; }
+  .print-customer, .print-offer, .print-note, .print-terms { margin: 8px 0; }
+  .print-footer { margin-top: 10px; }
+}
+
+/* Spacious Curtain/Sheer editor */
+.line-item.column-labels { display: none; }
+.line-item:not(.column-labels) {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fbfcfb;
+}
+.line-field { display: grid; min-width: 0; gap: 5px; color: var(--muted); font-size: 10px; font-weight: 600; }
+.line-field > span { min-height: 14px; white-space: normal; line-height: 1.35; }
+.line-field input { min-width: 0; width: 100%; background: #fff; font-size: 13px; }
+.line-field output { min-height: 39px; display: flex; align-items: center; padding: 8px 10px; border-radius: 8px; background: #edf3f0; color: var(--green); font-size: 13px; font-weight: 700; }
+.field-modelCode, .field-design, .field-source { grid-column: span 2; }
+.field-total { grid-column: span 2; }
+.line-item:not(.column-labels) > .remove-row { align-self: end; margin-bottom: 2px; }
+
+@media (max-width: 1150px) {
+  .line-item:not(.column-labels) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 780px) {
+  .line-item:not(.column-labels) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .field-modelCode, .field-design, .field-source, .field-total { grid-column: span 2; }
+}
+@media (max-width: 480px) {
+  .line-item:not(.column-labels) { grid-template-columns: 1fr; }
+  .field-modelCode, .field-design, .field-source, .field-total { grid-column: auto; }
 }

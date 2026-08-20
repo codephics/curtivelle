@@ -3,7 +3,9 @@
 
   const CURRENCY = new Intl.NumberFormat('en-BD', { style: 'currency', currency: 'BDT', maximumFractionDigits: 2 });
   const DATE = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' });
-  const DEFAULT_TERMS = `• Quotation validity: 15 days from issue date.\n• Custom designs cannot be changed after approval and production start.\n• Advance payments and custom-made products are non-refundable.\n• Final measurements must be verified before production; customer-provided measurements remain the customer's responsibility.\n• Installation schedule depends on site readiness and access.\n• Fabric shade, texture and pattern alignment may vary slightly between batches.\n• Products remain the property of Curtivelle until full payment is received.`;
+  const DEFAULT_TERMS = `1. Quotation validity: 15 days from issue date.\n2. Custom designs cannot be changed after approval and production start.\n3. Advance payments and custom-made products are non-refundable.\n4. Final measurements must be verified before production; customer-provided measurements remain the customer's responsibility.\n5. Installation schedule depends on site readiness and access.\n6. Products remain the property of Curtivelle until full payment is received.\n7. Delivery must be made within 1 month of production.`;
+  const PRODUCTS = Array.isArray(window.CURTIVELLE_PRODUCTS) ? window.CURTIVELLE_PRODUCTS : [];
+  const LINE_LABELS = { modelCode: 'প্রোডাক্ট', height: 'হাইট (ft)', width: 'উইডথ (ft)', pleatCount: 'কুচি', yards: 'ইয়ার্ড', yardPrice: 'প্রতি ইয়ার্ড মূল্য', design: 'ডিজাইন (ঐচ্ছিক)', designRate: 'ডিজাইন রেট', pieces: 'পিস', source: 'সোর্স', total: 'টোটাল' };
   const DB_KEY = 'curtivelle_crm_v1';
   const CONFIG_KEY = 'curtivelle_crm_config';
 
@@ -149,14 +151,27 @@
     $$('[data-restore]').forEach(btn => btn.onclick = async () => { const [type, id] = btn.dataset.restore.split(':'); await state.store.restore(type, id); toast('রেকর্ড restore হয়েছে'); trashPage(); });
   }
 
-  const blankLine = () => ({ modelCode: '', height: '', width: '', pleatCount: '', fabric: '', design: '', pieces: 1, unitPrice: '', total: 0 });
+  const blankLine = () => ({ modelCode: '', height: '', width: '', pleatCount: '', yards: '', yardPrice: '', catalogUnitPrice: '', gsm: '', source: '', design: '', designRate: '', pieces: 1, total: 0 });
   const blankExtra = () => ({ description: '', quantity: 1, unit: '', unitPrice: '', total: 0 });
   const blankRoom = (name = 'Master Bedroom') => ({ id: uid('ROOM'), name, curtains: [blankLine()], sheers: [blankLine()], extraFabric: [blankExtra()], fittings: [blankExtra()], accessories: [blankExtra()], total: 0 });
-  const blankQuote = async () => ({ id: uid('QUOTE'), number: await state.store.nextNumber('quotation'), date: today(), validUntil: new Date(Date.now() + 15 * 86400000).toISOString().slice(0,10), status: 'draft', customer: { id: '', customerNo: '', name: '', phone: '', profession: '', address: '' }, rooms: [blankRoom()], discount: 0, advanceReceived: 0, subtotal: 0, grandTotal: 0, dueAmount: 0, paymentTerms: '30% advance, remaining payment before/at installation.', terms: DEFAULT_TERMS, notes: '' });
+  const blankQuote = async () => ({ id: uid('QUOTE'), number: await state.store.nextNumber('quotation'), date: today(), deliveryDate: '', validUntil: new Date(Date.now() + 15 * 86400000).toISOString().slice(0,10), status: 'draft', customer: { id: '', customerNo: '', name: '', phone: '', profession: '', address: '' }, rooms: [blankRoom()], discountPercent: 0, discountAmount: 0, advanceReceived: 0, subtotal: 0, grandTotal: 0, dueAmount: 0, paymentTerms: '30% advance, remaining payment before/at installation.', offer: '', terms: DEFAULT_TERMS, notes: '' });
+  const normalizeLine = item => {
+    const legacyPriceOnly = item.yards == null && item.unitPrice != null;
+    item.yards = item.yards ?? (legacyPriceOnly ? 1 : '');
+    item.yardPrice = item.yardPrice ?? item.unitPrice ?? '';
+    item.designRate = item.designRate ?? '';
+    item.source = item.source ?? '';
+    item.pieces = item.pieces || 1;
+    return item;
+  };
 
   async function quotationPage(id) {
     const quote = id ? await state.store.get('quotations', id) : await blankQuote();
     if (!quote) { toast('কোটেশন পাওয়া যায়নি'); location.hash = '#quotations'; return; }
+    quote.deliveryDate = quote.deliveryDate || '';
+    quote.discountPercent = n(quote.discountPercent);
+    quote.offer = quote.offer || '';
+    quote.rooms.forEach(room => ['curtains','sheers'].forEach(key => (room[key] || []).forEach(normalizeLine)));
     setHeading(id ? quote.number : 'নতুন কোটেশন', 'Room-wise curtain quotation builder');
     $('#app').innerHTML = `<form id="quotationForm" class="quotation-layout">
       <div class="quotation-main">
@@ -168,19 +183,21 @@
           <label class="span-2">অ্যাড্রেস<textarea name="customerAddress">${escapeHtml(quote.customer.address)}</textarea></label>
           <label>কোটেশন নম্বর<input value="${escapeHtml(quote.number)}" readonly></label>
           <label>তারিখ<input name="date" type="date" value="${quote.date}"></label>
+          <label>Delivery date<input name="deliveryDate" type="date" value="${quote.deliveryDate}"></label>
           <label>Valid until<input name="validUntil" type="date" value="${quote.validUntil}"></label>
           <label>Status<select name="status">${['draft','sent','approved','rejected'].map(x => `<option ${quote.status === x ? 'selected' : ''}>${x}</option>`).join('')}</select></label>
         </div></section>
         <div><div class="section-title"><h2>রুমসমূহ</h2><button class="btn btn-secondary no-print" type="button" id="addRoom">+ রুম যোগ করুন</button></div><div id="rooms"></div></div>
         <section class="card"><div class="card-head"><h2>পেমেন্ট ও শর্তাবলি</h2></div><div class="form-grid">
-          <label>Discount<input name="discount" type="number" min="0" step="0.01" value="${n(quote.discount)}"></label>
+          <label>Discount (%)<input name="discountPercent" type="number" min="0" max="100" step="0.01" value="${n(quote.discountPercent)}"></label>
           <label>Advance received<input name="advanceReceived" type="number" min="0" step="0.01" value="${n(quote.advanceReceived)}"></label>
           <label class="span-2">Payment terms<textarea name="paymentTerms">${escapeHtml(quote.paymentTerms)}</textarea></label>
+          <label class="span-4">Offer / special note (optional)<textarea name="offer" placeholder="ফাঁকা রাখলে print-এ দেখাবে না">${escapeHtml(quote.offer)}</textarea></label>
           <label class="span-4">Terms & conditions<textarea name="terms" rows="8">${escapeHtml(quote.terms)}</textarea></label>
-          <label class="span-4">Notes<textarea name="notes">${escapeHtml(quote.notes)}</textarea></label>
+          <label class="span-4">Notes (optional)<textarea name="notes" placeholder="ফাঁকা রাখলে print-এ দেখাবে না">${escapeHtml(quote.notes)}</textarea></label>
         </div></section>
       </div>
-      <aside class="card quote-summary"><div class="card-head"><h2>Project Summary</h2></div><div id="roomSummary"></div><div class="summary-line"><span>Subtotal</span><strong id="subtotal">৳0</strong></div><div class="summary-line"><span>Discount</span><strong id="discountTotal">৳0</strong></div><div class="summary-line grand"><span>Grand total</span><strong id="grandTotal">৳0</strong></div><div class="summary-line"><span>Advance</span><strong id="advanceTotal">৳0</strong></div><div class="summary-line due"><span>Due amount</span><strong id="dueTotal">৳0</strong></div><div class="actions no-print" style="margin-top:18px"><button class="btn btn-primary" type="submit">সেভ করুন</button>${id ? '<button class="btn btn-secondary" type="button" id="convertInvoice">Convert to Invoice</button><button class="btn btn-secondary" type="button" id="printQuote">PDF / Print</button>' : ''}</div></aside>
+      <aside class="card quote-summary"><div class="card-head"><h2>Project Summary</h2></div><div id="roomSummary"></div><div class="summary-line"><span>Subtotal</span><strong id="subtotal">৳0</strong></div><div class="summary-line" id="discountRow" hidden><span>Discount</span><strong id="discountTotal">৳0</strong></div><div class="summary-line grand"><span>Grand total</span><strong id="grandTotal">৳0</strong></div><div class="summary-line"><span>Advance</span><strong id="advanceTotal">৳0</strong></div><div class="summary-line due"><span>Due amount</span><strong id="dueTotal">৳0</strong></div><div class="actions no-print" style="margin-top:18px"><button class="btn btn-primary" type="submit">সেভ করুন</button>${id ? '<button class="btn btn-secondary" type="button" id="convertInvoice">Convert to Invoice</button><button class="btn btn-secondary" type="button" id="printQuote">Quotation PDF</button><button class="btn btn-secondary" type="button" id="printMaking">Making PDF</button>' : ''}</div></aside>
     </form>`;
 
     const roomsRoot = $('#rooms');
@@ -189,13 +206,14 @@
     $('#quotationForm').addEventListener('input', () => calculateQuote(quote));
     $('#quotationForm').onsubmit = async (event) => { event.preventDefault(); await saveQuotation(quote); };
     if ($('#convertInvoice')) $('#convertInvoice').onclick = async () => convertToInvoice(quote);
-    if ($('#printQuote')) $('#printQuote').onclick = () => window.print();
+    if ($('#printQuote')) $('#printQuote').onclick = () => openPrintDocument(quote, 'quotation');
+    if ($('#printMaking')) $('#printMaking').onclick = () => openPrintDocument(quote, 'making');
     renderRooms();
   }
 
   function roomElement(room, index, quote, rerender) {
     const wrap = document.createElement('section'); wrap.className = 'room-card';
-    wrap.innerHTML = `<div class="room-head"><input class="room-name" value="${escapeHtml(room.name)}" aria-label="Room name"><output>${money(room.total)}</output><button class="icon-btn danger no-print remove-room" type="button" title="Remove room">×</button></div><div class="room-body"></div>`;
+    wrap.innerHTML = `<div class="room-head"><input class="room-name" list="roomOptions" value="${escapeHtml(room.name)}" aria-label="Room name"><output>${money(room.total)}</output><button class="icon-btn danger no-print remove-room" type="button" title="Remove room">×</button></div><div class="room-body"></div>`;
     const body = $('.room-body', wrap);
     [['curtains','কার্টেন'], ['sheers','শিয়ার']].forEach(([key, label]) => body.appendChild(lineSection(room, key, label, quote)));
     [['extraFabric','এক্সট্রা ফেব্রিক'], ['fittings','ফিটিংস'], ['accessories','অ্যাক্সেসরিজ']].forEach(([key, label]) => body.appendChild(extraSection(room, key, label, quote)));
@@ -206,18 +224,49 @@
 
   function lineSection(room, key, label, quote) {
     const el = document.createElement('div'); el.className = 'item-section';
-    el.innerHTML = `<div class="item-section-head"><h3>${label}</h3><button type="button" class="btn btn-secondary no-print">+ আইটেম</button></div><div class="line-item column-labels"><span>মডেল</span><span>হাইট</span><span>উইডথ</span><span>কুচি</span><span>ফেব্রিক</span><span>ডিজাইন</span><span>পিস</span><span>ইউনিট মূল্য</span><span>টোটাল</span></div><div class="rows"></div>`;
+    el.innerHTML = `<div class="item-section-head"><h3>${label}</h3><button type="button" class="btn btn-secondary no-print">+ আইটেম</button></div><div class="line-item column-labels"><span>প্রোডাক্ট</span><span>হাইট</span><span>উইডথ</span><span>কুচি</span><span>ইয়ার্ড</span><span>ইয়ার্ড মূল্য</span><span>ডিজাইন</span><span>ডিজাইন রেট</span><span>পিস</span><span>সোর্স</span><span>টোটাল</span></div><div class="rows"></div>`;
     const render = () => {
       const rows = $('.rows', el); rows.innerHTML = '';
-      room[key].forEach((item, index) => {
+      room[key].forEach((rawItem, index) => {
+        const item = normalizeLine(rawItem);
         const row = $('#lineItemTemplate').content.firstElementChild.cloneNode(true);
-        $$('[data-field]', row).forEach(input => { const field = input.dataset.field; if (input.tagName === 'OUTPUT') input.textContent = money(item.total); else { input.value = item[field] ?? ''; input.oninput = () => { item[field] = input.value; calculateQuote(quote); }; } });
+        $$('[data-field]', row).forEach(control => {
+          const field = control.dataset.field;
+          const wrapper = document.createElement('label');
+          wrapper.className = `line-field field-${field}`;
+          const caption = document.createElement('span');
+          caption.textContent = LINE_LABELS[field] || field;
+          control.replaceWith(wrapper);
+          wrapper.append(caption, control);
+        });
+        $$('[data-field]', row).forEach(input => {
+          const field = input.dataset.field;
+          if (input.tagName === 'OUTPUT') input.textContent = money(item.total);
+          else {
+            input.value = item[field] ?? '';
+            input.oninput = () => {
+              item[field] = input.value;
+              if (field === 'modelCode') {
+                const product = PRODUCTS.find(p => p.code.toLowerCase() === input.value.trim().toLowerCase());
+                if (product) {
+                  item.yardPrice = product.yardPrice;
+                  item.catalogUnitPrice = product.unitPrice;
+                  item.gsm = product.gsm || '';
+                  item.source = product.source;
+                  $('[data-field="yardPrice"]', row).value = item.yardPrice;
+                  $('[data-field="source"]', row).value = item.source;
+                }
+              }
+              calculateQuote(quote);
+            };
+          }
+        });
         $('.remove-row', row).onclick = () => { room[key].splice(index, 1); render(); calculateQuote(quote); };
         rows.appendChild(row);
       });
     };
     $('button', el).onclick = () => { room[key].push(blankLine()); render(); };
-    el._refresh = render; render(); return el;
+    render(); return el;
   }
 
   function extraSection(room, key, label, quote) {
@@ -238,19 +287,30 @@
 
   function calculateQuote(quote) {
     quote.rooms.forEach((room, i) => {
-      ['curtains','sheers'].forEach(key => room[key].forEach(item => item.total = n(item.pieces) * n(item.unitPrice)));
+      ['curtains','sheers'].forEach(key => room[key].forEach(item => {
+        normalizeLine(item);
+        const fabricCost = n(item.yards) * n(item.yardPrice);
+        const designCost = item.design ? n(item.pleatCount) * n(item.designRate) : 0;
+        item.fabricCost = fabricCost;
+        item.designCost = designCost;
+        item.total = (fabricCost + designCost) * n(item.pieces);
+      }));
       ['extraFabric','fittings','accessories'].forEach(key => room[key].forEach(item => item.total = n(item.quantity) * n(item.unitPrice)));
       room.total = ['curtains','sheers','extraFabric','fittings','accessories'].flatMap(key => room[key]).reduce((s, item) => s + n(item.total), 0);
       const roomEl = $$('.room-card')[i]; if (roomEl) { $('.room-head output', roomEl).textContent = money(room.total); $$('[data-field="total"]', roomEl).forEach((out, idx) => { const items = ['curtains','sheers','extraFabric','fittings','accessories'].flatMap(key => room[key]); out.textContent = money(items[idx]?.total); }); }
     });
     const form = $('#quotationForm');
     quote.subtotal = quote.rooms.reduce((s, room) => s + n(room.total), 0);
-    quote.discount = n(form?.elements.discount.value ?? quote.discount);
+    quote.discountPercent = n(form?.elements.discountPercent.value ?? quote.discountPercent);
+    quote.discountAmount = quote.subtotal * Math.min(100, quote.discountPercent) / 100;
     quote.advanceReceived = n(form?.elements.advanceReceived.value ?? quote.advanceReceived);
-    quote.grandTotal = Math.max(0, quote.subtotal - quote.discount);
+    quote.grandTotal = Math.max(0, quote.subtotal - quote.discountAmount);
     quote.dueAmount = Math.max(0, quote.grandTotal - quote.advanceReceived);
     $('#roomSummary').innerHTML = quote.rooms.map(room => `<div class="summary-line"><span>${escapeHtml(room.name)}</span><strong>${money(room.total)}</strong></div>`).join('');
-    $('#subtotal').textContent = money(quote.subtotal); $('#discountTotal').textContent = money(quote.discount); $('#grandTotal').textContent = money(quote.grandTotal); $('#advanceTotal').textContent = money(quote.advanceReceived); $('#dueTotal').textContent = money(quote.dueAmount);
+    $('#subtotal').textContent = money(quote.subtotal);
+    $('#discountRow').hidden = quote.discountPercent <= 0;
+    $('#discountTotal').textContent = `${quote.discountPercent}% · ${money(quote.discountAmount)}`;
+    $('#grandTotal').textContent = money(quote.grandTotal); $('#advanceTotal').textContent = money(quote.advanceReceived); $('#dueTotal').textContent = money(quote.dueAmount);
   }
 
   async function saveQuotation(quote) {
@@ -261,7 +321,7 @@
     const existing = customers.find(x => x.id === customer.id || x.phone.replace(/\D/g,'') === customer.phone.replace(/\D/g,''));
     if (existing) Object.assign(customer, existing, customer); else { customer.id = uid('CUSTOMER'); customer.customerNo = await state.store.nextNumber('customer'); }
     await state.store.save('customers', customer);
-    Object.assign(quote, { customer, date: form.elements.date.value, validUntil: form.elements.validUntil.value, status: form.elements.status.value, paymentTerms: form.elements.paymentTerms.value, terms: form.elements.terms.value, notes: form.elements.notes.value });
+    Object.assign(quote, { customer, date: form.elements.date.value, deliveryDate: form.elements.deliveryDate.value, validUntil: form.elements.validUntil.value, status: form.elements.status.value, paymentTerms: form.elements.paymentTerms.value, offer: form.elements.offer.value.trim(), terms: form.elements.terms.value, notes: form.elements.notes.value.trim() });
     calculateQuote(quote); await state.store.save('quotations', quote); toast('কোটেশন সেভ হয়েছে'); location.hash = `#quotation/${quote.id}`;
   }
 
@@ -275,7 +335,51 @@
   }
 
   function showInvoice(invoice) {
-    $('#modalRoot').innerHTML = `<div class="modal-backdrop"><div class="modal"><div class="card-head no-print"><h2>${escapeHtml(invoice.number)}</h2><button class="icon-btn" id="closeModal">×</button></div><div id="invoicePrint"><h2>${escapeHtml(state.config.businessName)}</h2><p><strong>Invoice:</strong> ${escapeHtml(invoice.number)} · <strong>Date:</strong> ${dateText(invoice.date)}</p><p><strong>Customer:</strong> ${escapeHtml(invoice.customer.name)} · ${escapeHtml(invoice.customer.phone)}<br>${escapeHtml(invoice.customer.address)}</p>${invoice.rooms.map(room => `<h3>${escapeHtml(room.name)} — ${money(room.total)}</h3>`).join('')}<hr><p><strong>Grand total:</strong> ${money(invoice.grandTotal)}<br><strong>Advance received:</strong> ${money(invoice.advanceReceived)}<br><strong>Due:</strong> ${money(invoice.dueAmount)}</p></div><div class="actions no-print"><button class="btn btn-primary" id="modalPrint">Print / Save PDF</button></div></div></div>`;
+    openPrintDocument(invoice, 'invoice');
+  }
+
+  const meaningful = item => Boolean(String(item?.modelCode || item?.description || item?.design || item?.source || '').trim()) || n(item?.height) > 0 || n(item?.width) > 0 || n(item?.yards) > 0 || n(item?.unitPrice) > 0 || n(item?.total) > 0;
+  const cell = value => escapeHtml(value == null ? '' : value);
+  function itemRows(room, making) {
+    const sections = [];
+    [['curtains','Curtain'], ['sheers','Sheer']].forEach(([key, label]) => {
+      const items = (room[key] || []).filter(meaningful);
+      if (!items.length) return;
+      sections.push(`<tr class="print-section"><th colspan="${making ? 8 : 10}">${label}</th></tr>`);
+      items.forEach(item => sections.push(`<tr><td>${cell(item.modelCode)}</td><td>${cell(item.width)}</td><td>${cell(item.height)}</td><td>${cell(item.pleatCount)}</td><td>${cell(item.yards)}</td><td>${cell(item.design)}</td><td>${cell(item.pieces)}</td><td>${making ? cell(item.source) : money(item.yardPrice)}</td>${making ? '' : `<td>${money(item.designCost)}</td><td>${money(item.total)}</td>`}</tr>`));
+    });
+    [['extraFabric','Extra Fabric'], ['fittings','Fittings'], ['accessories','Accessories']].forEach(([key, label]) => {
+      const items = (room[key] || []).filter(meaningful);
+      if (!items.length) return;
+      sections.push(`<tr class="print-section"><th colspan="${making ? 8 : 10}">${label}</th></tr>`);
+      items.forEach(item => sections.push(`<tr><td colspan="3">${cell(item.description)}</td><td></td><td>${cell(item.quantity)}</td><td>${cell(item.unit)}</td><td></td><td></td>${making ? '' : `<td>${money(item.unitPrice)}</td><td>${money(item.total)}</td>`}</tr>`));
+    });
+    return sections.join('');
+  }
+
+  function printDocumentHtml(record, kind) {
+    const making = kind === 'making';
+    const title = making ? 'MAKING SHEET' : kind === 'invoice' ? 'INVOICE' : 'QUOTATION';
+    const numberLabel = making ? 'Quotation Ref.' : title.charAt(0) + title.slice(1).toLowerCase() + ' No.';
+    const discountPercent = n(record.discountPercent);
+    const discountAmount = n(record.discountAmount);
+    const terms = String(record.terms || '').split(/\n+/).filter(Boolean).map(x => `<li>${escapeHtml(x.replace(/^\s*\d+[.)]\s*/, ''))}</li>`).join('');
+    return `<article class="print-document">
+      <header class="print-brand"><img src="../assets/img/logo/logo-01.svg" alt="Curtivelle"><div><h1>${escapeHtml(state.config.businessName || 'Curtivelle')}</h1><p>Custom Curtains · Sheers · Window Styling</p></div><strong>${title}</strong></header>
+      <section class="print-meta"><div><span>${numberLabel}</span><strong>${escapeHtml(record.number)}</strong></div><div><span>Date</span><strong>${dateText(record.date)}</strong></div><div><span>Delivery Date</span><strong>${record.deliveryDate ? dateText(record.deliveryDate) : ''}</strong></div><div><span>Valid Until</span><strong>${kind === 'quotation' ? dateText(record.validUntil) : ''}</strong></div></section>
+      <section class="print-customer"><h2>Customer</h2><p><strong>${cell(record.customer?.name)}</strong>${record.customer?.phone ? ` · ${cell(record.customer.phone)}` : ''}</p>${record.customer?.profession ? `<p>${cell(record.customer.profession)}</p>` : ''}${record.customer?.address ? `<p>${cell(record.customer.address)}</p>` : ''}</section>
+      ${record.offer && !making ? `<section class="print-offer"><strong>Offer</strong><p>${escapeHtml(record.offer)}</p></section>` : ''}
+      ${(record.rooms || []).map(room => `<section class="print-room"><h2>${cell(room.name)}</h2><table><thead><tr><th>Product</th><th>Width</th><th>Height</th><th>Kuchi</th><th>Yard/Qty</th><th>Design/Unit</th><th>Pieces</th><th>${making ? 'Source' : 'Yard Price'}</th>${making ? '' : '<th>Design Cost</th><th>Total</th>'}</tr></thead><tbody>${itemRows(room, making)}</tbody>${making ? '' : `<tfoot><tr><th colspan="9">Room Total</th><th>${money(room.total)}</th></tr></tfoot>`}</table></section>`).join('')}
+      ${making ? '' : `<section class="print-totals"><div><span>Subtotal</span><strong>${money(record.subtotal)}</strong></div>${discountPercent > 0 ? `<div><span>Discount (${discountPercent}%)</span><strong>− ${money(discountAmount)}</strong></div>` : ''}<div class="grand"><span>Grand Total</span><strong>${money(record.grandTotal)}</strong></div><div><span>Advance Received</span><strong>${money(record.advanceReceived)}</strong></div><div><span>Due Amount</span><strong>${money(record.dueAmount)}</strong></div></section>`}
+      ${record.notes ? `<section class="print-note"><strong>Notes</strong><p>${escapeHtml(record.notes)}</p></section>` : ''}
+      ${!making && record.paymentTerms ? `<section class="print-terms"><h2>Payment Terms</h2><p>${escapeHtml(record.paymentTerms)}</p></section>` : ''}
+      ${!making && terms ? `<section class="print-terms"><h2>Terms & Conditions</h2><ol>${terms}</ol></section>` : ''}
+      <footer class="print-footer"><span>Curtivelle</span><span>Thank you for choosing us.</span></footer>
+    </article>`;
+  }
+
+  function openPrintDocument(record, kind) {
+    $('#modalRoot').innerHTML = `<div class="modal-backdrop print-backdrop"><div class="modal print-modal"><div class="card-head no-print"><h2>${kind === 'making' ? 'Making Sheet' : kind === 'invoice' ? 'Invoice' : 'Quotation'} Preview</h2><button class="icon-btn" id="closeModal">×</button></div>${printDocumentHtml(record, kind)}<div class="actions no-print print-actions"><button class="btn btn-primary" id="modalPrint">Print / Save PDF</button></div></div></div>`;
     $('#closeModal').onclick = () => $('#modalRoot').innerHTML = '';
     $('#modalPrint').onclick = () => window.print();
   }
@@ -309,6 +413,7 @@
     } catch (error) { console.error(error); $('#app').innerHTML = `<div class="card"><h2>ডেটা লোড করা যায়নি</h2><p>${escapeHtml(error.message)}</p><p>Settings থেকে backend URL যাচাই করুন অথবা Local mode ব্যবহার করুন।</p></div>`; }
   }
 
+  $('#productOptions').innerHTML = PRODUCTS.map(product => `<option value="${escapeHtml(product.code)}">${escapeHtml(product.source)} · ৳${product.yardPrice}/yd</option>`).join('');
   setStore();
   window.addEventListener('hashchange', route);
   $('#quickQuotation').onclick = () => location.hash = '#quotation/new';
