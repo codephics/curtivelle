@@ -13,6 +13,17 @@ RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curta
 RewriteCond %{THE_REQUEST} \s/+(.*/)?style-based-curtain/(?:floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)/+[?\s] [NC]
 RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)/$ /%1style-based-curtain/$1 [R=301,L,NE]
 RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)$ style-based-curtain/$1.html [END]
+# Serve the interior-based curtain landing page and nested child URLs.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?interior-based-curtain/+[?\s] [NC]
+RewriteRule ^interior-based-curtain/$ /%1interior-based-curtain [R=301,L,NE]
+RewriteRule ^interior-based-curtain$ interior-based-curtain.html [END]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:residential-curtain|commercial-curtain|hospitality-curtain)(?:\.html)?/?[?\s] [NC]
+RewriteRule ^(residential-curtain|commercial-curtain|hospitality-curtain)(?:\.html)?/?$ /%1interior-based-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?interior-based-curtain/(?:residential-curtain|commercial-curtain|hospitality-curtain)\.html/?[?\s] [NC]
+RewriteRule ^interior-based-curtain/(residential-curtain|commercial-curtain|hospitality-curtain)\.html/?$ /%1interior-based-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?interior-based-curtain/(?:residential-curtain|commercial-curtain|hospitality-curtain)/+[?\s] [NC]
+RewriteRule ^interior-based-curtain/(residential-curtain|commercial-curtain|hospitality-curtain)/$ /%1interior-based-curtain/$1 [R=301,L,NE]
+RewriteRule ^interior-based-curtain/(residential-curtain|commercial-curtain|hospitality-curtain)$ interior-based-curtain/$1.html [END]
 # Serve the seasonal curtain landing page at /seasonal-curtain, like the blog landing page.
 RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/+[?\s] [NC]
 RewriteRule ^seasonal-curtain/$ /%1seasonal-curtain [R=301,L,NE]
