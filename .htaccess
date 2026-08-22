@@ -1,5 +1,17 @@
 RewriteEngine On
 
+# Serve the style-based curtain landing page at /style-based-curtain.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?style-based-curtain/+[?\s] [NC]
+RewriteRule ^style-based-curtain/$ /%1style-based-curtain [R=301,L,NE]
+RewriteRule ^style-based-curtain$ style-based-curtain.html [END]
+# Style-based curtain child URLs: permanently redirect legacy root URLs and serve canonical nested URLs.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)(?:\.html)?/?[?\s] [NC]
+RewriteRule ^(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)(?:\.html)?/?$ /%1style-based-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?style-based-curtain/(?:floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)\.html/?[?\s] [NC]
+RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)\.html/?$ /%1style-based-curtain/$1 [R=301,L,NE]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?style-based-curtain/(?:floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)/+[?\s] [NC]
+RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)/$ /%1style-based-curtain/$1 [R=301,L,NE]
+RewriteRule ^style-based-curtain/(floral-curtain|party-mode-curtain|glossy-curtain|chenille-curtain|blackout-curtain|dobby-curtain|water-resistant-curtain|artistic-curtain-price-in-bangladesh|acoustic-curtain-price-bd|jacquard-curtain-price-bd|velvet-curtain)$ style-based-curtain-pages/$1.html [END]
 # Serve the seasonal curtain landing page at /seasonal-curtain, like the blog landing page.
 RewriteCond %{THE_REQUEST} \s/+(.*/)?seasonal-curtain/+[?\s] [NC]
 RewriteRule ^seasonal-curtain/$ /%1seasonal-curtain [R=301,L,NE]
