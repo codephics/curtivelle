@@ -247,8 +247,13 @@
    <!-- Blog -->
    <url>
       <loc>https://curtivelle.com/blog</loc>
-      <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+      <lastmod>2026-08-24T00:00:00+00:00</lastmod>
       <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://curtivelle.com/blog/what-is-custom-curtain</loc>
+      <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+      <priority>0.64</priority>
    </url>
    <url>
       <loc>https://curtivelle.com/blog/best-curtain-for-winter-weather</loc>

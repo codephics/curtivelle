@@ -65,7 +65,7 @@ RewriteRule ^blog/$ /%1blog [R=301,L,NE]
 RewriteRule ^blog$ blog.html [END]
 
 # Blog article URLs: redirect legacy root slugs and serve existing HTML at /blog/{slug}
-RewriteRule ^blog/(best-curtain-for-rainy-weather|best-living-room-curtains-guide)$ blog/$1.html [END]
+RewriteRule ^blog/(best-curtain-for-rainy-weather|best-living-room-curtains-guide|what-is-custom-curtain)$ blog/$1.html [END]
 RewriteCond %{THE_REQUEST} \s/+(.*/)?(?:best-curtain-for-winter-weather|best-curtains-for-hot-weather|best-dining-room-curtain|best-office-curtains|curtain-cleaning-guide|curtain-price-in-bangladesh|hotel-curtain|how-to-measure-a-window-for-curtains|luxury-bedroom-curtain-bangladesh|premium-living-room-curtain|resort-curtain|small-bedroom-curtains)(?:[?\s]) [NC]
 RewriteRule ^(best-curtain-for-winter-weather|best-curtains-for-hot-weather|best-dining-room-curtain|best-office-curtains|curtain-cleaning-guide|curtain-price-in-bangladesh|hotel-curtain|how-to-measure-a-window-for-curtains|luxury-bedroom-curtain-bangladesh|premium-living-room-curtain|resort-curtain|small-bedroom-curtains)/?$ /%1blog/$1 [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+(.*/)?blog/(?:best-curtain-for-winter-weather|best-curtains-for-hot-weather|best-dining-room-curtain|best-office-curtains|curtain-cleaning-guide|curtain-price-in-bangladesh|hotel-curtain|how-to-measure-a-window-for-curtains|luxury-bedroom-curtain-bangladesh|premium-living-room-curtain|resort-curtain|small-bedroom-curtains)\.html[?\s] [NC]
