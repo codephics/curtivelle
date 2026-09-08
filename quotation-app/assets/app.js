@@ -5,7 +5,9 @@
   const DATE = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium' });
   const DEFAULT_TERMS = `1. Quotation validity: 15 days from issue date.\n2. Custom designs cannot be changed after approval and production start.\n3. Advance payments and custom-made products are non-refundable.\n4. Final measurements must be verified before production; customer-provided measurements remain the customer's responsibility.\n5. Installation schedule depends on site readiness and access.\n6. Products remain the property of Curtivelle until full payment is received.\n7. Delivery must be made within 1 month of production.`;
   const PRODUCTS = Array.isArray(window.CURTIVELLE_PRODUCTS) ? window.CURTIVELLE_PRODUCTS : [];
-  const LINE_LABELS = { modelCode: 'প্রোডাক্ট', height: 'হাইট (ft)', width: 'উইডথ (ft)', pleatCount: 'কুচি', yards: 'ইয়ার্ড', yardPrice: 'প্রতি ইয়ার্ড মূল্য', design: 'ডিজাইন (ঐচ্ছিক)', designRate: 'ডিজাইন রেট', pieces: 'পিস', source: 'সোর্স', total: 'টোটাল' };
+  const LINE_LABELS = { modelCode: 'প্রোডাক্ট', height: 'হাইট (ইঞ্চি)', width: 'উইডথ (ইঞ্চি)', pleatCount: 'ফোল্ড', yards: 'ফেব্রিক (ইয়ার্ড)', yardPrice: 'প্রতি ইয়ার্ড মূল্য', design: 'ডিজাইন (ঐচ্ছিক)', designRate: 'ডিজাইন রেট', pieces: 'পিস', source: 'নোট', total: 'টোটাল' };
+  const BUSINESS_ADDRESS = 'Amanullah Trade Center (7th Floor), Gulshan Avenue, Circle-02, Gulshan-02, Dhaka, Bangladesh, 1212';
+  const normalizeProductCode = value => String(value || '').trim().replace(/^start?\s+/i, '* ');
   const DB_KEY = 'curtivelle_crm_v1';
   const CONFIG_KEY = 'curtivelle_crm_config';
 
@@ -157,7 +159,8 @@
   const blankQuote = async () => ({ id: uid('QUOTE'), number: await state.store.nextNumber('quotation'), date: today(), deliveryDate: '', validUntil: new Date(Date.now() + 15 * 86400000).toISOString().slice(0,10), status: 'draft', customer: { id: '', customerNo: '', name: '', phone: '', profession: '', address: '' }, rooms: [blankRoom()], discountPercent: 0, discountAmount: 0, advanceReceived: 0, subtotal: 0, grandTotal: 0, dueAmount: 0, paymentTerms: '30% advance, remaining payment before/at installation.', offer: '', terms: DEFAULT_TERMS, notes: '' });
   const normalizeLine = item => {
     const legacyPriceOnly = item.yards == null && item.unitPrice != null;
-    item.yards = item.yards ?? (legacyPriceOnly ? 1 : '');
+    item.modelCode = normalizeProductCode(item.modelCode);
+    item.yards = n(item.pleatCount) > 0 ? Math.round(((n(item.pleatCount) * 13.5) / 36) * 10000) / 10000 : (item.yards ?? (legacyPriceOnly ? 1 : ''));
     item.yardPrice = item.yardPrice ?? item.unitPrice ?? '';
     item.designRate = item.designRate ?? '';
     item.source = item.source ?? '';
@@ -224,7 +227,7 @@
 
   function lineSection(room, key, label, quote) {
     const el = document.createElement('div'); el.className = 'item-section';
-    el.innerHTML = `<div class="item-section-head"><h3>${label}</h3><button type="button" class="btn btn-secondary no-print">+ আইটেম</button></div><div class="line-item column-labels"><span>প্রোডাক্ট</span><span>হাইট</span><span>উইডথ</span><span>কুচি</span><span>ইয়ার্ড</span><span>ইয়ার্ড মূল্য</span><span>ডিজাইন</span><span>ডিজাইন রেট</span><span>পিস</span><span>সোর্স</span><span>টোটাল</span></div><div class="rows"></div>`;
+    el.innerHTML = `<div class="item-section-head"><h3>${label}</h3><button type="button" class="btn btn-secondary no-print">+ আইটেম</button></div><div class="line-item column-labels"><span>প্রোডাক্ট</span><span>হাইট</span><span>উইডথ</span><span>ফোল্ড</span><span>ফেব্রিক</span><span>ইয়ার্ড মূল্য</span><span>ডিজাইন</span><span>ডিজাইন রেট</span><span>পিস</span><span>নোট</span><span>টোটাল</span></div><div class="rows"></div>`;
     const render = () => {
       const rows = $('.rows', el); rows.innerHTML = '';
       room[key].forEach((rawItem, index) => {
@@ -246,8 +249,14 @@
             input.value = item[field] ?? '';
             input.oninput = () => {
               item[field] = input.value;
+              if (field === 'pleatCount') {
+                item.yards = input.value === '' ? '' : Math.round(((n(input.value) * 13.5) / 36) * 10000) / 10000;
+                $('[data-field="yards"]', row).value = item.yards;
+              }
               if (field === 'modelCode') {
-                const product = PRODUCTS.find(p => p.code.toLowerCase() === input.value.trim().toLowerCase());
+                item.modelCode = normalizeProductCode(input.value);
+                input.value = item.modelCode;
+                const product = PRODUCTS.find(p => p.code.toLowerCase() === item.modelCode.toLowerCase());
                 if (product) {
                   item.yardPrice = product.yardPrice;
                   item.catalogUnitPrice = product.unitPrice;
@@ -276,7 +285,9 @@
       const rows = $('.rows', el); rows.innerHTML = '';
       room[key].forEach((item, index) => {
         const row = $('#extraItemTemplate').content.firstElementChild.cloneNode(true);
-        $$('[data-field]', row).forEach(input => { const field = input.dataset.field; if (input.tagName === 'OUTPUT') input.textContent = money(item.total); else { input.value = item[field] ?? ''; input.oninput = () => { item[field] = input.value; calculateQuote(quote); }; } });
+        const productInput = $('[data-field="description"]', row);
+        if (key === 'extraFabric') { productInput.setAttribute('list', 'productOptions'); productInput.placeholder = 'প্রোডাক্ট নির্বাচন করুন'; }
+        $$('[data-field]', row).forEach(input => { const field = input.dataset.field; if (input.tagName === 'OUTPUT') input.textContent = money(item.total); else { input.value = item[field] ?? ''; input.oninput = () => { item[field] = field === 'description' && key === 'extraFabric' ? normalizeProductCode(input.value) : input.value; if (field === 'description' && key === 'extraFabric') { input.value = item[field]; const product = PRODUCTS.find(p => p.code.toLowerCase() === item[field].toLowerCase()); if (product) { item.unitPrice = product.yardPrice; item.unit = 'yard'; $('[data-field="unitPrice"]', row).value = item.unitPrice; $('[data-field="unit"]', row).value = item.unit; } } calculateQuote(quote); }; } });
         $('.remove-row', row).onclick = () => { room[key].splice(index, 1); render(); calculateQuote(quote); };
         rows.appendChild(row);
       });
@@ -345,14 +356,14 @@
     [['curtains','Curtain'], ['sheers','Sheer']].forEach(([key, label]) => {
       const items = (room[key] || []).filter(meaningful);
       if (!items.length) return;
-      sections.push(`<tr class="print-section"><th colspan="${making ? 8 : 10}">${label}</th></tr>`);
-      items.forEach(item => sections.push(`<tr><td>${cell(item.modelCode)}</td><td>${cell(item.width)}</td><td>${cell(item.height)}</td><td>${cell(item.pleatCount)}</td><td>${cell(item.yards)}</td><td>${cell(item.design)}</td><td>${cell(item.pieces)}</td><td>${making ? cell(item.source) : money(item.yardPrice)}</td>${making ? '' : `<td>${money(item.designCost)}</td><td>${money(item.total)}</td>`}</tr>`));
+      sections.push(`<tr class="print-section"><th colspan="${making ? 7 : 10}">${label}</th></tr>`);
+      items.forEach(item => sections.push(`<tr><td>${cell(normalizeProductCode(item.modelCode))}</td><td>${cell(item.width)}</td><td>${cell(item.height)}</td><td>${cell(item.pleatCount)}</td><td>${cell(item.yards)}</td><td>${cell(item.design)}</td><td>${cell(item.pieces)}</td>${making ? '' : `<td>${cell(item.source)}</td><td>${money(item.yardPrice)}</td><td>${money(item.total)}</td>`}</tr>`));
     });
     [['extraFabric','Extra Fabric'], ['fittings','Fittings'], ['accessories','Accessories']].forEach(([key, label]) => {
       const items = (room[key] || []).filter(meaningful);
       if (!items.length) return;
-      sections.push(`<tr class="print-section"><th colspan="${making ? 8 : 10}">${label}</th></tr>`);
-      items.forEach(item => sections.push(`<tr><td colspan="3">${cell(item.description)}</td><td></td><td>${cell(item.quantity)}</td><td>${cell(item.unit)}</td><td></td><td></td>${making ? '' : `<td>${money(item.unitPrice)}</td><td>${money(item.total)}</td>`}</tr>`));
+      sections.push(`<tr class="print-section"><th colspan="${making ? 7 : 10}">${label}</th></tr>`);
+      items.forEach(item => sections.push(`<tr><td colspan="3">${cell(normalizeProductCode(item.description))}</td><td></td><td>${cell(item.quantity)}</td><td>${cell(item.unit)}</td><td></td>${making ? '' : `<td></td><td>${money(item.unitPrice)}</td><td>${money(item.total)}</td>`}</tr>`));
     });
     return sections.join('');
   }
@@ -365,23 +376,35 @@
     const discountAmount = n(record.discountAmount);
     const terms = String(record.terms || '').split(/\n+/).filter(Boolean).map(x => `<li>${escapeHtml(x.replace(/^\s*\d+[.)]\s*/, ''))}</li>`).join('');
     return `<article class="print-document">
-      <header class="print-brand"><img src="../assets/img/logo/logo-01.svg" alt="Curtivelle"><div><h1>${escapeHtml(state.config.businessName || 'Curtivelle')}</h1><p>Custom Curtains · Sheers · Window Styling</p></div><strong>${title}</strong></header>
+      <header class="print-brand"><img src="../assets/img/logo/logo-01.svg" alt="Curtivelle"><strong>${title}</strong></header>
       <section class="print-meta"><div><span>${numberLabel}</span><strong>${escapeHtml(record.number)}</strong></div><div><span>Date</span><strong>${dateText(record.date)}</strong></div><div><span>Delivery Date</span><strong>${record.deliveryDate ? dateText(record.deliveryDate) : ''}</strong></div><div><span>Valid Until</span><strong>${kind === 'quotation' ? dateText(record.validUntil) : ''}</strong></div></section>
-      <section class="print-customer"><h2>Customer</h2><p><strong>${cell(record.customer?.name)}</strong>${record.customer?.phone ? ` · ${cell(record.customer.phone)}` : ''}</p>${record.customer?.profession ? `<p>${cell(record.customer.profession)}</p>` : ''}${record.customer?.address ? `<p>${cell(record.customer.address)}</p>` : ''}</section>
+      ${making ? '' : `<section class="print-customer"><h2>Customer</h2><p><strong>${cell(record.customer?.name)}</strong>${record.customer?.phone ? ` · ${cell(record.customer.phone)}` : ''}</p>${record.customer?.profession ? `<p>${cell(record.customer.profession)}</p>` : ''}${record.customer?.address ? `<p>${cell(record.customer.address)}</p>` : ''}</section>`}
       ${record.offer && !making ? `<section class="print-offer"><strong>Offer</strong><p>${escapeHtml(record.offer)}</p></section>` : ''}
-      ${(record.rooms || []).map(room => `<section class="print-room"><h2>${cell(room.name)}</h2><table><thead><tr><th>Product</th><th>Width</th><th>Height</th><th>Kuchi</th><th>Yard/Qty</th><th>Design/Unit</th><th>Pieces</th><th>${making ? 'Source' : 'Yard Price'}</th>${making ? '' : '<th>Design Cost</th><th>Total</th>'}</tr></thead><tbody>${itemRows(room, making)}</tbody>${making ? '' : `<tfoot><tr><th colspan="9">Room Total</th><th>${money(room.total)}</th></tr></tfoot>`}</table></section>`).join('')}
+      ${(record.rooms || []).map(room => `<section class="print-room"><h2>${cell(room.name)}</h2><table><thead><tr><th>Product</th><th>Width (in)</th><th>Height (in)</th><th>Fold</th><th>Yard/Qty</th><th>Design/Unit</th><th>Pieces</th>${making ? '' : '<th>Note</th><th>Yard Price</th><th>Total</th>'}</tr></thead><tbody>${itemRows(room, making)}</tbody>${making ? '' : `<tfoot><tr><th colspan="9">Room Total</th><th>${money(room.total)}</th></tr></tfoot>`}</table></section>`).join('')}
       ${making ? '' : `<section class="print-totals"><div><span>Subtotal</span><strong>${money(record.subtotal)}</strong></div>${discountPercent > 0 ? `<div><span>Discount (${discountPercent}%)</span><strong>− ${money(discountAmount)}</strong></div>` : ''}<div class="grand"><span>Grand Total</span><strong>${money(record.grandTotal)}</strong></div><div><span>Advance Received</span><strong>${money(record.advanceReceived)}</strong></div><div><span>Due Amount</span><strong>${money(record.dueAmount)}</strong></div></section>`}
       ${record.notes ? `<section class="print-note"><strong>Notes</strong><p>${escapeHtml(record.notes)}</p></section>` : ''}
       ${!making && record.paymentTerms ? `<section class="print-terms"><h2>Payment Terms</h2><p>${escapeHtml(record.paymentTerms)}</p></section>` : ''}
       ${!making && terms ? `<section class="print-terms"><h2>Terms & Conditions</h2><ol>${terms}</ol></section>` : ''}
-      <footer class="print-footer"><span>Curtivelle</span><span>Thank you for choosing us.</span></footer>
+      <footer class="print-footer"><span>${BUSINESS_ADDRESS}</span></footer>
     </article>`;
   }
 
+  const safeFilePart = value => String(value || '').trim().replace(/[^a-zA-Z0-9\u0980-\u09FF]+/g, '_').replace(/^_+|_+$/g, '') || 'Curtivelle';
+  function printFileName(record, kind) {
+    const address = String(record.customer?.address || '');
+    const knownAreas = ['Mirpur','Gulshan','Banani','Uttara','Dhanmondi','Bashundhara','Mohammadpur','Badda','Baridhara','Khilgaon','Motijheel','Wari','Mohakhali'];
+    const location = knownAreas.find(area => new RegExp(area, 'i').test(address)) || address.split(',').map(x => x.trim()).find(Boolean) || 'Dhaka';
+    const type = kind === 'making' ? 'Making' : kind === 'invoice' ? 'Invoice' : 'Quotation';
+    return `${safeFilePart(location)}_${safeFilePart(record.customer?.name)}_${type}`;
+  }
+
   function openPrintDocument(record, kind) {
+    const previousTitle = document.title;
+    const filename = printFileName(record, kind);
+    document.title = filename;
     $('#modalRoot').innerHTML = `<div class="modal-backdrop print-backdrop"><div class="modal print-modal"><div class="card-head no-print"><h2>${kind === 'making' ? 'Making Sheet' : kind === 'invoice' ? 'Invoice' : 'Quotation'} Preview</h2><button class="icon-btn" id="closeModal">×</button></div>${printDocumentHtml(record, kind)}<div class="actions no-print print-actions"><button class="btn btn-primary" id="modalPrint">Print / Save PDF</button></div></div></div>`;
-    $('#closeModal').onclick = () => $('#modalRoot').innerHTML = '';
-    $('#modalPrint').onclick = () => window.print();
+    $('#closeModal').onclick = () => { $('#modalRoot').innerHTML = ''; document.title = previousTitle; };
+    $('#modalPrint').onclick = () => { document.title = filename; window.print(); };
   }
 
   async function settingsPage() {

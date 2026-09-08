@@ -154,11 +154,9 @@ textarea { resize: vertical; min-height: 80px; }
 .print-modal { width: min(1080px, 100%); }
 .print-actions { margin-top: 18px; justify-content: flex-end; }
 .print-document { padding: 10px; background: #fff; color: #18231f; font-family: Inter, "Noto Sans Bengali", sans-serif; font-size: 11px; }
-.print-brand { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 18px; padding-bottom: 14px; border-bottom: 2px solid var(--green); }
+.print-brand { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 18px; padding-bottom: 14px; border-bottom: 2px solid var(--green); }
 .print-brand img { display: block; max-width: 140px; max-height: 58px; }
-.print-brand h1 { margin: 0; color: var(--green); font: 700 22px Georgia, serif; }
-.print-brand p { margin: 4px 0 0; color: var(--muted); }
-.print-brand > strong { color: var(--green); font-size: 20px; letter-spacing: .12em; }
+.print-brand > strong { justify-self: end; color: var(--green); font-size: 20px; letter-spacing: .12em; }
 .print-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0; }
 .print-meta div { padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; }
 .print-meta span, .print-meta strong { display: block; }
@@ -179,16 +177,15 @@ textarea { resize: vertical; min-height: 80px; }
 .print-totals .grand { padding: 8px 0; border-top: 2px solid var(--green); border-bottom: 2px solid var(--green); color: var(--green); font-size: 14px; }
 .print-terms ol { margin: 6px 0 0 18px; padding: 0; }
 .print-terms li { margin: 3px 0; }
-.print-footer { display: flex; justify-content: space-between; margin-top: 18px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--muted); }
+.print-footer { display: block; margin-top: 18px; padding-top: 8px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; line-height: 1.45; }
 
 @media print {
   @page { size: A4 portrait; margin: 9mm; }
   .app-shell, .toast, .modal > .card-head, .print-actions { display: none !important; }
   #modalRoot, .modal-backdrop, .print-modal { position: static !important; display: block !important; width: auto !important; max-width: none !important; max-height: none !important; overflow: visible !important; margin: 0 !important; padding: 0 !important; background: #fff !important; box-shadow: none !important; }
   .print-document { padding: 0; font-size: 9.5px; }
-  .print-brand { grid-template-columns: 125px 1fr auto; padding-bottom: 8px; }
+  .print-brand { grid-template-columns: 125px 1fr; padding-bottom: 8px; }
   .print-brand img { max-width: 120px; max-height: 48px; }
-  .print-brand h1 { font-size: 18px; }
   .print-brand > strong { font-size: 16px; }
   .print-meta { margin: 8px 0; }
   .print-room { margin: 9px 0; }

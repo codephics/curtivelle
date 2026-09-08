@@ -51,15 +51,15 @@
   <template id="lineItemTemplate">
     <div class="line-item">
       <input data-field="modelCode" list="productOptions" placeholder="প্রোডাক্ট কোড">
-      <input data-field="height" type="number" min="0" step="0.01" placeholder="হাইট">
-      <input data-field="width" type="number" min="0" step="0.01" placeholder="উইডথ">
-      <input data-field="pleatCount" type="number" min="0" step="1" placeholder="কুচি">
-      <input data-field="yards" type="number" min="0" step="0.01" placeholder="ইয়ার্ড">
+      <input data-field="height" type="number" min="0" step="0.01" placeholder="হাইট (ইঞ্চি)">
+      <input data-field="width" type="number" min="0" step="0.01" placeholder="উইডথ (ইঞ্চি)">
+      <input data-field="pleatCount" type="number" min="0" step="0.01" placeholder="ফোল্ড">
+      <input data-field="yards" type="number" min="0" step="0.0001" placeholder="ইয়ার্ড">
       <input data-field="yardPrice" type="number" min="0" step="0.01" placeholder="প্রতি ইয়ার্ড">
       <input data-field="design" list="designOptions" placeholder="ডিজাইন (ঐচ্ছিক)">
       <input data-field="designRate" type="number" min="0" step="0.01" placeholder="ডিজাইন রেট">
       <input data-field="pieces" type="number" min="0" step="1" value="1" placeholder="পিস">
-      <input data-field="source" placeholder="সোর্স">
+      <input data-field="source" placeholder="নোট">
       <output data-field="total">৳0</output>
       <button type="button" class="icon-btn danger remove-row" aria-label="Remove">×</button>
     </div>
